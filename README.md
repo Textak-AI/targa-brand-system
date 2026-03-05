@@ -1,6 +1,6 @@
-# WhiteSpace Clarity Framework - Interactive Brand Mockups
+# TARGA AI - Interactive Brand Mockups
 
-Interactive mockups showcasing the WhiteSpace Clarity Framework brand system across 8 real-world applications.
+Interactive mockups showcasing the TARGA AI brand system across 8 real-world applications.
 
 **Live Demo:** [Your Vercel URL will go here]
 
@@ -8,7 +8,7 @@ Interactive mockups showcasing the WhiteSpace Clarity Framework brand system acr
 
 ## 📋 Project Overview
 
-This project contains interactive React mockups demonstrating the WhiteSpace Clarity Framework brand identity in production contexts:
+This project contains interactive React mockups demonstrating the TARGA AI brand identity in production contexts:
 
 - ✅ Website Hero
 - ✅ Certification Platform Dashboard
@@ -29,8 +29,8 @@ Each mockup is fully interactive—click the tabs to explore different applicati
 
 ```bash
 # If using git
-git clone https://github.com/yourusername/whitespace-clarity-mockups.git
-cd whitespace-clarity-mockups
+git clone https://github.com/yourusername/targa-brand-system-mockups.git
+cd targa-brand-system-mockups
 
 # Or just download and extract the files
 ```
@@ -59,9 +59,9 @@ Visit `http://localhost:3000` in your browser.
 ```bash
 git init
 git add .
-git commit -m "Initial commit: WhiteSpace Clarity mockups"
+git commit -m "Initial commit: TARGA AI Clarity mockups"
 git branch -M main
-git remote add origin https://github.com/yourusername/whitespace-clarity-mockups.git
+git remote add origin https://github.com/yourusername/targa-brand-system-mockups.git
 git push -u origin main
 ```
 
@@ -70,10 +70,10 @@ git push -u origin main
 2. Click "New Project"
 3. Select "Import Git Repository"
 4. Connect your GitHub account
-5. Select the `whitespace-clarity-mockups` repository
+5. Select the `targa-brand-system-mockups` repository
 6. Click "Deploy"
 
-✨ **Done!** Vercel will give you a live URL like: `https://whitespace-clarity-mockups.vercel.app`
+✨ **Done!** Vercel will give you a live URL like: `https://targa-brand-system-mockups.vercel.app`
 
 ---
 
@@ -98,7 +98,7 @@ Vercel will assign you a URL automatically.
 Once deployed to Vercel, you'll have a shareable URL:
 
 **Share with Bill:**
-> "Review the WhiteSpace Clarity Framework brand system mockups: https://whitespace-clarity-mockups.vercel.app"
+> "Review the TARGA AI brand system mockups: https://targa-brand-system-mockups.vercel.app"
 
 **Include in presentations:**
 - Email link to stakeholders
@@ -111,7 +111,7 @@ Once deployed to Vercel, you'll have a shareable URL:
 ## 📁 Project Structure
 
 ```
-whitespace-clarity-mockups/
+targa-brand-system-mockups/
 ├── app/
 │   ├── layout.jsx          # Root layout with fonts
 │   ├── page.jsx            # Entry point
@@ -137,8 +137,8 @@ whitespace-clarity-mockups/
 - **Gold:** #fbbf24 (Realization)
 
 ### Typography
-- **Lora** (serif) — "WhiteSpace" wordmark
-- **DM Sans** (sans-serif) — "Clarity Framework" and body copy
+- **Space Grotesk** (serif) — "TARGA AI" wordmark
+- **Inter (sans-serif) — body copy and UI
 
 ### Icon Mark
 - 4-bracket system representing 4 pillars
@@ -242,13 +242,13 @@ npm run dev -- -p 3001  # Use port 3001 instead
 For questions about:
 - **Deployment:** Refer to Vercel docs or contact Vercel support
 - **Code:** Check Next.js and React documentation
-- **Design/Brand:** Refer to WhiteSpace Clarity Brand Guidelines
+- **Design/Brand:** Refer to TARGA AI Clarity Brand Guidelines
 
 ---
 
 ## 📄 License
 
-This project showcases the WhiteSpace Clarity Framework brand identity. All brand assets are proprietary to Consult WhiteSpace LLC.
+This project showcases the TARGA AI brand identity. All brand assets are proprietary to Consult TARGA AI LLC.
 
 ---
 
@@ -270,7 +270,7 @@ This project showcases the WhiteSpace Clarity Framework brand identity. All bran
 
 **Next Steps:**
 1. Follow deployment steps above
-2. Share live URL with Bill Adams Jr.
+2. Share live URL with Joe Thompson.
 3. Get design approval
 4. Brief development team with brand guidelines
 

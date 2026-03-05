@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const styles = `
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300;400;600&family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: #ffffff;
   color: #1e293b;
   line-height: 1.6;
@@ -55,16 +55,16 @@ header {
 }
 
 .header-logo .logo-text h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  color: #475569;
+  color: #1f476a;
   letter-spacing: -0.5px;
   line-height: 1.2;
 }
 
 .header-logo .logo-text p {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   color: #64748b;
   font-weight: 500;
@@ -91,7 +91,7 @@ header {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: #64748b;
@@ -107,9 +107,9 @@ header {
 }
 
 .nav-tab.active {
-  color: #475569;
+  color: #1f476a;
   font-weight: 600;
-  border-bottom-color: #475569;
+  border-bottom-color: #1f476a;
 }
 
 /* Mobile hamburger */
@@ -121,7 +121,7 @@ header {
   padding: 8px 12px;
   cursor: pointer;
   font-size: 18px;
-  color: #475569;
+  color: #1f476a;
   margin-left: auto;
 }
 
@@ -169,7 +169,7 @@ header {
    ============================================ */
 
 .hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1a2744 100%);
+  background: linear-gradient(135deg, #132f4a 0%, #1a3a5c 100%);
   border-radius: 20px;
   padding: 100px;
   margin-bottom: 60px;
@@ -185,7 +185,7 @@ header {
   right: -100px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(14, 178, 175, 0.08) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -196,7 +196,7 @@ header {
   left: -100px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(0, 191, 165, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(14, 178, 175, 0.06) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -210,7 +210,7 @@ header {
 }
 
 .hero-text h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 56px;
   font-weight: 300;
   margin-bottom: 28px;
@@ -265,12 +265,12 @@ header {
   height: 3px;
 }
 
-.pillar-card.navy::before { background: #475569; }
-.pillar-card.teal::before { background: #00bfa5; }
+.pillar-card.navy::before { background: #1f476a; }
+.pillar-card.teal::before { background: #0eb2af; }
 .pillar-card.gold::before { background: #fbbf24; }
 
 .pillar-card h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 8px;
@@ -321,7 +321,7 @@ header {
   padding: 14px 32px;
   border-radius: 8px;
   border: none;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -332,14 +332,14 @@ header {
 }
 
 .btn-primary {
-  background: #2563eb;
+  background: #0eb2af;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #0ca3a0;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 20px rgba(14, 178, 175, 0.3);
 }
 
 .btn-secondary {
@@ -362,7 +362,7 @@ header {
 .btn-outline:hover {
   background: #f8fafc;
   border-color: #cbd5e1;
-  color: #475569;
+  color: #1f476a;
 }
 
 /* ============================================
@@ -370,7 +370,7 @@ header {
    ============================================ */
 
 .section-title {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 12px;
@@ -404,7 +404,7 @@ header {
 }
 
 .card-header {
-  background: linear-gradient(135deg, #0f172a 0%, #1a2744 100%);
+  background: linear-gradient(135deg, #132f4a 0%, #1a3a5c 100%);
   color: white;
   padding: 40px;
   border-radius: 12px 12px 0 0;
@@ -412,7 +412,7 @@ header {
 }
 
 .card-header h2 {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 28px;
   font-weight: 300;
   margin-bottom: 8px;
@@ -548,7 +548,7 @@ header {
 .spec-table td {
   padding: 14px 16px;
   border-bottom: 1px solid #f1f5f9;
-  color: #475569;
+  color: #1f476a;
 }
 
 .spec-table tr:hover td {
@@ -584,7 +584,7 @@ header {
 .checklist-icon {
   width: 22px;
   height: 22px;
-  background: #2563eb;
+  background: #0eb2af;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -610,13 +610,13 @@ header {
 
 .flow-box {
   background: white;
-  border: 2px solid #475569;
+  border: 2px solid #1f476a;
   border-radius: 8px;
   padding: 16px 28px;
   text-align: center;
   font-size: 13px;
   font-weight: 600;
-  color: #475569;
+  color: #1f476a;
 }
 
 .flow-arrow {
@@ -650,10 +650,10 @@ header {
 }
 
 .placeholder-section h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #475569;
+  color: #1f476a;
   margin-bottom: 8px;
 }
 
@@ -669,8 +669,8 @@ header {
    PILLAR ACCENT BORDERS
    ============================================ */
 
-.accent-navy { border-left: 3px solid #475569; }
-.accent-teal { border-left: 3px solid #00bfa5; }
+.accent-navy { border-left: 3px solid #1f476a; }
+.accent-teal { border-left: 3px solid #0eb2af; }
 .accent-gold { border-left: 3px solid #fbbf24; }
 
 /* ============================================
@@ -690,6 +690,15 @@ header {
   border-radius: 12px;
   padding: 24px;
 }
+
+@keyframes patternSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-80px); }
+}
+
+.pattern-animate {
+  animation: patternSlide 8s linear infinite;
+}
 `;
 
 export default function Mockups() {
@@ -697,11 +706,9 @@ export default function Mockups() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const Icon = ({ size = 40 }) => (
-    <svg width={size} height={size} viewBox="0 0 258.78 231.71" xmlns="http://www.w3.org/2000/svg">
-      <path fill="#475569" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-      <path fill="#475569" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-      <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-      <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
+    <svg width={size} height={size * (58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+      <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+      <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
     </svg>
   );
 
@@ -716,12 +723,12 @@ export default function Mockups() {
     { id: 'components', label: 'Components' },
     { id: 'voice', label: 'Voice' },
     { id: 'imagery', label: 'Imagery' },
-    { id: 'certification', label: 'Certification' },
-    { id: 'curriculum', label: 'Curriculum' },
+    { id: 'certification', label: 'Platform' },
+    { id: 'curriculum', label: 'Sales Deck' },
     // Row 2 (11 items)
     { id: 'email', label: 'Email' },
     { id: 'social', label: 'Social' },
-    { id: 'certificate', label: 'Certificate' },
+    { id: 'certificate', label: 'Collateral' },
     { id: 'presentation', label: 'Presentation' },
     { id: 'workshop', label: 'Workshop' },
     { id: 'mobile', label: 'Mobile' },
@@ -741,39 +748,22 @@ export default function Mockups() {
         <div className="header-inner">
           <div className="header-top">
             <div className="header-logo">
-              <svg height="60" viewBox="0 0 940.29 233.84" xmlns="http://www.w3.org/2000/svg">
-                <rect fill="#f2f2f2" x="311.49" y="123.09" width="628.8" height="110.75"/>
-                <path fill="#475569" d="M220.27,231.92c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.87c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                <path fill="#475569" d="M66.27,231.92c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21.82C0,11.32,8.75,2.57,19.25,2.57c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                <path fill="#fbbf24" d="M258.78,4.61c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21.82c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                <path fill="#00bfa5" d="M143.27,1.43c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V58.57C77,26.02,102.9.82,134.75.82c2.89,0,5.74.21,8.52.61Z"/>
-                <path fill="#475569" d="M325.17,25.86l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                <path fill="#475569" d="M430.73,80.48c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77V14.43c0-2.81.11-5.22.33-7.21l-7.88.44V3c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                <path fill="#475569" d="M498.88,80.48c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM505.76,14.26c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                <path fill="#475569" d="M538.18,65.16l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                <path fill="#475569" d="M588.96,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM615.76,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                <path fill="#475569" d="M652.78,84.14c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                <path fill="#475569" d="M697.9,108.78c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM736.14,77.92c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                <path fill="#475569" d="M768.89,81.92c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM791.47,77.64c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                <path fill="#475569" d="M836.82,82.14c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                <path fill="#475569" d="M895.65,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM922.46,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                <path fill="#475569" d="M350.41,199.35c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                <path fill="#475569" d="M379.78,198.48v-51.84h6.05v51.84h-6.05Z"/>
-                <path fill="#475569" d="M407.65,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM408.58,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                <path fill="#475569" d="M435.01,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M465.25,154.49c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM462.22,198.48v-36.29h6.05v36.29h-6.05Z"/>
-                <path fill="#475569" d="M493.18,198.48c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                <path fill="#475569" d="M511.11,214.32l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                <path fill="#475569" d="M566.69,198.48v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                <path fill="#475569" d="M604.85,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M643.3,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM644.24,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                <path fill="#475569" d="M670.66,198.48v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                <path fill="#475569" d="M750.72,199.35c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                <path fill="#475569" d="M781.61,198.48l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                <path fill="#475569" d="M844.04,199.35c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM844.11,194.16c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                <path fill="#475569" d="M870.53,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M897.17,198.48v-51.84h6.05v51.84h-6.05ZM919.49,198.48l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
+              <svg height="40" viewBox="0 0 376.9 114.15" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
+                <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
+                <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
+                <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
+                <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
+                <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
+                <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
+                <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
               </svg>
+              <div className="logo-text">
+                <p>Brand System</p>
+              </div>
             </div>
             <button 
               className="mobile-toggle"
@@ -810,13 +800,15 @@ export default function Mockups() {
             <div className="hero">
               <div className="hero-content">
                 <div className="hero-text">
-                  <h1>See Your Organizational Assets Clearly</h1>
+                  <p style={{ fontSize: '13px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>The Leader Experience™</p>
+                  <h1>AI-Powered Value Creation for Enterprise Leaders</h1>
                   <p>
-                    The WhiteSpace Clarity Framework helps you understand what you have, 
-                    what it is worth, and how to systematically convert it into customer value.
+                    TARGA AI is the leadership performance platform that turns strategic goals 
+                    into measurable outcomes — giving executives real-time visibility into 
+                    what drives enterprise value.
                   </p>
                   <div className="hero-buttons">
-                    <button className="btn btn-primary">Get Certified</button>
+                    <button className="btn btn-primary">Request a Demo</button>
                     <button className="btn btn-secondary">Learn More</button>
                   </div>
                 </div>
@@ -827,31 +819,32 @@ export default function Mockups() {
 
               <div className="pillar-cards">
                 <div className="pillar-card navy">
-                  <h3>Expectation</h3>
-                  <p>Clarity about what organizational assets exist and what they are truly worth.</p>
+                  <h3>Visibility</h3>
+                  <p>Real-time executive dashboards that surface what matters — goals, gaps, and the teams driving them.</p>
                 </div>
                 <div className="pillar-card teal">
-                  <h3>Systemization</h3>
-                  <p>A proven methodology for how assets work together as an integrated system.</p>
+                  <h3>Intelligence</h3>
+                  <p>AI-native agentic architecture that understands your business context and acts on natural language.</p>
                 </div>
                 <div className="pillar-card gold">
-                  <h3>Realization</h3>
-                  <p>Systematic conversion of organizational assets into measurable customer value.</p>
+                  <h3>Value</h3>
+                  <p>Enterprise value creation management — not task tracking. Outcomes measured in dollars, not checkboxes.</p>
                 </div>
               </div>
             </div>
 
             <div className="card-white" style={{ marginTop: '48px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
-                <div style={{ width: '4px', height: '40px', background: 'linear-gradient(to bottom, #475569, #00bfa5)', borderRadius: '2px' }}></div>
+                <div style={{ width: '4px', height: '40px', background: 'linear-gradient(to bottom, #1f476a, #0eb2af)', borderRadius: '2px' }}></div>
                 <div>
-                  <h3 style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '400', color: '#1e293b' }}>Outcome Dynamics</h3>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>By Bill Adams - Launching September 2026 via Forbes Books</p>
+                  <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '400', color: '#1e293b' }}>100 CEO Conversations</h3>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Building the future of the Leader Experience</p>
                 </div>
               </div>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.8', maxWidth: '700px' }}>
-                The definitive guide to understanding how organizations systematically convert their assets 
-                into value creation. Built on the patented Value Collaborator System methodology.
+              <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', maxWidth: '700px' }}>
+                TARGA AI is engaging 100 enterprise CEOs to validate and refine the platform — 
+                ensuring every feature is built on real executive needs, not assumptions. 
+                This initiative drives both product development and market positioning.
               </p>
             </div>
           </>
@@ -862,7 +855,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Brand Story</h2>
             <p className="section-subtitle">
-              The philosophy, methodology, and purpose behind the WhiteSpace Clarity Framework.
+              The vision, technology, and market position behind TARGA AI — The Leader Experience™.
             </p>
 
             <div className="icon-showcase" style={{ marginBottom: '48px', padding: '80px' }}>
@@ -870,45 +863,45 @@ export default function Mockups() {
             </div>
 
             <div className="card-white">
-              <h3 style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '20px' }}>
-                An organization's hidden assets are its greatest untapped opportunity.
+              <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '20px' }}>
+                Every executive deserves to see — at a glance — what drives enterprise value.
               </h3>
-              <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.8', marginBottom: '24px', maxWidth: '760px' }}>
-                The WhiteSpace Clarity Framework was created by Bill Adams to answer a fundamental question: 
-                why do organizations consistently undervalue what they already have? Through decades of consulting 
-                experience, Adams developed the Value Collaborator System - a patented methodology that reveals, 
-                organizes, and monetizes organizational assets.
+              <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', marginBottom: '24px', maxWidth: '760px' }}>
+                The software industry has defined experiences for users (UX), customers (CX), employees (EX), 
+                and developers (DX). But the people making the highest-stakes decisions — the leaders — have been 
+                left navigating fragmented tools built for someone else. TARGA AI defines a new category: 
+                <strong> LX — the Leader Experience™</strong>.
               </p>
-              <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.8', maxWidth: '760px' }}>
-                The Framework rests on three pillars - Expectation, Systemization, and Realization - each 
-                representing a phase in the journey from asset awareness to measurable value creation.
+              <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', maxWidth: '760px' }}>
+                The platform rests on three pillars — Visibility, Intelligence, and Value — each 
+                representing a layer in the journey from strategic intent to enterprise value creation.
               </p>
             </div>
 
             <div className="grid-3" style={{ marginTop: '40px' }}>
               <div className="box accent-navy" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '400', color: '#475569', marginBottom: '12px' }}>Expectation</h4>
+                <h4 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400', color: '#1f476a', marginBottom: '12px' }}>Visibility</h4>
                 <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                  Establishing clarity about what organizational assets exist, their current state, and their unrealized potential.
+                  Real-time executive dashboards that cut through noise — surfacing goal progress, team alignment, and strategic gaps at a glance.
                 </p>
               </div>
               <div className="box accent-teal" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '400', color: '#00bfa5', marginBottom: '12px' }}>Systemization</h4>
+                <h4 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400', color: '#0eb2af', marginBottom: '12px' }}>Intelligence</h4>
                 <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                  Applying a proven methodology to integrate assets into a working system where every element amplifies the others.
+                  AI-native agentic architecture that responds to natural language, automates executive workflows, and surfaces insights proactively.
                 </p>
               </div>
               <div className="box accent-gold" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '400', color: '#d97706', marginBottom: '12px' }}>Realization</h4>
+                <h4 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400', color: '#d97706', marginBottom: '12px' }}>Value</h4>
                 <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                  Systematically converting organizational assets into measurable customer value and business outcomes.
+                  Enterprise value creation management — measuring outcomes in dollars, not checkboxes. Premium SaaS that delivers ROI from day one.
                 </p>
               </div>
             </div>
 
             <div className="card-white" style={{ marginTop: '40px', textAlign: 'center', padding: '48px' }}>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px' }}>Ready to see what your organization is missing?</p>
-              <button className="btn btn-primary">Explore the Certification Program</button>
+              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px' }}>Ready to experience LX?</p>
+              <button className="btn btn-primary">Request a Demo</button>
             </div>
           </>
         )}
@@ -925,30 +918,28 @@ export default function Mockups() {
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Logo Usage</h3>
               <div className="grid-3">
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '40px', marginBottom: '12px' }}>
+                  <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Icon size={120} />
                   </div>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Primary Mark</p>
                   <p style={{ fontSize: '12px', color: '#64748b' }}>Full color on light</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ background: '#0f172a', borderRadius: '12px', padding: '40px', marginBottom: '12px' }}>
+                  <div style={{ background: '#132f4a', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Icon size={120} />
                   </div>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>On Dark</p>
                   <p style={{ fontSize: '12px', color: '#64748b' }}>Full color on dark backgrounds</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ background: '#475569', borderRadius: '12px', padding: '40px', marginBottom: '12px' }}>
-                    <svg width={120} height={120} viewBox="0 0 258.78 231.71" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#ffffff" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#ffffff" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                      <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
+                  <div style={{ background: '#1f476a', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <svg width={120} height={Math.round(120 * 58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                      <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                      <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
                     </svg>
                   </div>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>On Navy</p>
-                  <p style={{ fontSize: '12px', color: '#64748b' }}>Navy brackets become white</p>
+                  <p style={{ fontSize: '12px', color: '#64748b' }}>Navy elements become white</p>
                 </div>
               </div>
             </div>
@@ -986,7 +977,7 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Clear Space</h3>
               <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '16px' }}>
-                Maintain a minimum clear space equal to the height of the icon's top bracket on all sides. 
+                Maintain a minimum clear space equal to the height of the icon's apex on all sides. 
                 No other elements - text, graphics, or borders - should enter this exclusion zone.
               </p>
               <div style={{ display: 'flex', gap: '32px', fontSize: '13px' }}>
@@ -1020,11 +1011,9 @@ export default function Mockups() {
                 </div>
                 <div className="dont-card" style={{ textAlign: 'center', padding: '24px' }}>
                   <div style={{ background: '#fef2f2', borderRadius: '8px', padding: '24px', marginBottom: '12px' }}>
-                    <svg width={60} height={60} viewBox="0 0 258.78 231.71" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#e74c3c" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#e74c3c" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#f39c12" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                      <path fill="#2ecc71" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
+                    <svg width={60} height={Math.round(60 * 58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                      <polygon fill="#2ecc71" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                      <polygon fill="#e74c3c" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
                     </svg>
                   </div>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#dc2626', marginBottom: '4px' }}>{'\u2717'} Don't change brand colors</p>
@@ -1065,37 +1054,30 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Color System</h2>
             <p className="section-subtitle">
-              Brand colors carry meaning. Navy for authority, Teal for innovation, Gold for value realization, Blue for action.
+              Brand colors carry meaning. Navy for authority and trust. Teal for intelligence, innovation, and action. Gold for value and impact.
             </p>
 
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '20px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Primary Palette</h3>
             <div className="color-grid">
               <div className="color-swatch">
-                <div className="color-display" style={{ backgroundColor: '#475569' }}></div>
+                <div className="color-display" style={{ backgroundColor: '#1f476a' }}></div>
                 <div className="color-specs">
                   <div className="color-name">Navy</div>
-                  <div className="color-code">HEX: #475569<br/>RGB: 71, 85, 105<br/>Role: Authority, Foundation</div>
+                  <div className="color-code">HEX: #1f476a<br/>RGB: 31, 71, 106<br/>Role: Authority, Foundation, Trust</div>
                 </div>
               </div>
               <div className="color-swatch">
-                <div className="color-display" style={{ backgroundColor: '#00bfa5' }}></div>
+                <div className="color-display" style={{ backgroundColor: '#0eb2af' }}></div>
                 <div className="color-specs">
                   <div className="color-name">Teal</div>
-                  <div className="color-code">HEX: #00bfa5<br/>RGB: 0, 191, 165<br/>Role: Innovation, Progress</div>
+                  <div className="color-code">HEX: #0eb2af<br/>RGB: 14, 178, 175<br/>Role: Innovation, Intelligence, CTAs</div>
                 </div>
               </div>
               <div className="color-swatch">
                 <div className="color-display" style={{ backgroundColor: '#fbbf24' }}></div>
                 <div className="color-specs">
                   <div className="color-name">Gold</div>
-                  <div className="color-code">HEX: #fbbf24<br/>RGB: 251, 191, 36<br/>Role: Realization, Value</div>
-                </div>
-              </div>
-              <div className="color-swatch">
-                <div className="color-display" style={{ backgroundColor: '#2563eb' }}></div>
-                <div className="color-specs">
-                  <div className="color-name">Blue</div>
-                  <div className="color-code">HEX: #2563eb<br/>RGB: 37, 99, 235<br/>Role: CTAs, Interaction</div>
+                  <div className="color-code">HEX: #fbbf24<br/>RGB: 251, 191, 36<br/>Role: Performance, Impact, Value</div>
                 </div>
               </div>
             </div>
@@ -1104,7 +1086,7 @@ export default function Mockups() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '12px', marginBottom: '48px' }}>
               {[
                 { name: 'Gray 900', hex: '#1e293b' },
-                { name: 'Gray 700', hex: '#475569' },
+                { name: 'Gray 700', hex: '#1f476a' },
                 { name: 'Gray 500', hex: '#64748b' },
                 { name: 'Gray 300', hex: '#cbd5e1' },
                 { name: 'Gray 200', hex: '#e2e8f0' },
@@ -1141,7 +1123,7 @@ export default function Mockups() {
                     <td style={{ color: '#16a34a', fontWeight: '600' }}>Pass</td>
                   </tr>
                   <tr>
-                    <td>Blue on White</td>
+                    <td>Teal on White (buttons)</td>
                     <td style={{ fontFamily: 'monospace' }}>4.6:1</td>
                     <td style={{ color: '#16a34a', fontWeight: '600' }}>Pass</td>
                   </tr>
@@ -1166,25 +1148,25 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Typography</h2>
             <p className="section-subtitle">
-              Lora for headlines and brand-forward moments. DM Sans for body, UI, and everything else.
+              Space Grotesk for headlines and brand-forward moments. Inter for body, UI, and everything operational.
             </p>
 
             <div className="grid-2" style={{ marginBottom: '40px' }}>
               <div className="card-white">
-                <h3 style={{ fontFamily: 'Lora, serif', fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Lora - Headlines</h3>
-                <p style={{ fontFamily: 'Lora, serif', fontSize: '48px', fontWeight: '300', color: '#1e293b', lineHeight: '1.1', letterSpacing: '-1px', marginBottom: '16px' }}>
+                <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Space Grotesk - Headlines</h3>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '48px', fontWeight: '300', color: '#1e293b', lineHeight: '1.1', letterSpacing: '-1px', marginBottom: '16px' }}>
                   Light 300
                 </p>
-                <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '400', color: '#1e293b', lineHeight: '1.2', marginBottom: '16px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '400', color: '#1e293b', lineHeight: '1.2', marginBottom: '16px' }}>
                   Regular 400
                 </p>
-                <p style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '600', color: '#1e293b', lineHeight: '1.3' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '600', color: '#1e293b', lineHeight: '1.3' }}>
                   Semi-Bold 600
                 </p>
               </div>
               <div className="card-white">
-                <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>DM Sans - Body & UI</h3>
-                <p style={{ fontSize: '16px', fontWeight: '400', color: '#475569', lineHeight: '1.6', marginBottom: '16px' }}>
+                <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Inter - Body & UI</h3>
+                <p style={{ fontSize: '16px', fontWeight: '400', color: '#1f476a', lineHeight: '1.6', marginBottom: '16px' }}>
                   Regular 400 - Body text and general content. Optimized for comfortable reading at 16px with 1.6 line height.
                 </p>
                 <p style={{ fontSize: '14px', fontWeight: '500', color: '#1e293b', marginBottom: '16px' }}>
@@ -1210,43 +1192,43 @@ export default function Mockups() {
                 <tbody>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>56px</td>
-                    <td>Lora</td>
+                    <td>Space Grotesk</td>
                     <td>300 Light</td>
                     <td>Hero headlines (-1px letter-spacing)</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>40px</td>
-                    <td>Lora</td>
+                    <td>Space Grotesk</td>
                     <td>400 Regular</td>
                     <td>Page titles</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>32px</td>
-                    <td>Lora</td>
+                    <td>Space Grotesk</td>
                     <td>300 Light</td>
                     <td>Section headers (-0.5px letter-spacing)</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>24px</td>
-                    <td>Lora</td>
+                    <td>Space Grotesk</td>
                     <td>400 Regular</td>
                     <td>Card titles, subsection headers</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>16px</td>
-                    <td>DM Sans</td>
+                    <td>Inter</td>
                     <td>400 Regular</td>
                     <td>Body text (1.6 line-height)</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>14px</td>
-                    <td>DM Sans</td>
+                    <td>Inter</td>
                     <td>500 Medium</td>
                     <td>Labels, buttons, navigation</td>
                   </tr>
                   <tr>
                     <td style={{ fontFamily: 'monospace', fontWeight: '600' }}>12px</td>
-                    <td>DM Sans</td>
+                    <td>Inter</td>
                     <td>400 Regular</td>
                     <td>Captions, fine print (minimum size)</td>
                   </tr>
@@ -1256,9 +1238,9 @@ export default function Mockups() {
 
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Web Font Embedding</h3>
-              <div style={{ background: '#0f172a', borderRadius: '8px', padding: '20px', fontFamily: "'SF Mono', 'Fira Code', monospace", fontSize: '12px', color: '#94a3b8', lineHeight: '1.8', overflowX: 'auto' }}>
+              <div style={{ background: '#132f4a', borderRadius: '8px', padding: '20px', fontFamily: "'SF Mono', 'Fira Code', monospace", fontSize: '12px', color: '#94a3b8', lineHeight: '1.8', overflowX: 'auto' }}>
                 <span style={{ color: '#64748b' }}>/* Google Fonts import */</span><br/>
-                <span style={{ color: '#fbbf24' }}>@import</span> url(<span style={{ color: '#00bfa5' }}>'https://fonts.googleapis.com/css2?family=Lora:wght@300;400;600&family=DM+Sans:wght@400;500;600&display=swap'</span>);
+                <span style={{ color: '#fbbf24' }}>@import</span> url(<span style={{ color: '#0eb2af' }}>'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap'</span>);
               </div>
             </div>
           </>
@@ -1269,7 +1251,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Logo System</h2>
             <p className="section-subtitle">
-              The four-bracket icon mark, combimark, lockup variations, and approved background treatments.
+              The TARGA A-mark icon, combimark, lockup variations, and approved background treatments.
             </p>
 
             {/* Icon Mark */}
@@ -1278,167 +1260,115 @@ export default function Mockups() {
               <Icon size={280} />
             </div>
             <p style={{ fontSize: '14px', color: '#64748b', textAlign: 'center', marginTop: '-28px', marginBottom: '48px' }}>
-              Four interlocking brackets: Slate (Expectation) - Teal (Systemization) - Slate (Foundation) - Gold (Realization)
+              The triangular A-mark: Navy (Leadership Authority) with Teal apex triangle (AI Intelligence) — representing the convergence of executive vision and performance automation
             </p>
 
             {/* Icon on backgrounds */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Icon - Background Variants</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
               <div style={{ textAlign: 'center' }}>
-                <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '40px', marginBottom: '12px', border: '1px solid #e2e8f0' }}>
+                <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px solid #e2e8f0' }}>
                   <Icon size={100} />
                 </div>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>On Light</p>
                 <p style={{ fontSize: '12px', color: '#64748b' }}>Full brand colors</p>
               </div>
               <div style={{ textAlign: 'center' }}>
-                <div style={{ background: '#0f172a', borderRadius: '12px', padding: '40px', marginBottom: '12px' }}>
-                  <svg width={100} height={100} viewBox="0 0 258.78 231.71" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#ffffff" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#ffffff" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                    <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
-                  </svg>
+                <div style={{ background: '#132f4a', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <svg width={100} height={Math.round(100 * 58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                      <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                      <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                    </svg>
                 </div>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>On Dark</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Navy brackets become white</p>
+                <p style={{ fontSize: '12px', color: '#64748b' }}>Navy elements become white</p>
               </div>
               <div style={{ textAlign: 'center' }}>
-                <div style={{ background: '#475569', borderRadius: '12px', padding: '40px', marginBottom: '12px' }}>
-                  <svg width={100} height={100} viewBox="0 0 258.78 231.71" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#ffffff" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#ffffff" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                    <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
-                  </svg>
+                <div style={{ background: '#1f476a', borderRadius: '12px', padding: '40px', marginBottom: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <svg width={100} height={Math.round(100 * 58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                      <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                      <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                    </svg>
                 </div>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>On Navy</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Navy brackets become white</p>
+                <p style={{ fontSize: '12px', color: '#64748b' }}>Navy elements become white</p>
               </div>
             </div>
 
             {/* Combimark */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Combimark</h3>
             <div className="card-white" style={{ padding: '60px', textAlign: 'center', marginBottom: '48px' }}>
-              <svg height="80" viewBox="0 0 940.29 233.84" xmlns="http://www.w3.org/2000/svg">
-                <rect fill="#f2f2f2" x="311.49" y="123.09" width="628.8" height="110.75"/>
-                <path fill="#475569" d="M220.27,231.92c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.87c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                <path fill="#475569" d="M66.27,231.92c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21.82C0,11.32,8.75,2.57,19.25,2.57c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                <path fill="#fbbf24" d="M258.78,4.61c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21.82c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                <path fill="#00bfa5" d="M143.27,1.43c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V58.57C77,26.02,102.9.82,134.75.82c2.89,0,5.74.21,8.52.61Z"/>
-                <path fill="#475569" d="M325.17,25.86l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                <path fill="#475569" d="M430.73,80.48c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77V14.43c0-2.81.11-5.22.33-7.21l-7.88.44V3c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                <path fill="#475569" d="M498.88,80.48c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM505.76,14.26c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                <path fill="#475569" d="M538.18,65.16l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                <path fill="#475569" d="M588.96,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM615.76,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                <path fill="#475569" d="M652.78,84.14c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                <path fill="#475569" d="M697.9,108.78c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM736.14,77.92c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                <path fill="#475569" d="M768.89,81.92c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM791.47,77.64c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                <path fill="#475569" d="M836.82,82.14c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                <path fill="#475569" d="M895.65,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM922.46,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                <path fill="#475569" d="M350.41,199.35c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                <path fill="#475569" d="M379.78,198.48v-51.84h6.05v51.84h-6.05Z"/>
-                <path fill="#475569" d="M407.65,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM408.58,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                <path fill="#475569" d="M435.01,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M465.25,154.49c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM462.22,198.48v-36.29h6.05v36.29h-6.05Z"/>
-                <path fill="#475569" d="M493.18,198.48c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                <path fill="#475569" d="M511.11,214.32l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                <path fill="#475569" d="M566.69,198.48v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                <path fill="#475569" d="M604.85,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M643.3,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM644.24,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                <path fill="#475569" d="M670.66,198.48v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                <path fill="#475569" d="M750.72,199.35c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                <path fill="#475569" d="M781.61,198.48l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                <path fill="#475569" d="M844.04,199.35c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM844.11,194.16c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                <path fill="#475569" d="M870.53,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                <path fill="#475569" d="M897.17,198.48v-51.84h6.05v51.84h-6.05ZM919.49,198.48l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
+              <svg height="80" viewBox="0 0 376.9 114.15" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
+                <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
+                <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
+                <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
+                <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
+                <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
+                <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
+                <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
               </svg>
               <p style={{ fontSize: '14px', color: '#64748b', textAlign: 'center', marginTop: '16px' }}>
-                Icon mark + "WhiteSpace Clarity Framework" wordmark. Gray band grounds the second line.
+                TARGA iconmark + wordmark lockup. The triangular A-mark sits to the left of the logotype.
               </p>
             </div>
 
             {/* Lockup Variations */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Lockup Variations</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
-              <div className="box" style={{ textAlign: 'center', padding: '40px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                <Icon size={100} />
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginTop: '16px' }}>Icon Only</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Favicons, avatars, small spaces</p>
+              <div className="box" style={{ textAlign: 'center', padding: '48px 24px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '240px' }}>
+                <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+                  <Icon size={48} />
+                </div>
+                <div style={{ marginTop: '24px' }}>
+                  <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 4px 0' }}>Icon Only</p>
+                  <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Favicons, avatars, small spaces</p>
+                </div>
               </div>
-              <div className="box" style={{ textAlign: 'center', padding: '40px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                <svg height="80" viewBox="0 0 940.29 233.84" xmlns="http://www.w3.org/2000/svg" style={{ marginBottom: '16px' }}>
-                  <rect fill="#f2f2f2" x="311.49" y="123.09" width="628.8" height="110.75"/>
-                  <path fill="#475569" d="M220.27,231.92c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.87c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                  <path fill="#475569" d="M66.27,231.92c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21.82C0,11.32,8.75,2.57,19.25,2.57c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                  <path fill="#fbbf24" d="M258.78,4.61c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21.82c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                  <path fill="#00bfa5" d="M143.27,1.43c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V58.57C77,26.02,102.9.82,134.75.82c2.89,0,5.74.21,8.52.61Z"/>
-                  <path fill="#475569" d="M325.17,25.86l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                  <path fill="#475569" d="M430.73,80.48c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77V14.43c0-2.81.11-5.22.33-7.21l-7.88.44V3c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                  <path fill="#475569" d="M498.88,80.48c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM505.76,14.26c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                  <path fill="#475569" d="M538.18,65.16l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                  <path fill="#475569" d="M588.96,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM615.76,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                  <path fill="#475569" d="M652.78,84.14c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                  <path fill="#475569" d="M697.9,108.78c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM736.14,77.92c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                  <path fill="#475569" d="M768.89,81.92c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM791.47,77.64c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                  <path fill="#475569" d="M836.82,82.14c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                  <path fill="#475569" d="M895.65,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM922.46,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                  <path fill="#475569" d="M350.41,199.35c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                  <path fill="#475569" d="M379.78,198.48v-51.84h6.05v51.84h-6.05Z"/>
-                  <path fill="#475569" d="M407.65,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM408.58,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                  <path fill="#475569" d="M435.01,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M465.25,154.49c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM462.22,198.48v-36.29h6.05v36.29h-6.05Z"/>
-                  <path fill="#475569" d="M493.18,198.48c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                  <path fill="#475569" d="M511.11,214.32l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                  <path fill="#475569" d="M566.69,198.48v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                  <path fill="#475569" d="M604.85,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M643.3,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM644.24,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                  <path fill="#475569" d="M670.66,198.48v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                  <path fill="#475569" d="M750.72,199.35c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                  <path fill="#475569" d="M781.61,198.48l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                  <path fill="#475569" d="M844.04,199.35c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM844.11,194.16c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                  <path fill="#475569" d="M870.53,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M897.17,198.48v-51.84h6.05v51.84h-6.05ZM919.49,198.48l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
-                </svg>
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginTop: '16px' }}>Combimark (Horizontal)</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Headers, navigation, primary lockup</p>
+              <div className="box" style={{ textAlign: 'center', padding: '48px 24px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '240px' }}>
+                <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+                  <svg height="56" viewBox="0 0 376.9 114.15" xmlns="http://www.w3.org/2000/svg">
+                    <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
+                    <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
+                    <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                    <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
+                    <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
+                    <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
+                    <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                    <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
+                    <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                    <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
+                    <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
+                  </svg>
+                </div>
+                <div style={{ marginTop: '24px' }}>
+                  <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 4px 0' }}>Combimark (Horizontal)</p>
+                  <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Headers, navigation, primary lockup</p>
+                </div>
               </div>
-              <div className="box" style={{ textAlign: 'center', padding: '40px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                <svg height="180" viewBox="0 0 628.8 521.48" xmlns="http://www.w3.org/2000/svg" style={{ marginBottom: '16px' }}>
-                  <rect fill="#f2f2f2" x="0" y="410.72" width="628.8" height="110.75"/>
-                  <path fill="#475569" d="M405.28,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                  <path fill="#475569" d="M251.28,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21c0-10.5,8.75-19.25,19.25-19.25,3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                  <path fill="#fbbf24" d="M443.79,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                  <path fill="#00bfa5" d="M328.28.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75c0-32.55,25.9-57.75,57.75-57.75,2.89,0,5.74.21,8.52.61Z"/>
-                  <path fill="#475569" d="M15.65,313.5l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                  <path fill="#475569" d="M121.21,368.11c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77v-52.5c0-2.81.11-5.22.33-7.21l-7.88.44v-4.66c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                  <path fill="#475569" d="M189.36,368.11c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM196.24,301.9c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                  <path fill="#475569" d="M228.65,352.79l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                  <path fill="#475569" d="M279.43,369.61c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM306.24,334.7c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                  <path fill="#475569" d="M343.26,371.77c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                  <path fill="#475569" d="M388.38,396.42c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM426.62,365.56c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                  <path fill="#475569" d="M459.36,369.55c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM481.95,365.28c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                  <path fill="#475569" d="M527.3,369.78c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                  <path fill="#475569" d="M586.13,369.61c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM612.93,334.7c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                  <path fill="#475569" d="M37.93,486.98c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                  <path fill="#475569" d="M67.3,486.12v-51.84h6.05v51.84h-6.05Z"/>
-                  <path fill="#475569" d="M95.16,486.98c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM96.1,481.87c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                  <path fill="#475569" d="M122.52,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M152.76,442.13c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM149.74,486.12v-36.29h6.05v36.29h-6.05Z"/>
-                  <path fill="#475569" d="M180.7,486.12c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                  <path fill="#475569" d="M198.63,501.96l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                  <path fill="#475569" d="M254.21,486.12v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                  <path fill="#475569" d="M292.37,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M330.82,486.98c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM331.75,481.87c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                  <path fill="#475569" d="M358.18,486.12v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                  <path fill="#475569" d="M438.24,486.98c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                  <path fill="#475569" d="M469.13,486.12l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                  <path fill="#475569" d="M531.55,486.98c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM531.62,481.8c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                  <path fill="#475569" d="M558.05,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                  <path fill="#475569" d="M584.69,486.12v-51.84h6.05v51.84h-6.05ZM607.01,486.12l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
+              <div className="box" style={{ textAlign: 'center', padding: '48px 24px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '240px' }}>
+                <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+                  <svg height="100" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
+                  <polygon fill="#0eb2af" points="134.33 88.62 112.09 88.72 123.29 65.52 134.33 88.62"/>
+                  <polygon fill="#1f476a" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
+                  <path fill="#1f476a" d="M172.56,173.47c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                  <polygon fill="#1f476a" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
+                  <polygon fill="#0eb2af" points="202.4 183.34 195.93 183.37 199.19 176.61 202.4 183.34"/>
+                  <polygon fill="#1f476a" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
+                  <path fill="#1f476a" d="M106.28,174.68l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                  <polygon fill="#1f476a" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
+                  <path fill="#0eb2af" d="M232.22,145.63l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                  <rect fill="#0eb2af" x="243.82" y="146.62" width="2.36" height="15.63"/>
+                  <polygon fill="#0eb2af" points="67.03 183.34 60.56 183.37 63.81 176.61 67.03 183.34"/>
                 </svg>
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Vertical Combimark</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Print, presentations, square formats</p>
+                </div>
+                <div style={{ marginTop: '24px' }}>
+                  <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 4px 0' }}>Vertical Combimark</p>
+                  <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Print, presentations, square formats</p>
+                </div>
               </div>
             </div>
 
@@ -1488,17 +1418,17 @@ export default function Mockups() {
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>File Formats</h3>
               <div className="grid-3">
                 <div className="box" style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#2563eb', marginBottom: '8px', fontWeight: '600' }}>SVG</p>
+                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#0eb2af', marginBottom: '8px', fontWeight: '600' }}>SVG</p>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '4px' }}>Primary / Web</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: '1.5' }}>Vector, infinitely scalable. Use for all digital applications.</p>
                 </div>
                 <div className="box" style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#00bfa5', marginBottom: '8px', fontWeight: '600' }}>PNG</p>
+                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#0eb2af', marginBottom: '8px', fontWeight: '600' }}>PNG</p>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '4px' }}>Raster / Transparency</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: '1.5' }}>2048px exports for social, presentations, and email.</p>
                 </div>
                 <div className="box" style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#475569', marginBottom: '8px', fontWeight: '600' }}>PDF</p>
+                  <p style={{ fontFamily: 'monospace', fontSize: '24px', color: '#1f476a', marginBottom: '8px', fontWeight: '600' }}>PDF</p>
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '4px' }}>Print / Production</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: '1.5' }}>Vector with embedded fonts for offset and large format print.</p>
                 </div>
@@ -1520,7 +1450,7 @@ export default function Mockups() {
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
                 <button className="btn btn-primary">Primary Action</button>
                 <button className="btn btn-outline">Secondary</button>
-                <button className="btn" style={{ background: 'transparent', color: '#2563eb', fontWeight: '600', fontSize: '14px', padding: '14px 32px' }}>Tertiary Link</button>
+                <button className="btn" style={{ background: 'transparent', color: '#0eb2af', fontWeight: '600', fontSize: '14px', padding: '14px 32px' }}>Tertiary Link</button>
               </div>
               <table className="spec-table">
                 <thead>
@@ -1535,7 +1465,7 @@ export default function Mockups() {
                 <tbody>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Primary</td>
-                    <td style={{ fontFamily: 'monospace' }}>#2563eb</td>
+                    <td style={{ fontFamily: "monospace" }}>#0eb2af</td>
                     <td>White, 600</td>
                     <td>14px 32px</td>
                     <td>8px</td>
@@ -1550,7 +1480,7 @@ export default function Mockups() {
                   <tr>
                     <td style={{ fontWeight: '600' }}>Tertiary</td>
                     <td>None</td>
-                    <td>#2563eb, 600</td>
+                    <td>#0eb2af, 600</td>
                     <td>14px 32px</td>
                     <td>-</td>
                   </tr>
@@ -1568,9 +1498,347 @@ export default function Mockups() {
                 <h4 style={{ marginBottom: '8px', color: '#1e293b', fontWeight: '600', fontSize: '14px' }}>Content Card</h4>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Larger padding (40px), used for primary content sections.</p>
               </div>
-              <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', borderRadius: '12px', padding: '24px', color: 'white' }}>
+              <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '12px', padding: '24px', color: 'white' }}>
                 <h4 style={{ marginBottom: '8px', fontWeight: '600', fontSize: '14px' }}>Dark Card</h4>
                 <p style={{ fontSize: '13px', color: '#cbd5e1', margin: 0, lineHeight: '1.6' }}>For hero blocks, CTAs, and emphasis sections.</p>
+              </div>
+            </div>
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase', marginTop: '48px' }}>Website Sections with Brand Pattern</h3>
+            <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '24px', maxWidth: '700px' }}>
+              Examples of how the interlocking A-mark pattern integrates into website sections. The pattern creates visual depth while reinforcing brand identity.
+            </p>
+
+            {/* Hero Section Mockup */}
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <svg width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="compHeroPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.10">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    <g opacity="0.06" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                  </pattern>
+                  <linearGradient id="compHeroGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#1f476a"/>
+                    <stop offset="100%" stopColor="#152d4a"/>
+                  </linearGradient>
+                  <clipPath id="heroRound">
+                    <rect width="100%" height="360" rx="0"/>
+                  </clipPath>
+                </defs>
+                <rect width="100%" height="360" fill="url(#compHeroGrad)"/>
+                <rect width="100%" height="360" fill="url(#compHeroPattern)"/>
+                {/* Content overlay */}
+                <rect x="0" y="0" width="55%" height="360" fill="url(#compHeroGrad)" opacity="0.85"/>
+                {/* Icon */}
+                <g transform="translate(60, 80)">
+                  <polygon fill="#0eb2af" points="16.5 22.1 10.9 22.1 13.7 16.3 16.5 22.1"/>
+                  <polygon fill="#ffffff" points="27.2 27.8 22.3 27.8 13.7 10.3 5 27.9 0 27.9 11 5.5 12.8 1.7 13.7 0 27.2 27.8"/>
+                </g>
+                {/* Text */}
+                <text x="60" y="128" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="2">THE LEADER EXPERIENCE™</text>
+                <text x="60" y="158" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="300" letterSpacing="-0.5">AI-Powered Value Creation</text>
+                <text x="60" y="190" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="300" letterSpacing="-0.5">for Enterprise Leaders</text>
+                <text x="60" y="224" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Real-time visibility into what drives enterprise value.</text>
+                <text x="60" y="242" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Natural language AI that speaks the C-suite's language.</text>
+                {/* CTA buttons */}
+                <rect x="60" y="268" width="160" height="42" rx="8" fill="#0eb2af"/>
+                <text x="140" y="294" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600" textAnchor="middle">Request a Demo</text>
+                <rect x="236" y="268" width="130" height="42" rx="8" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
+                <text x="301" y="294" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="500" textAnchor="middle">Learn More</text>
+                {/* Teal accent line */}
+                <line x1="0" y1="357" x2="100%" y2="357" stroke="#0eb2af" strokeWidth="3" opacity="0.5"/>
+              </svg>
+              <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>Hero Section</strong> — Pattern at full density behind content area with 85% overlay fade on the text side. Teal accent line anchors the bottom.
+              </div>
+            </div>
+
+            {/* CTA Band Mockup */}
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <svg width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="compCtaPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.08">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    <g opacity="0.05" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="180" fill="#1f476a"/>
+                <rect width="100%" height="180" fill="url(#compCtaPattern)"/>
+                {/* Centered text */}
+                <text x="50%" y="60" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" textAnchor="middle" letterSpacing="2">THE LEADER EXPERIENCE™</text>
+                <text x="50%" y="88" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="22" fontWeight="400" textAnchor="middle" letterSpacing="-0.3">Ready to see what value creation looks like?</text>
+                <text x="50%" y="112" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" textAnchor="middle">Join 100 enterprise CEOs shaping the future of LX.</text>
+                {/* CTA */}
+                <rect x="50%" y="126" width="200" height="42" rx="8" fill="#0eb2af" transform="translate(-100,0)"/>
+                <text x="50%" y="152" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600" textAnchor="middle">Schedule a Conversation</text>
+              </svg>
+              <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>CTA Band</strong> — Full-width pattern at low opacity behind centered call-to-action. Use between content sections to break visual rhythm.
+              </div>
+            </div>
+
+            {/* Footer Mockup */}
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <svg width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="compFooterPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.06">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    <g opacity="0.03" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                  </pattern>
+                  <linearGradient id="compFooterGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#132f4a"/>
+                    <stop offset="100%" stopColor="#0f2338"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="260" fill="url(#compFooterGrad)"/>
+                <rect width="100%" height="260" fill="url(#compFooterPattern)"/>
+                {/* Teal top border */}
+                <line x1="0" y1="2" x2="100%" y2="2" stroke="#0eb2af" strokeWidth="3" opacity="0.6"/>
+                {/* Logo: white iconmark + white wordmark */}
+                <g transform="translate(60, 32)">
+                  {/* White iconmark */}
+                  <g transform="scale(0.55)">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06" opacity="0.85"/>
+                  </g>
+                  {/* White wordmark (whiteAsset_6) */}
+                  <g transform="translate(40, 4) scale(0.55)">
+                    <path fill="#ffffff" d="M172.56,24.31c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z" opacity="0.85"/>
+                    <polygon fill="#ffffff" points="220.02 44.98 216.6 45 199.28 8.77 181.74 45.15 178.23 45.17 199.26 1.55 220.02 44.98" opacity="0.85"/>
+                    <polygon fill="#0eb2af" points="202.4 34.18 195.93 34.21 199.19 27.46 202.4 34.18"/>
+                    <polygon fill="#ffffff" points="84.7 44.99 81.28 45 63.97 8.77 46.42 45.15 42.91 45.17 63.95 1.55 84.7 44.99" opacity="0.85"/>
+                    <path fill="#ffffff" d="M106.28,25.52l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z" opacity="0.85"/>
+                    <polygon fill="#ffffff" points="45.35 .93 43.94 3.85 21.9 3.85 21.9 45.69 18.54 45.69 18.54 3.85 0 3.85 1.4 .94 45.35 .93" opacity="0.85"/>
+                    <polygon fill="#0eb2af" points="67.03 34.18 60.56 34.21 63.81 27.46 67.03 34.18"/>
+                  </g>
+                </g>
+                {/* Footer columns */}
+                <text x="60" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1" textTransform="uppercase">PLATFORM</text>
+                <text x="60" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Features</text>
+                <text x="60" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Integrations</text>
+                <text x="60" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Pricing</text>
+                <text x="200" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1">COMPANY</text>
+                <text x="200" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Our Story</text>
+                <text x="200" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Leadership</text>
+                <text x="200" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Careers</text>
+                <text x="340" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1">RESOURCES</text>
+                <text x="340" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Blog</text>
+                <text x="340" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Case Studies</text>
+                <text x="340" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Support</text>
+                {/* Divider */}
+                <line x1="60" y1="200" x2="90%" y2="200" stroke="#ffffff" strokeWidth="1" opacity="0.06"/>
+                {/* Copyright */}
+                <text x="60" y="230" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">{'\u00A9'} 2026 Targatek Inc. All rights reserved.</text>
+                <text x="90%" y="230" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11" textAnchor="end">Privacy Policy  |  Terms</text>
+              </svg>
+              <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>Footer</strong> — Darkest navy gradient with pattern at minimal opacity (6%). Teal accent line at top edge. Pattern adds subtle texture without competing with navigation links.
+              </div>
+            </div>
+
+            {/* Lead Magnet */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginTop: '48px', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Lead Magnet / Gated Content</h3>
+            <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '24px', maxWidth: '700px' }}>
+              Downloadable asset for the 100 CEO Conversations initiative. Animated pattern creates premium perception at the moment of conversion.
+            </p>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <svg width="100%" viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="leadPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.10">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    <g opacity="0.06" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                  </pattern>
+                  <pattern id="leadPatternSm" x="20" y="23" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.05">
+                      <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                  </pattern>
+                  <linearGradient id="leadGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#1f476a"/>
+                    <stop offset="100%" stopColor="#132f4a"/>
+                  </linearGradient>
+                  <clipPath id="leadClip">
+                    <rect width="100%" height="480"/>
+                  </clipPath>
+                </defs>
+                <rect width="100%" height="480" fill="url(#leadGrad)"/>
+                <g clipPath="url(#leadClip)">
+                  <g className="pattern-animate">
+                    <rect x="-80" y="0" width="2000" height="480" fill="url(#leadPattern)"/>
+                    <rect x="-80" y="0" width="2000" height="480" fill="url(#leadPatternSm)"/>
+                  </g>
+                </g>
+                {/* Left content */}
+                <g transform="translate(60, 60)">
+                  <text x="0" y="0" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="2">FREE EXECUTIVE BRIEF</text>
+                  <text x="0" y="40" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="32" fontWeight="300" letterSpacing="-0.5">The State of the</text>
+                  <text x="0" y="76" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="32" fontWeight="300" letterSpacing="-0.5">Leader Experience</text>
+                  <text x="0" y="118" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Insights from conversations with 100 enterprise</text>
+                  <text x="0" y="136" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">CEOs on what's broken in leadership tooling</text>
+                  <text x="0" y="154" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">and what comes next.</text>
+                  {/* Key stats */}
+                  <g transform="translate(0, 186)">
+                    <rect x="0" y="0" width="120" height="64" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
+                    <text x="16" y="28" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="24" fontWeight="400">100</text>
+                    <text x="16" y="48" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">CEOs Interviewed</text>
+                    <rect x="136" y="0" width="120" height="64" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
+                    <text x="152" y="28" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="24" fontWeight="400">7</text>
+                    <text x="152" y="48" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">Key Findings</text>
+                  </g>
+                </g>
+                {/* Right form card */}
+                <rect x="580" y="48" width="360" height="384" rx="16" fill="#ffffff" opacity="0.97"/>
+                <text x="612" y="88" fill="#1e293b" fontFamily="'Space Grotesk', sans-serif" fontSize="18" fontWeight="400">Get the Brief</text>
+                <text x="612" y="108" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">Join 2,400+ leaders who've read it.</text>
+                {/* Form fields */}
+                <rect x="612" y="124" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
+                <text x="628" y="149" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">First Name</text>
+                <rect x="612" y="176" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
+                <text x="628" y="201" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Work Email</text>
+                <rect x="612" y="228" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
+                <text x="628" y="253" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Company</text>
+                <rect x="612" y="280" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
+                <text x="628" y="305" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Title</text>
+                {/* CTA */}
+                <rect x="612" y="336" width="296" height="44" rx="8" fill="#0eb2af"/>
+                <text x="760" y="363" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="14" fontWeight="600" textAnchor="middle">Download the Brief</text>
+                <text x="760" y="412" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="9" textAnchor="middle">No spam. Unsubscribe anytime.</text>
+                {/* Teal bottom line */}
+                <line x1="0" y1="477" x2="100%" y2="477" stroke="#0eb2af" strokeWidth="3" opacity="0.5"/>
+              </svg>
+              <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>Lead Magnet</strong> — Animated interlocking pattern behind a split layout: value proposition left, conversion form right. Teal accent stats reinforce credibility. Ties directly to the 100 CEO Conversations initiative.
+              </div>
+            </div>
+
+            {/* Feature Spotlight */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginTop: '24px', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Feature Spotlight Section</h3>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <div style={{ background: '#f8fafc', padding: '48px 60px', display: 'flex', gap: '48px', alignItems: 'center' }}>
+                {/* Left: feature card with animated pattern */}
+                <div style={{ flex: '0 0 45%', borderRadius: '16px', overflow: 'hidden', position: 'relative' }}>
+                  <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <pattern id="featPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                        <g opacity="0.08">
+                          <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                          <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                        </g>
+                        <g opacity="0.05" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                          <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                        </g>
+                      </pattern>
+                      <clipPath id="featClip">
+                        <rect width="400" height="300" rx="12"/>
+                      </clipPath>
+                    </defs>
+                    <rect width="400" height="300" rx="12" fill="#1f476a"/>
+                    <g clipPath="url(#featClip)">
+                      <g className="pattern-animate">
+                        <rect x="-80" y="0" width="560" height="300" fill="url(#featPattern)"/>
+                      </g>
+                    </g>
+                    {/* Dashboard mockup inside */}
+                    <rect x="40" y="40" width="320" height="220" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                    <rect x="40" y="40" width="320" height="4" rx="2" fill="#0eb2af" opacity="0.6"/>
+                    {/* Mini chart bars */}
+                    <rect x="60" y="180" width="32" height="60" rx="4" fill="#1f476a" opacity="0.4"/>
+                    <rect x="60" y="160" width="32" height="80" rx="4" fill="rgba(255,255,255,0.08)"/>
+                    <rect x="104" y="140" width="32" height="100" rx="4" fill="#0eb2af" opacity="0.3"/>
+                    <rect x="148" y="160" width="32" height="80" rx="4" fill="rgba(255,255,255,0.08)"/>
+                    <rect x="192" y="120" width="32" height="120" rx="4" fill="#0eb2af" opacity="0.3"/>
+                    <rect x="236" y="150" width="32" height="90" rx="4" fill="rgba(255,255,255,0.08)"/>
+                    <rect x="280" y="100" width="32" height="140" rx="4" fill="#fbbf24" opacity="0.3"/>
+                    {/* Labels */}
+                    <text x="60" y="80" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="16" fontWeight="300" opacity="0.9">Value Creation Dashboard</text>
+                    <text x="60" y="100" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">Real-time performance across all initiatives</text>
+                  </svg>
+                </div>
+                {/* Right: text content */}
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '12px' }}>Visibility & Sync</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', marginBottom: '16px' }}>See every initiative at a glance. Act before problems become crises.</p>
+                  <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '24px' }}>
+                    TARGA's Visibility & Sync engine connects goals to execution in real time. 
+                    AI surfaces risks before they escalate, syncs resources automatically, and 
+                    gives you the single view your leadership team has been asking for.
+                  </p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '24px' }}>
+                    {['Real-time goal alignment across teams', 'AI-surfaced risk indicators', 'Automated resource rebalancing'].map((item, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#0eb2af14', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                          <span style={{ color: '#0eb2af', fontSize: '12px', fontWeight: '700' }}>{'\u2713'}</span>
+                        </div>
+                        <span style={{ fontSize: '14px', color: '#1e293b' }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Explore Visibility & Sync</button>
+                </div>
+              </div>
+              <div style={{ background: '#ffffff', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>Feature Spotlight</strong> — Animated pattern inside the product screenshot card creates depth. Light background keeps focus on the text content. Pillar label in teal anchors the section to the brand framework.
+              </div>
+            </div>
+
+            {/* Social Proof Bar */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginTop: '24px', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Social Proof Bar</h3>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
+              <svg width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="proofPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    <g opacity="0.04">
+                      <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    <g opacity="0.025" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                  </pattern>
+                  <clipPath id="proofClip">
+                    <rect width="100%" height="120"/>
+                  </clipPath>
+                </defs>
+                <rect width="100%" height="120" fill="#f8fafc"/>
+                <g clipPath="url(#proofClip)">
+                  <g className="pattern-animate">
+                    <rect x="-80" y="0" width="2000" height="120" fill="url(#proofPattern)"/>
+                  </g>
+                </g>
+                <line x1="0" y1="0" x2="100%" y2="0" stroke="#e2e8f0" strokeWidth="1"/>
+                <line x1="0" y1="119" x2="100%" y2="119" stroke="#e2e8f0" strokeWidth="1"/>
+                <text x="50%" y="40" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="500" textAnchor="middle" letterSpacing="1">TRUSTED BY LEADERS AT</text>
+                {/* Placeholder logos */}
+                {[0, 1, 2, 3, 4].map(i => (
+                  <g key={i} transform={`translate(${120 + i * 180}, 0)`}>
+                    <rect x="0" y="60" width="100" height="28" rx="4" fill="#1f476a" opacity="0.08"/>
+                    <text x="50" y="79" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Partner {i + 1}</text>
+                  </g>
+                ))}
+              </svg>
+              <div style={{ background: '#ffffff', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
+                <strong style={{ color: '#1e293b' }}>Social Proof Bar</strong> — Light animated pattern creates premium texture behind partner logos. Use between hero and feature sections.
               </div>
             </div>
           </>
@@ -1588,10 +1856,10 @@ export default function Mockups() {
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Brand Voice Attributes</h3>
               <div className="grid-4">
                 {[
-                  { symbol: '\u25C6', label: 'Authoritative', desc: 'Backed by methodology, credentials, and results' },
-                  { symbol: '\u25C7', label: 'Clear', desc: 'Active voice, short sentences, concrete examples' },
-                  { symbol: '\u25C8', label: 'Professional', desc: 'Enterprise-grade, McKinsey-caliber language' },
-                  { symbol: '\u25CB', label: 'Accessible', desc: 'Approachable without being casual' },
+                  { symbol: '\u25C6', label: 'Authoritative', desc: 'Speaks from experience — built for leaders, by people who understand leadership' },
+                  { symbol: '\u25C7', label: 'Clear', desc: 'Active voice, short sentences, value over jargon. If a CEO can\'t parse it in 3 seconds, rewrite it.' },
+                  { symbol: '\u25C8', label: 'Premium', desc: 'Enterprise-grade language. This is a $350K platform, and every word should reflect that.' },
+                  { symbol: '\u25CB', label: 'Confident', desc: 'Not arrogant. We define a category (LX) — we don\'t compete in someone else\'s.' },
                 ].map((attr, i) => (
                   <div key={i} style={{ textAlign: 'center' }}>
                     <div style={{ fontSize: '28px', marginBottom: '12px' }}>{attr.symbol}</div>
@@ -1603,29 +1871,75 @@ export default function Mockups() {
             </div>
 
             <div className="card-white">
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Category Definition</h3>
+              <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '32px', borderLeft: '4px solid #0eb2af', marginBottom: '24px' }}>
+                <p style={{ fontSize: '13px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '8px' }}>LX — The Leader Experience™</p>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', lineHeight: '1.5', marginBottom: '16px' }}>
+                  The software industry defined UX, CX, EX, and DX. TARGA AI defines LX — the experience designed specifically for the people making the highest-stakes decisions.
+                </p>
+                <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
+                  Use "The Leader Experience" as the category framing in headlines, pitch decks, and CEO conversations. 
+                  Use "LX" as the shorthand once the category has been established in context. Never use LX without first introducing what it stands for.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Messaging Pillars</h3>
               <div className="grid-3">
                 <div className="box accent-navy" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Expectation</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>See what is unseen. Reveal hidden organizational assets and their unrealized potential.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Plan & Capture</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Swift, structured capture of goals and strategic objectives. Leaders see the full picture before they act.</p>
                 </div>
                 <div className="box accent-teal" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Systemization</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Structure creates value. Methodology transforms complexity into clarity.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Visibility & Sync</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Dynamic views of initiatives, resources, and milestones. Everything connected, nothing siloed.</p>
                 </div>
                 <div className="box accent-gold" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Realization</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Monetize assets. Measure results. Deliver measurable impact.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Performance & Impact</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Execution, refinement, and measurable value outcomes. ROI that speaks to the board, not the backlog.</p>
                 </div>
               </div>
             </div>
 
             <div className="card-white">
-              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Primary Tagline</h3>
-              <p style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '12px' }}>
-                "See Your Organizational Assets Clearly"
-              </p>
-              <p style={{ fontSize: '13px', color: '#64748b' }}>Use for hero headlines, email subject lines, and primary CTAs across all channels.</p>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Primary Taglines</h3>
+              <div style={{ marginBottom: '24px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                  "The Next Generation Leader Experience"
+                </p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Primary. Use for hero headlines, pitch decks, and brand-forward moments.</p>
+              </div>
+              <div style={{ marginBottom: '24px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                  "Run your business — instead of the business running you"
+                </p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Secondary. Use for CTAs, email campaigns, and conversational contexts.</p>
+              </div>
+              <div>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                  "Your digital Chief of Staff"
+                </p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Tertiary. Use sparingly — effective in demos and product-focused contexts.</p>
+              </div>
+            </div>
+
+            <div className="card-white">
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Language Guide</h3>
+              <div className="grid-2">
+                <div className="do-card">
+                  <h4 style={{ marginBottom: '12px', color: '#16a34a', fontWeight: '600', fontSize: '13px' }}>SAY</h4>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
+                    Leader Experience, leadership performance platform, value creation, enterprise value, strategic visibility, performance automation, digital chief of staff
+                  </p>
+                </div>
+                <div className="dont-card">
+                  <h4 style={{ marginBottom: '12px', color: '#dc2626', fontWeight: '600', fontSize: '13px' }}>DON'T SAY</h4>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
+                    Project management, task management, workflow tool, productivity software, collaboration platform, Asana alternative, SaaS tool
+                  </p>
+                </div>
+              </div>
             </div>
           </>
         )}
@@ -1661,18 +1975,159 @@ export default function Mockups() {
             <div className="grid-2">
               <div className="do-card">
                 <h4 style={{ marginBottom: '12px', color: '#16a34a', fontWeight: '600', fontSize: '13px' }}>DO</h4>
-                <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
+                <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
                   Show authentic workplace moments, diverse professionals collaborating, 
                   thoughtful compositions with natural lighting, strategic use of brand colors in environment.
                 </p>
               </div>
               <div className="dont-card">
                 <h4 style={{ marginBottom: '12px', color: '#dc2626', fontWeight: '600', fontSize: '13px' }}>DON'T</h4>
-                <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
+                <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
                   Use generic stock photography, posed/artificial scenarios, 
                   clip art or low-res images, overly saturated or filtered effects.
                 </p>
               </div>
+            </div>
+
+            {/* Brand Pattern */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginTop: '48px', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Brand Pattern</h3>
+            <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '24px', maxWidth: '700px' }}>
+              Interlocking A-mark tessellation for presentation folders, event materials, packaging, and decorative backgrounds. 
+              Use on navy backgrounds at subtle opacity for premium texture.
+            </p>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px' }}>
+              <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="targaPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                    {/* Upright A */}
+                    <g opacity="0.12">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                    {/* Inverted A - offset */}
+                    <g opacity="0.07" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                    </g>
+                  </pattern>
+                  <pattern id="targaPatternSm" x="20" y="23" width="80" height="92" patternUnits="userSpaceOnUse">
+                    {/* Second layer offset for depth */}
+                    <g opacity="0.06">
+                      <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                    <g opacity="0.04" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                      <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                    </g>
+                  </pattern>
+                  <linearGradient id="patternFade" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#1a3a5c"/>
+                    <stop offset="100%" stopColor="#152d4a"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="400" fill="url(#patternFade)"/>
+                <rect width="100%" height="400" fill="url(#targaPattern)"/>
+                <rect width="100%" height="400" fill="url(#targaPatternSm)"/>
+                {/* Accent line */}
+                <line x1="0" y1="399" x2="100%" y2="399" stroke="#0eb2af" strokeWidth="3" opacity="0.6"/>
+              </svg>
+            </div>
+
+            <div className="grid-3" style={{ marginBottom: '24px' }}>
+              <div style={{ borderRadius: '12px', overflow: 'hidden' }}>
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="targaLight" x="0" y="0" width="60" height="69" patternUnits="userSpaceOnUse">
+                      <g opacity="0.08">
+                        <polygon fill="#1f476a" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                        <polygon fill="#0eb2af" points="30,31.5 36,43.5 24,43.5"/>
+                      </g>
+                      <g opacity="0.05" transform="translate(30,34.5) scale(1,-1) translate(-30,-21.75)">
+                        <polygon fill="#1f476a" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                      </g>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="200" fill="#f8fafc"/>
+                  <rect width="100%" height="200" fill="url(#targaLight)"/>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '8px 0' }}>Light variant</p>
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden' }}>
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="targaTeal" x="0" y="0" width="60" height="69" patternUnits="userSpaceOnUse">
+                      <g opacity="0.15">
+                        <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                        <polygon fill="#ffffff" points="30,31.5 36,43.5 24,43.5"/>
+                      </g>
+                      <g opacity="0.08" transform="translate(30,34.5) scale(1,-1) translate(-30,-21.75)">
+                        <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                      </g>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="200" fill="#0eb2af"/>
+                  <rect width="100%" height="200" fill="url(#targaTeal)"/>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '8px 0' }}>Teal variant</p>
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden' }}>
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="targaDense" x="0" y="0" width="48" height="55.4" patternUnits="userSpaceOnUse">
+                      <g opacity="0.18">
+                        <polygon fill="#ffffff" points="24,2.4 43.2,34.8 33.6,34.8 24,18 14.4,34.8 4.8,34.8"/>
+                        <polygon fill="#0eb2af" points="24,25.2 28.8,34.8 19.2,34.8"/>
+                      </g>
+                      <g opacity="0.1" transform="translate(24,27.7) scale(1,-1) translate(-24,-17.4)">
+                        <polygon fill="#ffffff" points="24,2.4 43.2,34.8 33.6,34.8 24,18 14.4,34.8 4.8,34.8"/>
+                        <polygon fill="#0eb2af" points="24,25.2 28.8,34.8 19.2,34.8"/>
+                      </g>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="200" fill="#152d4a"/>
+                  <rect width="100%" height="200" fill="url(#targaDense)"/>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '8px 0' }}>Dense variant</p>
+              </div>
+            </div>
+
+            <div className="card-white">
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Pattern Usage</h3>
+              <table className="spec-table">
+                <thead>
+                  <tr>
+                    <th>Application</th>
+                    <th>Variant</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Presentation folder backs</td>
+                    <td style={{ fontWeight: '600' }}>Navy (primary)</td>
+                    <td>Full bleed, teal accent line at spine edge</td>
+                  </tr>
+                  <tr>
+                    <td>Event signage / banners</td>
+                    <td style={{ fontWeight: '600' }}>Navy or Dense</td>
+                    <td>Works at any scale, pattern remains legible</td>
+                  </tr>
+                  <tr>
+                    <td>Slide backgrounds</td>
+                    <td style={{ fontWeight: '600' }}>Light</td>
+                    <td>Subtle texture under content, never distracting</td>
+                  </tr>
+                  <tr>
+                    <td>Business card backs</td>
+                    <td style={{ fontWeight: '600' }}>Dense</td>
+                    <td>Tighter repeat for small format</td>
+                  </tr>
+                  <tr>
+                    <td>Digital backgrounds</td>
+                    <td style={{ fontWeight: '600' }}>Teal</td>
+                    <td>Section dividers, email headers, social covers</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </>
         )}
@@ -1682,7 +2137,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Certification Program</h2>
             <p className="section-subtitle">
-              A highly selective program for consultants who want to master the Value Collaborator System. Below: how the brand system creates a cohesive, modular training experience.
+              A highly selective program for consultants who want to master the TARGA performance methodology. Below: how the brand system creates a cohesive, modular training experience.
             </p>
 
             {/* Program header card */}
@@ -1691,23 +2146,23 @@ export default function Mockups() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                   <Icon size={48} />
                   <div>
-                    <h2>WhiteSpace Clarity Certification</h2>
-                    <p>Master the Value Collaborator System. Transform how organizations see their assets.</p>
+                    <h2>TARGA AI Certification</h2>
+                    <p>Master the TARGA performance methodology. Transform how organizations see their assets.</p>
                   </div>
                 </div>
               </div>
               <div className="grid-3">
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '40px', fontWeight: '300', color: '#475569', marginBottom: '8px' }}>2-3</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#1f476a', marginBottom: '8px' }}>2-3</p>
                   <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Candidates per cohort</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '40px', fontWeight: '300', color: '#00bfa5', marginBottom: '8px' }}>3</p>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Core pillars mastered</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#0eb2af', marginBottom: '8px' }}>3</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Core pillars completed</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '40px', fontWeight: '300', color: '#fbbf24', marginBottom: '8px' }}>1:1</p>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Personal vetting by Steve Smith</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#fbbf24', marginBottom: '8px' }}>1:1</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Personal vetting by Joe Thompson</p>
                 </div>
               </div>
             </div>
@@ -1715,8 +2170,8 @@ export default function Mockups() {
             {/* Selectivity messaging */}
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Why Selective?</h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.8', maxWidth: '700px' }}>
-                The WhiteSpace Clarity Certification is not a commodity credential. Each candidate is personally vetted to ensure they have the experience, mindset, and commitment to represent the methodology at the highest level. This selectivity is what makes certified consultants immediately credible with enterprise clients.
+              <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', maxWidth: '700px' }}>
+                The TARGA AI Certification is not a commodity credential. Each candidate is personally vetted to ensure they have the experience, mindset, and commitment to represent the methodology at the highest level. This selectivity is what makes certified consultants immediately credible with enterprise clients.
               </p>
             </div>
 
@@ -1724,16 +2179,16 @@ export default function Mockups() {
             <div style={{ borderTop: '2px solid #e2e8f0', marginTop: '48px', paddingTop: '48px' }}>
               <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '8px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Training Design System</h3>
               <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '40px', maxWidth: '640px', lineHeight: '1.7' }}>
-                These modular components show how the brand system translates into training materials for enrolled consultants. Every element uses the same bracket geometry, pillar colors, and typography.
+                These modular components show how the brand system translates into training materials for enrolled consultants. Every element uses the same mark geometry, brand colors, and typography.
               </p>
 
               {/* Module navigation cards */}
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Module Cards</h4>
               <div className="grid-3" style={{ marginBottom: '48px' }}>
                 {[
-                  { num: '01', title: 'Expectation', subtitle: 'Asset Discovery & Valuation', color: '#475569', progress: 100 },
-                  { num: '02', title: 'Systemization', subtitle: 'Framework Integration', color: '#00bfa5', progress: 65 },
-                  { num: '03', title: 'Realization', subtitle: 'Value Conversion & Measurement', color: '#fbbf24', progress: 0 },
+                  { num: '01', title: 'Plan & Capture', subtitle: 'Goals, Plans & Objectives Capture', color: '#1f476a', progress: 100 },
+                  { num: '02', title: 'Visibility & Sync', subtitle: 'Initiative Tracking & Resource Sync', color: '#0eb2af', progress: 65 },
+                  { num: '03', title: 'Performance & Impact', subtitle: 'Execution, Refinement & Assessment', color: '#fbbf24', progress: 0 },
                 ].map((mod, i) => (
                   <div key={i} style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', transition: 'all 0.2s ease' }}>
                     <div style={{ height: '4px', background: mod.color }}></div>
@@ -1744,7 +2199,7 @@ export default function Mockups() {
                           {mod.progress === 100 ? 'Complete' : mod.progress > 0 ? `${mod.progress}%` : 'Locked'}
                         </span>
                       </div>
-                      <h4 style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '400', color: '#1e293b', marginBottom: '4px' }}>{mod.title}</h4>
+                      <h4 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '400', color: '#1e293b', marginBottom: '4px' }}>{mod.title}</h4>
                       <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>{mod.subtitle}</p>
                       <div style={{ height: '4px', background: '#f1f5f9', borderRadius: '2px', overflow: 'hidden' }}>
                         <div style={{ height: '100%', width: `${mod.progress}%`, background: mod.color, borderRadius: '2px', transition: 'width 0.3s ease' }}></div>
@@ -1758,12 +2213,12 @@ export default function Mockups() {
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Lesson Layout</h4>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', marginBottom: '48px' }}>
                 {/* Lesson header bar */}
-                <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', padding: '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <Icon size={28} />
                     <div>
-                      <p style={{ fontSize: '11px', color: '#00bfa5', fontWeight: '600', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 2px 0' }}>Module 02 - Systemization</p>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '300', color: 'white', margin: 0 }}>Lesson 2.3: Mapping Asset Dependencies</p>
+                      <p style={{ fontSize: '11px', color: '#0eb2af', fontWeight: '600', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 2px 0' }}>Module 02 - Visibility & Sync</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', margin: 0 }}>Lesson 2.3: Mapping Asset Dependencies</p>
                     </div>
                   </div>
                   <span style={{ fontSize: '12px', color: '#64748b', background: 'rgba(255,255,255,0.08)', padding: '6px 14px', borderRadius: '6px' }}>45 min</span>
@@ -1776,8 +2231,8 @@ export default function Mockups() {
                     <div style={{ height: '12px', background: '#f1f5f9', borderRadius: '4px', marginBottom: '12px', width: '75%' }}></div>
                     <div style={{ height: '12px', background: '#f1f5f9', borderRadius: '4px', marginBottom: '24px', width: '85%' }}></div>
                     {/* Key concept callout */}
-                    <div style={{ borderLeft: '3px solid #00bfa5', background: '#f0fdfa', padding: '20px 24px', borderRadius: '0 8px 8px 0', marginBottom: '24px' }}>
-                      <p style={{ fontSize: '11px', fontWeight: '600', color: '#00bfa5', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Key Concept</p>
+                    <div style={{ borderLeft: '3px solid #0eb2af', background: '#f0fdfa', padding: '20px 24px', borderRadius: '0 8px 8px 0', marginBottom: '24px' }}>
+                      <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Key Concept</p>
                       <p style={{ fontSize: '14px', color: '#1e293b', margin: 0, lineHeight: '1.6' }}>Asset dependencies determine how value flows through an organization. Mapping them reveals both bottlenecks and multiplication opportunities.</p>
                     </div>
                     <div style={{ height: '12px', background: '#f1f5f9', borderRadius: '4px', marginBottom: '12px', width: '95%' }}></div>
@@ -1788,13 +2243,13 @@ export default function Mockups() {
                     <p style={{ fontSize: '11px', fontWeight: '600', color: '#1e293b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>In This Lesson</p>
                     {['Asset mapping framework', 'Dependency identification', 'Value flow analysis', 'Bottleneck diagnosis'].map((item, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-                        <div style={{ width: '18px', height: '18px', borderRadius: '4px', border: i < 2 ? 'none' : '2px solid #e2e8f0', background: i < 2 ? '#00bfa5' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '10px', flexShrink: 0 }}>{i < 2 ? '\u2713' : ''}</div>
+                        <div style={{ width: '18px', height: '18px', borderRadius: '4px', border: i < 2 ? 'none' : '2px solid #e2e8f0', background: i < 2 ? '#0eb2af' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '10px', flexShrink: 0 }}>{i < 2 ? '\u2713' : ''}</div>
                         <span style={{ fontSize: '13px', color: i < 2 ? '#1e293b' : '#64748b' }}>{item}</span>
                       </div>
                     ))}
                     <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '8px', textAlign: 'center' }}>
                       <Icon size={32} />
-                      <p style={{ fontSize: '11px', color: '#64748b', marginTop: '8px', margin: '8px 0 0 0' }}>Pillar: Systemization</p>
+                      <p style={{ fontSize: '11px', color: '#64748b', marginTop: '8px', margin: '8px 0 0 0' }}>Pillar: Visibility & Sync</p>
                     </div>
                   </div>
                 </div>
@@ -1804,7 +2259,7 @@ export default function Mockups() {
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Consultant Dashboard</h4>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '32px', marginBottom: '48px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '32px' }}>
-                  <div style={{ width: '48px', height: '48px', background: '#475569', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '400' }}>JD</div>
+                  <div style={{ width: '48px', height: '48px', background: '#1f476a', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400' }}>JD</div>
                   <div>
                     <p style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Jane Davidson</p>
                     <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Cohort 2026-A - In Progress</p>
@@ -1812,9 +2267,9 @@ export default function Mockups() {
                 </div>
                 {/* Pillar progress bars */}
                 {[
-                  { label: 'Expectation', color: '#475569', pct: 100 },
-                  { label: 'Systemization', color: '#00bfa5', pct: 65 },
-                  { label: 'Realization', color: '#fbbf24', pct: 0 },
+                  { label: 'Plan & Capture', color: '#1f476a', pct: 100 },
+                  { label: 'Visibility & Sync', color: '#0eb2af', pct: 65 },
+                  { label: 'Performance & Impact', color: '#fbbf24', pct: 0 },
                 ].map((p, i) => (
                   <div key={i} style={{ marginBottom: '20px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
@@ -1830,51 +2285,51 @@ export default function Mockups() {
                   <Icon size={32} />
                   <div>
                     <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Next: Lesson 2.4 - Integration Patterns</p>
-                    <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Continue in the Systemization module</p>
+                    <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Continue in the Visibility & Sync module</p>
                   </div>
                   <button className="btn btn-primary" style={{ marginLeft: 'auto', padding: '10px 24px', fontSize: '13px' }}>Continue</button>
                 </div>
               </div>
 
-              {/* Bracket-derived decorative elements */}
+              {/* A-mark-derived decorative elements */}
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Brand Elements - Modular Toolkit</h4>
               <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '24px', lineHeight: '1.7', maxWidth: '640px' }}>
-                Design elements derived from the bracket icon geometry. Use these to create section dividers, callout frames, and visual hierarchy in any certification material.
+                Design elements derived from the A-mark icon geometry. Use these to create section dividers, callout frames, and visual hierarchy in any platform material.
               </p>
               <div className="grid-2" style={{ marginBottom: '48px' }}>
-                {/* Bracket-line divider */}
+                {/* A-mark accent divider */}
                 <div className="box" style={{ padding: '32px', textAlign: 'center' }}>
                   <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Section Divider</p>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
-                    <div style={{ height: '2px', flex: 1, background: '#475569', borderRadius: '1px' }}></div>
-                    <div style={{ height: '2px', width: '24px', background: '#00bfa5', borderRadius: '1px' }}></div>
-                    <div style={{ height: '2px', width: '24px', background: '#475569', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', flex: 1, background: '#1f476a', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '24px', background: '#0eb2af', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '24px', background: '#1f476a', borderRadius: '1px' }}></div>
                     <div style={{ height: '2px', width: '24px', background: '#fbbf24', borderRadius: '1px' }}></div>
-                    <div style={{ height: '2px', flex: 1, background: '#475569', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', flex: 1, background: '#1f476a', borderRadius: '1px' }}></div>
                   </div>
-                  <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Three-pillar divider for section breaks</p>
+                  <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Three-brand accent divider for section breaks</p>
                 </div>
                 {/* Pillar accent chips */}
                 <div className="box" style={{ padding: '32px', textAlign: 'center' }}>
                   <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Pillar Tags</p>
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#475569', background: '#47556914', padding: '6px 14px', borderRadius: '20px' }}>Expectation</span>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#00bfa5', background: '#00bfa514', padding: '6px 14px', borderRadius: '20px' }}>Systemization</span>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#d97706', background: '#fbbf2414', padding: '6px 14px', borderRadius: '20px' }}>Realization</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#1f476a', background: '#1f476a14', padding: '6px 14px', borderRadius: '20px' }}>Plan & Capture</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', background: '#0eb2af14', padding: '6px 14px', borderRadius: '20px' }}>Visibility & Sync</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#d97706', background: '#fbbf2414', padding: '6px 14px', borderRadius: '20px' }}>Performance & Impact</span>
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Use to categorize lessons, resources, and assessments</p>
                 </div>
-                {/* Bracket callout frame */}
+                {/* A-mark callout frame */}
                 <div className="box" style={{ padding: '32px', textAlign: 'center' }}>
                   <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Quote Frame</p>
                   <div style={{ position: 'relative', padding: '24px 32px' }}>
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '3px', height: '100%', background: 'linear-gradient(to bottom, #475569, #00bfa5, #fbbf24)', borderRadius: '2px' }}></div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '16px', fontWeight: '300', color: '#1e293b', lineHeight: '1.6', fontStyle: 'italic', textAlign: 'left', margin: 0 }}>
+                    <div style={{ position: 'absolute', top: 0, left: 0, width: '3px', height: '100%', background: 'linear-gradient(to bottom, #1f476a, #0eb2af, #fbbf24)', borderRadius: '2px' }}></div>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '300', color: '#1e293b', lineHeight: '1.6', fontStyle: 'italic', textAlign: 'left', margin: 0 }}>
                       "The best consultants don't just see assets - they see the connections between them."
                     </p>
                     <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'left', marginTop: '8px' }}>- Bill Adams, Outcome Dynamics</p>
                   </div>
-                  <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '12px' }}>Gradient bracket line for attributed quotes</p>
+                  <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '12px' }}>Gradient accent line for attributed quotes</p>
                 </div>
                 {/* Icon as watermark */}
                 <div className="box" style={{ padding: '32px', textAlign: 'center' }}>
@@ -1883,8 +2338,8 @@ export default function Mockups() {
                     <div style={{ position: 'absolute', right: '-20px', bottom: '-20px', opacity: 0.06 }}>
                       <Icon size={140} />
                     </div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '16px', fontWeight: '400', color: '#1e293b', position: 'relative', zIndex: 1, margin: 0 }}>Assessment Complete</p>
-                    <p style={{ fontSize: '13px', color: '#64748b', position: 'relative', zIndex: 1, margin: '4px 0 0 0' }}>Module 01 - Expectation</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '400', color: '#1e293b', position: 'relative', zIndex: 1, margin: 0 }}>Assessment Complete</p>
+                    <p style={{ fontSize: '13px', color: '#64748b', position: 'relative', zIndex: 1, margin: '4px 0 0 0' }}>Module 01 - Plan & Capture</p>
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Subtle icon watermark for branded documents</p>
                 </div>
@@ -1899,7 +2354,7 @@ export default function Mockups() {
 
         {/* ==================== CURRICULUM ==================== */}
         {activeTab === 'curriculum' && (
-          <Placeholder icon="&#128218;" title="Curriculum" description="Module breakdown, learning objectives, lesson content, and assessment methods for the certification program." />
+          <Placeholder icon="&#128218;" title="Curriculum" description="Module breakdown, learning objectives, lesson content, and assessment methods for the the TARGA platform." />
         )}
 
         {/* ==================== EMAIL ==================== */}
@@ -1914,25 +2369,25 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Email Signatures</h3>
             <div className="grid-2" style={{ marginBottom: '40px' }}>
               <div className="card-white" style={{ margin: 0 }}>
-                <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>Steve Smith</p>
+                <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>Joe Thompson</p>
                 <div style={{ background: '#fafafa', borderRadius: '8px', padding: '24px' }}>
                   <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                    <div style={{ borderRight: '2px solid #00bfa5', paddingRight: '16px', flexShrink: 0 }}>
+                    <div style={{ borderRight: '2px solid #0eb2af', paddingRight: '16px', flexShrink: 0 }}>
                       <Icon size={36} />
                     </div>
                     <div>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Steve Smith</p>
-                      <p style={{ fontSize: '12px', color: '#475569', margin: '0 0 10px 0' }}>Managing Partner, Consult WhiteSpace</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                      <p style={{ fontSize: '12px', color: '#1f476a', margin: '0 0 10px 0' }}>CEO, TARGA AI</p>
                       <div style={{ fontSize: '11px', color: '#64748b', lineHeight: '1.8' }}>
-                        steve@consultwhitespace.com<br/>
+                        joe@targa.ai<br/>
                         (555) 123-4567
                       </div>
                       <div style={{ display: 'flex', gap: '6px', marginTop: '10px' }}>
-                        <div style={{ height: '2px', width: '16px', background: '#475569', borderRadius: '1px' }}></div>
-                        <div style={{ height: '2px', width: '16px', background: '#00bfa5', borderRadius: '1px' }}></div>
+                        <div style={{ height: '2px', width: '16px', background: '#1f476a', borderRadius: '1px' }}></div>
+                        <div style={{ height: '2px', width: '16px', background: '#0eb2af', borderRadius: '1px' }}></div>
                         <div style={{ height: '2px', width: '16px', background: '#fbbf24', borderRadius: '1px' }}></div>
                       </div>
-                      <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>WhiteSpace Clarity Framework - consultwhitespace.com</p>
+                      <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>TARGA AI - targa.ai</p>
                     </div>
                   </div>
                 </div>
@@ -1941,19 +2396,19 @@ export default function Mockups() {
                 <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>Bill Adams</p>
                 <div style={{ background: '#fafafa', borderRadius: '8px', padding: '24px' }}>
                   <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                    <div style={{ borderRight: '2px solid #00bfa5', paddingRight: '16px', flexShrink: 0 }}>
+                    <div style={{ borderRight: '2px solid #0eb2af', paddingRight: '16px', flexShrink: 0 }}>
                       <Icon size={36} />
                     </div>
                     <div>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Bill Adams</p>
-                      <p style={{ fontSize: '12px', color: '#475569', margin: '0 0 10px 0' }}>Founder, Value Collaborator System</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Bill Adams</p>
+                      <p style={{ fontSize: '12px', color: '#1f476a', margin: '0 0 10px 0' }}>Founder, TARGA performance methodology</p>
                       <div style={{ fontSize: '11px', color: '#64748b', lineHeight: '1.8' }}>
-                        bill@consultwhitespace.com<br/>
+                        info@targa.ai<br/>
                         (555) 987-6543
                       </div>
                       <div style={{ display: 'flex', gap: '6px', marginTop: '10px' }}>
-                        <div style={{ height: '2px', width: '16px', background: '#475569', borderRadius: '1px' }}></div>
-                        <div style={{ height: '2px', width: '16px', background: '#00bfa5', borderRadius: '1px' }}></div>
+                        <div style={{ height: '2px', width: '16px', background: '#1f476a', borderRadius: '1px' }}></div>
+                        <div style={{ height: '2px', width: '16px', background: '#0eb2af', borderRadius: '1px' }}></div>
                         <div style={{ height: '2px', width: '16px', background: '#fbbf24', borderRadius: '1px' }}></div>
                       </div>
                       <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>Author: Outcome Dynamics (Forbes Books, Sept 2026)</p>
@@ -1974,13 +2429,13 @@ export default function Mockups() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ fontWeight: '600' }}>Icon</td><td>Bracket mark, 36px height, left of divider</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Divider</td><td>2px solid Teal (#00bfa5), full height</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Name</td><td>Lora Regular 400, 15px, #1e293b</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Title</td><td>DM Sans Regular 400, 12px, #475569</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Contact</td><td>DM Sans Regular 400, 11px, #64748b</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Pillar Bar</td><td>Three 16px bars (Slate/Teal/Gold), 2px height, 6px gap</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Tagline</td><td>DM Sans Italic 400, 10px, #94a3b8 - differs per person</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Icon</td><td>A-mark icon, 36px height, left of divider</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Divider</td><td>2px solid Teal (#0eb2af), full height</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Name</td><td>Space Grotesk Regular 400, 15px, #1e293b</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Title</td><td>Inter Regular 400, 12px, #1f476a</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Contact</td><td>Inter Regular 400, 11px, #64748b</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Pillar Bar</td><td>Three 16px bars (Navy/Teal/Gold), 2px height, 6px gap</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Tagline</td><td>Inter Italic 400, 10px, #94a3b8 - differs per person</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Format</td><td>HTML email signature - no images where possible (inline SVG preferred)</td></tr>
                 </tbody>
               </table>
@@ -1992,13 +2447,13 @@ export default function Mockups() {
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
                   {/* Email header */}
-                  <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', padding: '32px 32px 24px 32px', position: 'relative', overflow: 'hidden' }}>
+                  <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '32px 32px 24px 32px', position: 'relative', overflow: 'hidden' }}>
                     <div style={{ position: 'absolute', right: '-20px', top: '-20px', opacity: 0.05 }}>
                       <Icon size={120} />
                     </div>
                     <Icon size={28} />
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '300', color: 'white', margin: '16px 0 4px 0', lineHeight: '1.3' }}>See what your organization is missing.</p>
-                    <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The WhiteSpace Clarity Framework</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: 'white', margin: '16px 0 4px 0', lineHeight: '1.3' }}>See what your organization is missing.</p>
+                    <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The TARGA AI</p>
                   </div>
                   {/* Email body */}
                   <div style={{ padding: '28px 32px' }}>
@@ -2010,8 +2465,8 @@ export default function Mockups() {
                     {/* Three pillar callouts */}
                     <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
                       {[
-                        { label: 'Discover', color: '#475569' },
-                        { label: 'Integrate', color: '#00bfa5' },
+                        { label: 'Discover', color: '#1f476a' },
+                        { label: 'Integrate', color: '#0eb2af' },
                         { label: 'Convert', color: '#fbbf24' },
                       ].map((p, i) => (
                         <div key={i} style={{ flex: 1, textAlign: 'center', padding: '12px 8px', borderTop: `3px solid ${p.color}`, background: '#f8fafc', borderRadius: '0 0 6px 6px' }}>
@@ -2031,14 +2486,14 @@ export default function Mockups() {
                   {/* Email footer */}
                   <div style={{ padding: '20px 32px', borderTop: '1px solid #f1f5f9', textAlign: 'center' }}>
                     <Icon size={20} />
-                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Consult WhiteSpace LLC - consultwhitespace.com</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Targatek Inc. - targa.ai</p>
                   </div>
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Layout Structure</h4>
-                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Three-pillar callout strip (Discover / Integrate / Convert)', 'Single primary CTA button (Blue #2563eb)', 'Centered footer with icon and company link'].map((item, i) => (
+                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Three-pillar callout strip (Plan / Sync / Perform)', 'Single primary CTA button (Blue #0eb2af)', 'Centered footer with icon and company link'].map((item, i) => (
                     <div key={i} className="checklist-item" style={{ marginBottom: '10px' }}>
                       <div className="checklist-icon">{'\u2713'}</div>
                       <div className="checklist-text" style={{ fontSize: '13px' }}>{item}</div>
@@ -2048,7 +2503,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Subject Line Guidelines</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Lead with insight or question, not company name. Keep under 50 characters. No exclamation marks, no ALL CAPS. Examples: "What your org chart isn't showing you" or "The asset gap most consultants miss."
+                    Lead with insight or question, not company name. Keep under 50 characters. No exclamation marks, no ALL CAPS. Examples: "What your org chart isn't showing you" or "Why every other experience has a name except yours."
                   </p>
                 </div>
               </div>
@@ -2059,20 +2514,20 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
-                  {/* Slate header for book */}
-                  <div style={{ background: 'linear-gradient(135deg, #475569, #334155)', padding: '32px', position: 'relative', overflow: 'hidden' }}>
+                  {/* Navy header for book */}
+                  <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '32px', position: 'relative', overflow: 'hidden' }}>
                     <div style={{ position: 'absolute', left: '-40px', bottom: '-40px', opacity: 0.06 }}>
                       <Icon size={160} />
                     </div>
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center', position: 'relative', zIndex: 1 }}>
                       {/* Book mockup */}
-                      <div style={{ width: '80px', height: '110px', background: 'linear-gradient(135deg, #1e293b, #0f172a)', borderRadius: '3px', boxShadow: '6px 3px 16px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '12px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.08)' }}>
+                      <div style={{ width: '80px', height: '110px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '3px', boxShadow: '6px 3px 16px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '12px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.08)' }}>
                         <Icon size={18} />
-                        <p style={{ fontFamily: 'Lora, serif', fontSize: '8px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '6px', lineHeight: '1.3' }}>Outcome Dynamics</p>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '8px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '6px', lineHeight: '1.3' }}>Outcome Dynamics</p>
                       </div>
                       <div>
                         <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Coming September 2026</p>
-                        <p style={{ fontFamily: 'Lora, serif', fontSize: '18px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 4px 0' }}>Outcome Dynamics</p>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 4px 0' }}>Outcome Dynamics</p>
                         <p style={{ fontSize: '11px', color: '#cbd5e1', margin: 0 }}>By Bill Adams - Forbes Books</p>
                       </div>
                     </div>
@@ -2084,7 +2539,7 @@ export default function Mockups() {
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '24px', width: '70%' }}></div>
 
                     <div style={{ borderLeft: '3px solid #fbbf24', paddingLeft: '16px', marginBottom: '24px' }}>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '14px', fontWeight: '300', color: '#1e293b', fontStyle: 'italic', lineHeight: '1.6', margin: 0 }}>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '14px', fontWeight: '300', color: '#1e293b', fontStyle: 'italic', lineHeight: '1.6', margin: 0 }}>
                         "Organizations sit on millions in unrealized value - not because they lack resources, but because they lack clarity."
                       </p>
                     </div>
@@ -2095,7 +2550,7 @@ export default function Mockups() {
                   </div>
                   <div style={{ padding: '20px 32px', borderTop: '1px solid #f1f5f9', textAlign: 'center' }}>
                     <Icon size={20} />
-                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Consult WhiteSpace LLC - consultwhitespace.com</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Targatek Inc. - targa.ai</p>
                   </div>
                 </div>
               </div>
@@ -2103,17 +2558,17 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Design Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: '0 0 12px 0' }}>
-                    Slate gradient header (not dark navy) to differentiate from the standard outreach template. Book cover mockup left, title and publishing details right. Gold accent for the launch date.
+                    Navy gradient header to differentiate from the standard outreach template. Book cover mockup left, title and publishing details right. Gold accent for the launch date.
                   </p>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Pull quote uses Gold bracket line to tie to the Realization pillar. Single CTA - either "Learn More" pre-launch or "Order Now" post-launch.
+                    Pull quote uses Gold accent line to tie to the Value pillar. Single CTA - either "Learn More" pre-launch or "Order Now" post-launch.
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Send Sequence</h4>
                   {['Teaser (June): Key insight, no cover', 'Reveal (July): Full cover + launch date', 'Pre-order (August): Direct CTA', 'Launch (September): Personal note from Bill', 'Follow-up (October): Early reader reactions'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'flex-start' }}>
-                      <span style={{ fontSize: '11px', fontWeight: '600', color: '#475569', background: '#47556910', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
+                      <span style={{ fontSize: '11px', fontWeight: '600', color: '#1f476a', background: '#1f476a10', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
                       <span style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.5' }}>{item}</span>
                     </div>
                   ))}
@@ -2127,11 +2582,11 @@ export default function Mockups() {
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
                   {/* Pillar bar top */}
-                  <div style={{ height: '4px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                  <div style={{ height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                   <div style={{ padding: '32px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '24px' }}>
                       <Icon size={36} />
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '22px', fontWeight: '300', color: '#1e293b', margin: '16px 0 4px 0' }}>Welcome to the Program</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '300', color: '#1e293b', margin: '16px 0 4px 0' }}>Welcome to the Program</p>
                       <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Your certification journey begins now.</p>
                     </div>
 
@@ -2141,8 +2596,8 @@ export default function Mockups() {
 
                     {/* Three steps */}
                     {[
-                      { num: '1', label: 'Access your learning portal', color: '#475569' },
-                      { num: '2', label: 'Review Module 01: Expectation', color: '#00bfa5' },
+                      { num: '1', label: 'Access your learning portal', color: '#1f476a' },
+                      { num: '2', label: 'Review Module 01: Plan & Capture', color: '#0eb2af' },
                       { num: '3', label: 'Schedule your first mentoring session', color: '#fbbf24' },
                     ].map((step, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px', padding: '12px 16px', background: '#f8fafc', borderRadius: '8px' }}>
@@ -2157,7 +2612,7 @@ export default function Mockups() {
                   </div>
                   <div style={{ padding: '20px 32px', borderTop: '1px solid #f1f5f9', textAlign: 'center' }}>
                     <Icon size={20} />
-                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Consult WhiteSpace LLC - consultwhitespace.com</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '6px 0 0 0' }}>Targatek Inc. - targa.ai</p>
                   </div>
                 </div>
               </div>
@@ -2165,13 +2620,13 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Template Purpose</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Sent immediately after a consultant is accepted into the certification program. This is their first branded touchpoint as an enrolled participant - it should feel premium and welcoming, not transactional. The three numbered steps use pillar colors to foreshadow the methodology structure.
+                    Sent immediately after a consultant is accepted into the the TARGA platform. This is their first branded touchpoint as an enrolled participant - it should feel premium and welcoming, not transactional. The three numbered steps use brand colors to foreshadow the platform structure.
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    White background with pillar gradient top bar (not dark header) to differentiate from marketing emails. Centered icon and welcome message. Numbered onboarding steps with pillar-colored circles. Single "Access Your Portal" CTA.
+                    White background with brand gradient top bar (not dark header) to differentiate from marketing emails. Centered icon and welcome message. Numbered onboarding steps with brand-colored circles. Single "Access Your Portal" CTA.
                   </p>
                 </div>
               </div>
@@ -2187,7 +2642,7 @@ export default function Mockups() {
                     'Max width: 600px centered (email client standard)',
                     'Header: 32px padding, icon at 28px height',
                     'Body: 32px horizontal padding, 16px base font size',
-                    'CTA: Blue #2563eb, centered, minimum 44px height',
+                    'CTA: Blue #0eb2af, centered, minimum 44px height',
                     'Footer: Icon 20px, 10px legal text, centered',
                     'One primary CTA per email - never two competing buttons',
                   ].map((item, i) => (
@@ -2201,14 +2656,14 @@ export default function Mockups() {
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Typography in Email</h4>
                   <table className="spec-table" style={{ fontSize: '13px' }}>
                     <tbody>
-                      <tr><td style={{ fontWeight: '600' }}>Headlines</td><td>Georgia (Lora fallback), 20-22px, Light</td></tr>
-                      <tr><td style={{ fontWeight: '600' }}>Body</td><td>Arial (DM Sans fallback), 14-16px, #475569</td></tr>
-                      <tr><td style={{ fontWeight: '600' }}>CTA Text</td><td>Arial Bold, 13-14px, white on #2563eb</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>Headlines</td><td>Georgia (Space Grotesk fallback), 20-22px, Light</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>Body</td><td>Arial (Inter fallback), 14-16px, #1f476a</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>CTA Text</td><td>Arial Bold, 13-14px, white on #0eb2af</td></tr>
                       <tr><td style={{ fontWeight: '600' }}>Fine Print</td><td>Arial, 10px, #94a3b8</td></tr>
                     </tbody>
                   </table>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '12px', lineHeight: '1.6' }}>
-                    Note: Web fonts (Lora, DM Sans) don't render reliably in most email clients. Use Georgia and Arial as safe fallbacks. The brand feel carries through color, spacing, and the icon mark.
+                    Note: Web fonts (Space Grotesk, Inter) don't render reliably in most email clients. Use Georgia and Arial as safe fallbacks. The brand feel carries through color, spacing, and the icon mark.
                   </p>
                 </div>
               </div>
@@ -2235,7 +2690,7 @@ export default function Mockups() {
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Book Announcement</td>
-                    <td>Slate gradient</td>
+                    <td>Navy gradient</td>
                     <td>Book campaign sequence</td>
                     <td>Learn More / Order Now</td>
                   </tr>
@@ -2276,17 +2731,17 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 {/* Post image */}
-                <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
+                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
                   <div style={{ position: 'absolute', right: '-40px', bottom: '-40px', opacity: 0.05 }}>
                     <Icon size={240} />
                   </div>
                   <div style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ display: 'flex', gap: '6px', marginBottom: '24px' }}>
-                      <div style={{ height: '3px', width: '32px', background: '#475569', borderRadius: '2px' }}></div>
-                      <div style={{ height: '3px', width: '32px', background: '#00bfa5', borderRadius: '2px' }}></div>
+                      <div style={{ height: '3px', width: '32px', background: '#1f476a', borderRadius: '2px' }}></div>
+                      <div style={{ height: '3px', width: '32px', background: '#0eb2af', borderRadius: '2px' }}></div>
                       <div style={{ height: '3px', width: '32px', background: '#fbbf24', borderRadius: '2px' }}></div>
                     </div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '22px', fontWeight: '300', color: 'white', lineHeight: '1.4', margin: '0 0 16px 0', maxWidth: '320px' }}>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '300', color: 'white', lineHeight: '1.4', margin: '0 0 16px 0', maxWidth: '320px' }}>
                       Most organizations undervalue what they already have.
                     </p>
                     <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Bill Adams - Outcome Dynamics</p>
@@ -2305,16 +2760,16 @@ export default function Mockups() {
                   <table className="spec-table" style={{ fontSize: '13px' }}>
                     <tbody>
                       <tr><td style={{ fontWeight: '600', width: '120px' }}>Size</td><td>1200 x 627px</td></tr>
-                      <tr><td style={{ fontWeight: '600' }}>Background</td><td>Dark gradient (#0f172a to #1a2744)</td></tr>
-                      <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Lora Light 300, white</td></tr>
-                      <tr><td style={{ fontWeight: '600' }}>Decoration</td><td>Three-pillar divider bar, icon watermark</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>Background</td><td>Dark gradient (#132f4a to #1a3a5c)</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Space Grotesk Light 300, white</td></tr>
+                      <tr><td style={{ fontWeight: '600' }}>Decoration</td><td>Three-brand accent divider bar, icon watermark</td></tr>
                     </tbody>
                   </table>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Post Guidelines</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Lead with insight, not promotion. Reference the methodology without jargon. End with a question or soft CTA. Tag the WhiteSpace company page.
+                    Lead with insight, not promotion. Reference LX and the three pillars without jargon. End with a question or soft CTA. Tag the TARGA AI company page.
                   </p>
                 </div>
               </div>
@@ -2325,25 +2780,25 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 <div style={{ background: 'white', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627', border: '1px solid #f1f5f9' }}>
-                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                   <div style={{ position: 'absolute', right: '-20px', bottom: '-20px', opacity: 0.04 }}>
                     <Icon size={200} />
                   </div>
                   <div style={{ position: 'relative', zIndex: 1 }}>
                     <Icon size={32} />
-                    <p style={{ fontSize: '11px', fontWeight: '600', color: '#00bfa5', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>Now Certified</p>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Jane Davidson</p>
-                    <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>WhiteSpace Clarity Framework - Cohort 2026-A</p>
+                    <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>Now Certified</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Jane Davidson</p>
+                    <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>TARGA AI - Cohort 2026-A</p>
                     <div style={{ display: 'flex', gap: '16px' }}>
-                      {['Expectation', 'Systemization', 'Realization'].map((p, i) => (
-                        <span key={i} style={{ fontSize: '10px', fontWeight: '600', color: ['#475569', '#00bfa5', '#d97706'][i], background: ['#47556910', '#00bfa510', '#fbbf2410'][i], padding: '4px 10px', borderRadius: '12px' }}>{p}</span>
+                      {['Plan & Capture', 'Visibility & Sync', 'Performance & Impact'].map((p, i) => (
+                        <span key={i} style={{ fontSize: '10px', fontWeight: '600', color: ['#1f476a', '#0eb2af', '#d97706'][i], background: ['#1f476a10', '#0eb2af10', '#fbbf2410'][i], padding: '4px 10px', borderRadius: '12px' }}>{p}</span>
                       ))}
                     </div>
                   </div>
                 </div>
                 <div style={{ padding: '20px' }}>
                   <p style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Congratulate by name. Mention cohort and pillars mastered. Reinforce selectivity. Tag the certified consultant.
+                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Congratulate by name. Mention cohort and pillars completed. Reinforce selectivity. Tag the certified consultant.
                   </p>
                 </div>
               </div>
@@ -2357,7 +2812,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Light background with pillar gradient top bar. Pillar tags visually reinforce what was mastered. Clean, credential-forward - not promotional.
+                    Light background with brand gradient top bar. Pillar tags visually reinforce what was mastered. Clean, credential-forward - not promotional.
                   </p>
                 </div>
               </div>
@@ -2367,20 +2822,20 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Book Launch - Outcome Dynamics</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
-                <div style={{ background: 'linear-gradient(135deg, #475569, #334155)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
+                <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
                   <div style={{ position: 'absolute', left: '-60px', top: '-60px', opacity: 0.06 }}>
                     <Icon size={280} />
                   </div>
                   <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '32px', height: '100%' }}>
                     {/* Book mockup */}
-                    <div style={{ width: '120px', height: '160px', background: 'linear-gradient(135deg, #1e293b, #0f172a)', borderRadius: '4px', boxShadow: '8px 4px 20px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '16px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.1)' }}>
+                    <div style={{ width: '120px', height: '160px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '4px', boxShadow: '8px 4px 20px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '16px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.1)' }}>
                       <Icon size={24} />
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '11px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '8px', lineHeight: '1.2' }}>Outcome Dynamics</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '11px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '8px', lineHeight: '1.2' }}>Outcome Dynamics</p>
                       <p style={{ fontSize: '7px', color: '#94a3b8', textAlign: 'center', marginTop: '4px' }}>Bill Adams</p>
                     </div>
                     <div>
                       <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 8px 0' }}>September 2026</p>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 8px 0' }}>Outcome<br/>Dynamics</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 8px 0' }}>Outcome<br/>Dynamics</p>
                       <p style={{ fontSize: '11px', color: '#cbd5e1', lineHeight: '1.5', margin: 0 }}>The definitive guide to organizational asset conversion. Forbes Books.</p>
                     </div>
                   </div>
@@ -2396,7 +2851,7 @@ export default function Mockups() {
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Campaign Sequence</h4>
                   {['Teaser: Key insight from the book (no cover reveal)', 'Cover reveal: Full visual with launch date', 'Pre-order: Direct CTA with landing page link', 'Launch day: Personal post from Bill', 'Post-launch: Reader testimonials and press'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '10px', alignItems: 'flex-start' }}>
-                      <span style={{ fontSize: '11px', fontWeight: '600', color: '#475569', background: '#47556910', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
+                      <span style={{ fontSize: '11px', fontWeight: '600', color: '#1f476a', background: '#1f476a10', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
                       <span style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.5' }}>{item}</span>
                     </div>
                   ))}
@@ -2404,7 +2859,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Slate background (not dark navy) to differentiate from thought leadership posts. Book mockup left, copy right. Gold accent for launch date.
+                    Navy gradient background to differentiate from thought leadership posts. Book mockup left, copy right. Gold accent for launch date.
                   </p>
                 </div>
               </div>
@@ -2414,16 +2869,16 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Video Series Frame</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
-                <div style={{ background: '#0f172a', padding: '0', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
+                <div style={{ background: '#132f4a', padding: '0', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
                   {/* Video frame mockup */}
                   <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                     <div style={{ position: 'absolute', top: '16px', left: '16px', display: 'flex', alignItems: 'center', gap: '8px', zIndex: 2 }}>
                       <Icon size={20} />
-                      <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.6)', fontWeight: '500' }}>WhiteSpace Clarity Framework</span>
+                      <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.6)', fontWeight: '500' }}>TARGA AI</span>
                     </div>
                     <div style={{ position: 'absolute', bottom: '0', left: '0', right: '0', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', padding: '40px 24px 20px 24px', zIndex: 2 }}>
-                      <p style={{ fontFamily: 'Lora, serif', fontSize: '16px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>Why Consultants Leave McKinsey</p>
-                      <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0 }}>Steve Smith & Bill Adams - Episode 3</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>Why Consultants Leave McKinsey</p>
+                      <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0 }}>Joe Thompson & Bill Adams - Episode 3</p>
                     </div>
                     {/* Play button */}
                     <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid rgba(255,255,255,0.3)', zIndex: 2 }}>
@@ -2447,7 +2902,7 @@ export default function Mockups() {
                   </p>
                   {['Competitive differentiation', 'Client story as proof', 'Methodology deep-dive', 'Asset discovery walkthrough', 'Book preview / key insights', 'Certification program overview'].map((ep, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'center' }}>
-                      <span style={{ fontSize: '10px', fontWeight: '600', color: ['#475569', '#00bfa5', '#475569', '#00bfa5', '#d97706', '#475569'][i], background: ['#47556910', '#00bfa510', '#47556910', '#00bfa510', '#fbbf2410', '#47556910'][i], padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>EP {i + 1}</span>
+                      <span style={{ fontSize: '10px', fontWeight: '600', color: ['#1f476a', '#0eb2af', '#1f476a', '#0eb2af', '#d97706', '#1f476a'][i], background: ['#1f476a10', '#0eb2af10', '#1f476a10', '#0eb2af10', '#fbbf2410', '#1f476a10'][i], padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>EP {i + 1}</span>
                       <span style={{ fontSize: '12px', color: '#64748b' }}>{ep}</span>
                     </div>
                   ))}
@@ -2461,21 +2916,21 @@ export default function Mockups() {
               <div className="grid-3">
                 <div className="do-card">
                   <h4 style={{ color: '#16a34a', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2713'} DO</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
-                    Lead with insight over promotion. Use client outcomes as proof points. Reference the three pillars by name. Tag certified consultants. Link to discovery conversations.
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
+                    Lead with insight over promotion. Use client outcomes as proof points. Reference LX and the three pillars by name. Tag partners and pilot participants. Link to discovery conversations.
                   </p>
                 </div>
                 <div className="dont-card">
                   <h4 style={{ color: '#dc2626', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2717'} DON'T</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
                     Use transactional language ("buy", "purchase", "deal"). Post without a visual. Use internal methodology jargon. Post more than 3x per week from the company page.
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0, padding: '24px' }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Hashtags</h4>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                    {['#WhiteSpaceFramework', '#OutcomeDynamics', '#ConsultingCertification', '#ValueCollaborator', '#OrganizationalAssets', '#ConsultingExcellence'].map((tag, i) => (
-                      <span key={i} style={{ fontSize: '11px', color: '#2563eb', background: '#2563eb10', padding: '4px 10px', borderRadius: '12px' }}>{tag}</span>
+                    {['#TARGAAI', '#LeaderExperience', '#LX', '#PerformanceAutomation', '#EnterpriseLeadership', '#ValueCreation'].map((tag, i) => (
+                      <span key={i} style={{ fontSize: '11px', color: '#0eb2af', background: '#0eb2af10', padding: '4px 10px', borderRadius: '12px' }}>{tag}</span>
                     ))}
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '12px' }}>Use 3-4 per post. First two are mandatory.</p>
@@ -2490,7 +2945,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Certificate Design</h2>
             <p className="section-subtitle">
-              Certification credential, digital badge, and display guidelines for certified WhiteSpace consultants.
+              Certification credential, digital badge, and display guidelines for certified TARGA consultants.
             </p>
 
             {/* Certificate mockup */}
@@ -2498,7 +2953,7 @@ export default function Mockups() {
             <div className="card-white" style={{ padding: '48px', marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '2px solid #e2e8f0', borderRadius: '4px', padding: '60px', maxWidth: '720px', margin: '0 auto', position: 'relative', overflow: 'hidden' }}>
                 {/* Top pillar bar */}
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                 {/* Corner watermark */}
                 <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.04 }}>
                   <Icon size={200} />
@@ -2506,21 +2961,21 @@ export default function Mockups() {
 
                 <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <Icon size={40} />
-                  <p style={{ fontSize: '10px', fontWeight: '600', color: '#64748b', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 4px 0' }}>WhiteSpace Clarity Framework</p>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '28px', fontWeight: '300', color: '#1e293b', margin: '24px 0 8px 0' }}>Certificate of Completion</p>
+                  <p style={{ fontSize: '10px', fontWeight: '600', color: '#64748b', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 4px 0' }}>TARGA AI</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', margin: '24px 0 8px 0' }}>Certificate of Completion</p>
                   <p style={{ fontSize: '14px', color: '#64748b', margin: '0 0 32px 0' }}>This certifies that</p>
 
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '36px', fontWeight: '400', color: '#1e293b', margin: '0 0 8px 0', borderBottom: '1px solid #e2e8f0', paddingBottom: '8px', display: 'inline-block', minWidth: '300px' }}>Jane Davidson</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '400', color: '#1e293b', margin: '0 0 8px 0', borderBottom: '1px solid #e2e8f0', paddingBottom: '8px', display: 'inline-block', minWidth: '300px' }}>Jane Davidson</p>
                   <p style={{ fontSize: '14px', color: '#64748b', margin: '16px 0 32px 0', lineHeight: '1.7', maxWidth: '480px', marginLeft: 'auto', marginRight: 'auto' }}>
-                    has successfully completed all requirements of the WhiteSpace Clarity Certification program and demonstrated mastery of the Value Collaborator System.
+                    has successfully completed all requirements of the TARGA AI Certification program and demonstrated mastery of the TARGA performance methodology.
                   </p>
 
                   {/* Pillar badges */}
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '32px' }}>
                     {[
-                      { label: 'Expectation', color: '#475569' },
-                      { label: 'Systemization', color: '#00bfa5' },
-                      { label: 'Realization', color: '#fbbf24' },
+                      { label: 'Plan & Capture', color: '#1f476a' },
+                      { label: 'Visibility & Sync', color: '#0eb2af' },
+                      { label: 'Performance & Impact', color: '#fbbf24' },
                     ].map((p, i) => (
                       <div key={i} style={{ textAlign: 'center' }}>
                         <div style={{ width: '48px', height: '48px', borderRadius: '50%', border: `2px solid ${p.color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 6px auto' }}>
@@ -2535,13 +2990,13 @@ export default function Mockups() {
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '80px', marginTop: '24px' }}>
                     <div style={{ textAlign: 'center' }}>
                       <div style={{ borderBottom: '1px solid #cbd5e1', width: '160px', marginBottom: '8px', height: '24px' }}></div>
-                      <p style={{ fontSize: '12px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Steve Smith</p>
-                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Managing Partner</p>
+                      <p style={{ fontSize: '12px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>CEO</p>
                     </div>
                     <div style={{ textAlign: 'center' }}>
                       <div style={{ borderBottom: '1px solid #cbd5e1', width: '160px', marginBottom: '8px', height: '24px' }}></div>
                       <p style={{ fontSize: '12px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Bill Adams</p>
-                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Founder, Value Collaborator System</p>
+                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Founder, TARGA performance methodology</p>
                     </div>
                   </div>
 
@@ -2560,9 +3015,9 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Digital Badge</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
-                <div style={{ width: '120px', height: '120px', borderRadius: '50%', background: 'linear-gradient(135deg, #0f172a, #1a2744)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '3px solid #00bfa5', boxShadow: '0 0 0 6px #0f172a, 0 0 0 8px #475569' }}>
+                <div style={{ width: '120px', height: '120px', borderRadius: '50%', background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '3px solid #0eb2af', boxShadow: '0 0 0 6px #132f4a, 0 0 0 8px #1f476a' }}>
                   <Icon size={32} />
-                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#00bfa5', letterSpacing: '1px', textTransform: 'uppercase', marginTop: '4px' }}>Certified</p>
+                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#0eb2af', letterSpacing: '1px', textTransform: 'uppercase', marginTop: '4px' }}>Certified</p>
                 </div>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>LinkedIn Badge</p>
                 <p style={{ fontSize: '12px', color: '#64748b' }}>120x120px - Profile credential</p>
@@ -2570,10 +3025,10 @@ export default function Mockups() {
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
                 <div style={{ width: '120px', height: '120px', borderRadius: '12px', background: 'white', border: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto' }}>
                   <Icon size={28} />
-                  <p style={{ fontSize: '8px', fontWeight: '600', color: '#475569', letterSpacing: '0.5px', marginTop: '6px' }}>CERTIFIED</p>
+                  <p style={{ fontSize: '8px', fontWeight: '600', color: '#1f476a', letterSpacing: '0.5px', marginTop: '6px' }}>CERTIFIED</p>
                   <div style={{ display: 'flex', gap: '3px', marginTop: '4px' }}>
-                    <div style={{ width: '12px', height: '2px', background: '#475569', borderRadius: '1px' }}></div>
-                    <div style={{ width: '12px', height: '2px', background: '#00bfa5', borderRadius: '1px' }}></div>
+                    <div style={{ width: '12px', height: '2px', background: '#1f476a', borderRadius: '1px' }}></div>
+                    <div style={{ width: '12px', height: '2px', background: '#0eb2af', borderRadius: '1px' }}></div>
                     <div style={{ width: '12px', height: '2px', background: '#fbbf24', borderRadius: '1px' }}></div>
                   </div>
                 </div>
@@ -2582,7 +3037,7 @@ export default function Mockups() {
               </div>
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
                 <div style={{ width: '120px', height: '120px', borderRadius: '12px', background: '#f8fafc', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '1px solid #e2e8f0' }}>
-                  <div style={{ fontSize: '32px', color: '#475569' }}>{'\u2764'}</div>
+                  <div style={{ fontSize: '32px', color: '#1f476a' }}>{'\u2764'}</div>
                   <p style={{ fontSize: '7px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', marginTop: '4px' }}>SCAN TO VERIFY</p>
                 </div>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>QR Verification</p>
@@ -2596,14 +3051,14 @@ export default function Mockups() {
               <div className="grid-2">
                 <div className="do-card">
                   <h4 style={{ color: '#16a34a', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2713'} Approved Uses</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
                     LinkedIn profile credentials section. Email signature badge. Consulting proposals and engagement decks. Personal website or portfolio. Conference speaker bios.
                   </p>
                 </div>
                 <div className="dont-card">
                   <h4 style={{ color: '#dc2626', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2717'} Not Permitted</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>
-                    Modifying the badge colors or layout. Claiming certification without completing all three pillars. Using "WhiteSpace Certified" without the full credential ID. Displaying an expired credential.
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
+                    Modifying the badge colors or layout. Claiming certification without completing all three pillars. Using "TARGA Certified" without the full credential ID. Displaying an expired credential.
                   </p>
                 </div>
               </div>
@@ -2621,8 +3076,8 @@ export default function Mockups() {
                 <tbody>
                   <tr><td style={{ fontWeight: '600' }}>Print Size</td><td>11" x 8.5" (landscape)</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Paper</td><td>100lb premium linen or cotton stock</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Lora Light (name), DM Sans (body), uppercase tracking for labels</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Top Bar</td><td>4px pillar gradient (Slate 30% / Teal 25% / Slate 20% / Gold 25%)</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Space Grotesk Light (name), Inter (body), uppercase tracking for labels</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Top Bar</td><td>4px pillar gradient (Navy 30% / Teal 25% / Navy 20% / Gold 25%)</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Credential ID</td><td>Format: WCF-[YEAR]-[SEQUENTIAL 4-DIGIT]</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Digital Format</td><td>PDF with embedded fonts, 300 DPI for print</td></tr>
                 </tbody>
@@ -2642,16 +3097,17 @@ export default function Mockups() {
             {/* Title slide */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Title Slide</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '40px' }}>
-              <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', right: '60px', bottom: '-40px', opacity: 0.04 }}>
                   <Icon size={320} />
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={36} />
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Organizational Asset<br/>Discovery Workshop</p>
+                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>The Leader Experience™</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: 'white', margin: '0 0 12px 0', lineHeight: '1.2' }}>Enterprise Value Creation<br/>Through Performance Automation</p>
                   <div style={{ display: 'flex', gap: '8px', margin: '20px 0 0 0' }}>
-                    <div style={{ height: '2px', width: '40px', background: '#475569', borderRadius: '1px' }}></div>
-                    <div style={{ height: '2px', width: '40px', background: '#00bfa5', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '40px', background: '#1f476a', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '40px', background: '#0eb2af', borderRadius: '1px' }}></div>
                     <div style={{ height: '2px', width: '40px', background: '#fbbf24', borderRadius: '1px' }}></div>
                   </div>
                   <p style={{ fontSize: '14px', color: '#94a3b8', margin: '20px 0 0 0' }}>Prepared for Acme Corp - March 2026</p>
@@ -2662,14 +3118,19 @@ export default function Mockups() {
             {/* Section divider slide */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Section Divider</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '40px' }}>
-              <div style={{ background: '#475569', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', left: '-40px', bottom: '-40px', opacity: 0.08 }}>
-                  <Icon size={260} />
+              <div style={{ background: '#1f476a', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                {/* Triangle accent bottom-left */}
+                <div style={{ position: 'absolute', left: '-20px', bottom: '-20px', opacity: 0.10 }}>
+                  <Icon size={200} />
+                </div>
+                {/* Subtle second triangle top-right */}
+                <div style={{ position: 'absolute', right: '40px', top: '-60px', opacity: 0.04 }}>
+                  <Icon size={180} />
                 </div>
                 <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-                  <span style={{ fontSize: '12px', fontWeight: '600', color: '#00bfa5', letterSpacing: '2px', textTransform: 'uppercase' }}>Section 02</span>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '36px', fontWeight: '300', color: 'white', margin: '12px 0 0 0' }}>Systemization</p>
-                  <p style={{ fontSize: '14px', color: '#cbd5e1', marginTop: '8px' }}>How assets work together as an integrated system</p>
+                  <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase' }}>Section 02</span>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '300', color: 'white', margin: '12px 0 0 0' }}>Visibility & Sync</p>
+                  <p style={{ fontSize: '14px', color: '#cbd5e1', marginTop: '8px' }}>Dynamic views of initiatives, resources, and milestones — connected in real time</p>
                 </div>
               </div>
             </div>
@@ -2678,18 +3139,18 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Content Slide</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '40px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '48px', aspectRatio: '16/9', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div style={{ maxWidth: '55%' }}>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: '#1e293b', margin: '0 0 24px 0' }}>Asset Mapping Results</p>
-                    <div style={{ borderLeft: '3px solid #00bfa5', paddingLeft: '16px', marginBottom: '16px' }}>
-                      <p style={{ fontSize: '13px', color: '#475569', lineHeight: '1.7', margin: 0 }}>
-                        Analysis revealed 14 underutilized assets across three business units, representing an estimated $2.4M in unrealized annual value.
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', margin: '0 0 24px 0' }}>Initiative Performance Overview</p>
+                    <div style={{ borderLeft: '3px solid #0eb2af', paddingLeft: '16px', marginBottom: '16px' }}>
+                      <p style={{ fontSize: '13px', color: '#1f476a', lineHeight: '1.7', margin: 0 }}>
+                        TARGA visibility dashboard identified 3 at-risk initiatives across two business units, enabling preemptive resource reallocation saving an estimated $1.8M in delayed delivery costs.
                       </p>
                     </div>
-                    {['Customer relationship data', 'Process IP and workflows', 'Brand equity in adjacent markets'].map((item, i) => (
+                    {['Real-time goal alignment tracking', 'Automated resource sync across teams', 'AI-surfaced risk indicators'].map((item, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                        <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: ['#475569', '#00bfa5', '#fbbf24'][i], flexShrink: 0 }}></div>
+                        <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: ['#1f476a', '#0eb2af', '#fbbf24'][i], flexShrink: 0 }}></div>
                         <span style={{ fontSize: '14px', color: '#1e293b' }}>{item}</span>
                       </div>
                     ))}
@@ -2697,13 +3158,13 @@ export default function Mockups() {
                   <div style={{ width: '35%', background: '#f8fafc', borderRadius: '8px', padding: '24px' }}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                       {[
-                        { label: 'Identified', value: '14', color: '#475569' },
-                        { label: 'In System', value: '8', color: '#00bfa5' },
-                        { label: 'Monetized', value: '3', color: '#fbbf24' },
+                        { label: 'Initiatives', value: '14', color: '#1f476a' },
+                        { label: 'On Track', value: '8', color: '#0eb2af' },
+                        { label: 'Value Delivered', value: '$2.4M', color: '#fbbf24' },
                       ].map((stat, i) => (
                         <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                           <span style={{ fontSize: '12px', color: '#64748b' }}>{stat.label}</span>
-                          <span style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: stat.color }}>{stat.value}</span>
+                          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: stat.color }}>{stat.value}</span>
                         </div>
                       ))}
                     </div>
@@ -2722,13 +3183,13 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Data Visualization Slide</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '48px', aspectRatio: '16/9', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
-                <p style={{ fontFamily: 'Lora, serif', fontSize: '20px', fontWeight: '300', color: '#1e293b', margin: '0 0 32px 0' }}>Value Realization Over Time</p>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', margin: '0 0 32px 0' }}>Value Creation Over Time</p>
                 {/* Fake chart */}
                 <div style={{ display: 'flex', alignItems: 'flex-end', gap: '16px', height: '140px', paddingBottom: '24px', borderBottom: '1px solid #e2e8f0' }}>
                   {[30, 42, 55, 48, 68, 75, 82, 95, 88, 110, 125, 140].map((h, i) => (
                     <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-                      <div style={{ width: '100%', height: `${h * 0.8}px`, background: i < 4 ? '#475569' : i < 8 ? '#00bfa5' : '#fbbf24', borderRadius: '3px 3px 0 0', opacity: 0.8 }}></div>
+                      <div style={{ width: '100%', height: `${h * 0.8}px`, background: i < 4 ? '#1f476a' : i < 8 ? '#0eb2af' : '#fbbf24', borderRadius: '3px 3px 0 0', opacity: 0.8 }}></div>
                     </div>
                   ))}
                 </div>
@@ -2738,7 +3199,7 @@ export default function Mockups() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '24px', marginTop: '16px' }}>
-                  {[{ label: 'Expectation', color: '#475569' }, { label: 'Systemization', color: '#00bfa5' }, { label: 'Realization', color: '#fbbf24' }].map((l, i) => (
+                  {[{ label: 'Plan & Capture', color: '#1f476a' }, { label: 'Visibility & Sync', color: '#0eb2af' }, { label: 'Performance & Impact', color: '#fbbf24' }].map((l, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: l.color }}></div>
                       <span style={{ fontSize: '11px', color: '#64748b' }}>{l.label}</span>
@@ -2765,11 +3226,11 @@ export default function Mockups() {
                 </thead>
                 <tbody>
                   <tr><td style={{ fontWeight: '600' }}>Aspect Ratio</td><td>16:9 (1920 x 1080px)</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Title Slides</td><td>Dark gradient background, Lora Light 32px, pillar divider</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Section Dividers</td><td>Pillar color background (Slate, Teal, or Gold), centered Lora title</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Content Slides</td><td>White background, pillar gradient top bar, Lora 24px headers</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Title Slides</td><td>Dark gradient background, Space Grotesk Light 32px, brand accent divider</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Section Dividers</td><td>Brand color background (Navy, Teal, or Gold), centered Space Grotesk title</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Content Slides</td><td>White background, brand gradient top bar, Space Grotesk 24px headers</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Footer</td><td>Icon mark left, confidentiality note center, page number right</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Charts</td><td>Pillar colors only - Slate for phase 1, Teal for phase 2, Gold for phase 3</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Charts</td><td>Pillar colors only - Navy for phase 1, Teal for phase 2, Gold for phase 3</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Bullet Style</td><td>Pillar-colored dots (6px), not dashes or arrows</td></tr>
                 </tbody>
               </table>
@@ -2791,26 +3252,26 @@ export default function Mockups() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                   <Icon size={36} />
                   <div>
-                    <h2>Asset Discovery & Valuation Workshop</h2>
-                    <p>A structured full-day engagement using the WhiteSpace Clarity Framework</p>
+                    <h2>Goals, Plans & Objectives Capture Workshop</h2>
+                    <p>A structured full-day engagement using the TARGA AI</p>
                   </div>
                 </div>
               </div>
               <div className="grid-4">
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: '#475569' }}>8</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: '#1f476a' }}>8</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Hours total</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: '#00bfa5' }}>3</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: '#0eb2af' }}>3</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Core sessions</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: '#fbbf24' }}>6-12</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: '#fbbf24' }}>6-12</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Participants</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: '#2563eb' }}>1</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: '#0eb2af' }}>1</p>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Action plan delivered</p>
                 </div>
               </div>
@@ -2819,18 +3280,18 @@ export default function Mockups() {
             {/* Agenda timeline */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Full-Day Agenda</h3>
 
-            {/* Morning - Expectation */}
+            {/* Morning - Plan & Capture */}
             <div style={{ marginBottom: '24px' }}>
               {[
-                { time: '8:30 - 9:00', title: 'Welcome & Framework Introduction', desc: 'Overview of the day, introductions, and the three-pillar methodology explained.', color: '#475569', pillar: null },
-                { time: '9:00 - 10:30', title: 'Session 1: Expectation - Asset Discovery', desc: 'Guided inventory of organizational assets. Participants map what exists across people, processes, IP, relationships, and brand equity.', color: '#475569', pillar: 'Expectation' },
+                { time: '8:30 - 9:00', title: 'Welcome & Framework Introduction', desc: 'Overview of the day, introductions, and the three-pillar framework explained.', color: '#1f476a', pillar: null },
+                { time: '9:00 - 10:30', title: 'Session 1: Plan & Capture - Strategic Goals', desc: 'Guided capture of strategic objectives. Participants map goals, initiatives, and key results across the leadership team.', color: '#1f476a', pillar: 'Plan & Capture' },
                 { time: '10:30 - 10:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Asset Valuation', desc: 'Each identified asset is scored on current utilization, potential value, and accessibility. The Asset Gap Map is produced.', color: '#475569', pillar: 'Expectation' },
+                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Initiative Prioritization', desc: 'Each identified initiative is scored on strategic impact, resource readiness, and timeline feasibility. The Priority Matrix is produced.', color: '#1f476a', pillar: 'Plan & Capture' },
                 { time: '12:00 - 1:00', title: 'Lunch', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '1:00 - 2:30', title: 'Session 2: Systemization - Integration Mapping', desc: 'Participants connect assets into systems. Identify dependencies, bottlenecks, and multiplication opportunities. The Asset System Map is produced.', color: '#00bfa5', pillar: 'Systemization' },
+                { time: '1:00 - 2:30', title: 'Session 2: Visibility & Sync - Initiative Mapping', desc: 'Participants connect initiatives to resources and timelines. Identify dependencies, visibility gaps, and automation opportunities. The Initiative Map is produced.', color: '#0eb2af', pillar: 'Visibility & Sync' },
                 { time: '2:30 - 2:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '2:45 - 4:00', title: 'Session 3: Realization - Value Conversion Plan', desc: 'Transform the System Map into actionable initiatives. Each asset system gets a 90-day conversion plan with measurable outcomes.', color: '#fbbf24', pillar: 'Realization' },
-                { time: '4:00 - 4:30', title: 'Action Plan & Close', desc: 'Consolidated action plan delivered. Next steps, accountability assignments, and follow-up schedule established.', color: '#2563eb', pillar: null },
+                { time: '2:45 - 4:00', title: 'Session 3: Performance & Impact - Value Delivery', desc: 'Transform the Initiative Map into execution plans. Each workstream gets a 90-day performance plan with measurable value outcomes.', color: '#fbbf24', pillar: 'Performance & Impact' },
+                { time: '4:00 - 4:30', title: 'Action Plan & Close', desc: 'Consolidated action plan delivered. Next steps, accountability assignments, and follow-up schedule established.', color: '#0eb2af', pillar: null },
               ].map((session, i) => (
                 <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', padding: session.desc ? '20px' : '12px 20px', background: session.desc ? 'white' : '#f8fafc', borderRadius: '8px', borderLeft: `3px solid ${session.color}`, marginBottom: '8px', border: session.desc ? `1px solid #e2e8f0` : 'none', borderLeftWidth: '3px', borderLeftColor: session.color, borderLeftStyle: 'solid' }}>
                   <div style={{ minWidth: '100px', flexShrink: 0 }}>
@@ -2853,11 +3314,11 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', marginTop: '48px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Workshop Deliverables</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
               <div className="box accent-navy" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#475569', marginBottom: '8px' }}>Asset Gap Map</h4>
+                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#1f476a', marginBottom: '8px' }}>Asset Gap Map</h4>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Complete inventory of organizational assets with utilization scores and unrealized potential estimates.</p>
               </div>
               <div className="box accent-teal" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#00bfa5', marginBottom: '8px' }}>Asset System Map</h4>
+                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#0eb2af', marginBottom: '8px' }}>Asset System Map</h4>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Visual dependency map showing how assets connect, where bottlenecks exist, and where value multiplies.</p>
               </div>
               <div className="box accent-gold" style={{ paddingLeft: '28px' }}>
@@ -2881,7 +3342,7 @@ export default function Mockups() {
                 </div>
                 <div>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Room Setup & Digital</h4>
-                  {['Presentation deck (see Presentation tab)', 'Whiteboard or flip charts with markers', 'Post-it notes in pillar colors (slate, teal, gold)', 'Name tents with WhiteSpace branding', 'Follow-up email template with action plan PDF'].map((item, i) => (
+                  {['Presentation deck (see Presentation tab)', 'Whiteboard or flip charts with markers', 'Post-it notes in brand colors (navy, teal, gold)', 'Name tents with TARGA branding', 'Follow-up email template with action plan PDF'].map((item, i) => (
                     <div key={i} className="checklist-item">
                       <div className="checklist-icon">{'\u2713'}</div>
                       <div className="checklist-text">{item}</div>
@@ -2894,12 +3355,12 @@ export default function Mockups() {
             {/* Facilitator notes */}
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Facilitator Notes</h3>
-              <div style={{ borderLeft: '3px solid #00bfa5', paddingLeft: '20px' }}>
-                <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.8', marginBottom: '12px' }}>
-                  The three sessions are sequenced intentionally - Expectation must complete before Systemization begins, and Systemization before Realization. Do not allow the group to jump ahead to "solutions" before the asset inventory is thorough. The most common facilitator mistake is letting the group rush past discovery.
+              <div style={{ borderLeft: '3px solid #0eb2af', paddingLeft: '20px' }}>
+                <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', marginBottom: '12px' }}>
+                  The three sessions are sequenced intentionally - Plan & Capture must complete before Visibility & Sync begins, and Visibility before Performance & Impact. Do not allow the group to jump ahead to solutions before the strategic capture is thorough. The most common facilitator mistake is letting the group rush past discovery.
                 </p>
-                <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.8', margin: 0 }}>
-                  Use the pillar colors physically in the room - slate post-its for assets, teal for system connections, gold for value conversion opportunities. This reinforces the methodology visually and makes the Asset System Map immediately legible.
+                <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', margin: 0 }}>
+                  Use the brand colors physically in the room - slate post-its for assets, teal for system connections, gold for value conversion opportunities. This reinforces the methodology visually and makes the Asset System Map immediately legible.
                 </p>
               </div>
             </div>
@@ -2911,8 +3372,247 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Mobile & Responsive</h2>
             <p className="section-subtitle">
-              Breakpoints, typography scaling, touch targets, and responsive layout guidelines.
+              Breakpoints, typography scaling, touch targets, and mobile app layout concepts for the Leader Experience.
             </p>
+
+            {/* Mobile App Mockups */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>App Layout Concepts</h3>
+            <div className="grid-3" style={{ marginBottom: '48px' }}>
+
+              {/* Dashboard Screen */}
+              <div className="box" style={{ padding: 0, overflow: 'hidden', borderRadius: '24px', border: '3px solid #1e293b' }}>
+                <svg width="100%" viewBox="0 0 320 580" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="mobGrad" x1="0" y1="0" x2="0" y2="0.3">
+                      <stop offset="0%" stopColor="#1f476a"/>
+                      <stop offset="100%" stopColor="#1a3a5c"/>
+                    </linearGradient>
+                    <pattern id="mobPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                      <g opacity="0.12">
+                        <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                        <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                      </g>
+                      <g opacity="0.07" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                        <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                        <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                      </g>
+                    </pattern>
+                    <pattern id="mobPatternSm" x="20" y="23" width="80" height="92" patternUnits="userSpaceOnUse">
+                      <g opacity="0.06">
+                        <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      </g>
+                      <g opacity="0.04" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                        <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      </g>
+                    </pattern>
+                    <clipPath id="mobHeaderClip">
+                      <rect width="320" height="200" rx="20"/>
+                    </clipPath>
+                  </defs>
+                  {/* Status bar */}
+                  <rect width="320" height="580" fill="#f8fafc" rx="20"/>
+                  <rect width="320" height="200" fill="url(#mobGrad)" rx="20"/>
+                  <rect x="0" y="180" width="320" height="20" fill="url(#mobGrad)"/>
+                  {/* Animated pattern layers */}
+                  <g clipPath="url(#mobHeaderClip)">
+                    <g className="pattern-animate">
+                      <rect x="-80" y="0" width="480" height="200" fill="url(#mobPattern)"/>
+                      <rect x="-80" y="0" width="480" height="200" fill="url(#mobPatternSm)"/>
+                    </g>
+                  </g>
+                  {/* Header */}
+                  <text x="24" y="52" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="500">Good morning, Joe</text>
+                  <text x="24" y="78" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="22" fontWeight="300">Your LX Dashboard</text>
+                  {/* Icon top right */}
+                  <g transform="translate(270, 36) scale(0.35)">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06" opacity="0.5"/>
+                  </g>
+                  {/* Score cards */}
+                  <rect x="24" y="110" width="130" height="72" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                  <text x="40" y="138" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="400">87%</text>
+                  <text x="40" y="162" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11">Goal Progress</text>
+                  <rect x="166" y="110" width="130" height="72" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                  <text x="182" y="138" fill="#fbbf24" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="400">$2.4M</text>
+                  <text x="182" y="162" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11">Value Created</text>
+                  {/* Content cards */}
+                  <rect x="16" y="216" width="288" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <rect x="28" y="230" width="4" height="52" rx="2" fill="#0eb2af"/>
+                  <text x="44" y="248" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600">Q2 Revenue Initiative</text>
+                  <text x="44" y="266" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">3 milestones on track, 1 at risk</text>
+                  <rect x="44" y="276" width="200" height="4" rx="2" fill="#e2e8f0"/>
+                  <rect x="44" y="276" width="140" height="4" rx="2" fill="#0eb2af"/>
+                  <text x="260" y="282" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="600">70%</text>
+
+                  <rect x="16" y="308" width="288" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <rect x="28" y="322" width="4" height="52" rx="2" fill="#1f476a"/>
+                  <text x="44" y="340" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600">Talent Retention Program</text>
+                  <text x="44" y="358" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">All milestones on track</text>
+                  <rect x="44" y="368" width="200" height="4" rx="2" fill="#e2e8f0"/>
+                  <rect x="44" y="368" width="190" height="4" rx="2" fill="#1f476a"/>
+                  <text x="260" y="374" fill="#1f476a" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="600">95%</text>
+
+                  <rect x="16" y="400" width="288" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <rect x="28" y="414" width="4" height="52" rx="2" fill="#fbbf24"/>
+                  <text x="44" y="432" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600">Market Expansion - APAC</text>
+                  <text x="44" y="450" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">2 milestones behind, needs attention</text>
+                  <rect x="44" y="460" width="200" height="4" rx="2" fill="#e2e8f0"/>
+                  <rect x="44" y="460" width="80" height="4" rx="2" fill="#fbbf24"/>
+                  <text x="260" y="466" fill="#d97706" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="600">40%</text>
+
+                  {/* Bottom nav */}
+                  <rect x="0" y="500" width="320" height="80" fill="#ffffff" rx="0"/>
+                  <line x1="0" y1="500" x2="320" y2="500" stroke="#e2e8f0" strokeWidth="1"/>
+                  <text x="50" y="536" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="600" textAnchor="middle">Dashboard</text>
+                  <text x="160" y="536" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Initiatives</text>
+                  <text x="270" y="536" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Insights</text>
+                  {/* Active indicator */}
+                  <rect x="30" y="545" width="40" height="3" rx="1.5" fill="#0eb2af"/>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '12px 0' }}>Dashboard — Executive overview</p>
+              </div>
+
+              {/* AI Chat Screen */}
+              <div className="box" style={{ padding: 0, overflow: 'hidden', borderRadius: '24px', border: '3px solid #1e293b' }}>
+                <svg width="100%" viewBox="0 0 320 580" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="chatPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                      <g opacity="0.04">
+                        <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                        <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                      </g>
+                      <g opacity="0.025" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
+                        <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                        <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                      </g>
+                    </pattern>
+                    <pattern id="chatPatternSm" x="20" y="23" width="80" height="92" patternUnits="userSpaceOnUse">
+                      <g opacity="0.02">
+                        <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                      </g>
+                    </pattern>
+                    <clipPath id="chatBodyClip">
+                      <rect x="0" y="64" width="320" height="436"/>
+                    </clipPath>
+                  </defs>
+                  <rect width="320" height="580" fill="#f8fafc" rx="20"/>
+                  {/* Animated light pattern behind chat */}
+                  <g clipPath="url(#chatBodyClip)">
+                    <g className="pattern-animate">
+                      <rect x="-80" y="64" width="480" height="436" fill="url(#chatPattern)"/>
+                      <rect x="-80" y="64" width="480" height="436" fill="url(#chatPatternSm)"/>
+                    </g>
+                  </g>
+                  {/* Header */}
+                  <rect width="320" height="64" fill="#ffffff" rx="20"/>
+                  <rect x="0" y="44" width="320" height="20" fill="#ffffff"/>
+                  <line x1="0" y1="64" x2="320" y2="64" stroke="#e2e8f0" strokeWidth="1"/>
+                  <g transform="translate(24, 18) scale(0.3)">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </g>
+                  <text x="50" y="40" fill="#1e293b" fontFamily="'Space Grotesk', sans-serif" fontSize="15" fontWeight="500">TARGA AI</text>
+                  <text x="250" y="40" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600">New Chat</text>
+                  {/* Chat messages */}
+                  <rect x="80" y="88" width="220" height="48" rx="12" fill="#0eb2af" opacity="0.1"/>
+                  <text x="96" y="108" fill="#1f476a" fontFamily="'Inter', sans-serif" fontSize="12">What projects are behind</text>
+                  <text x="96" y="124" fill="#1f476a" fontFamily="'Inter', sans-serif" fontSize="12">schedule this week?</text>
+                  
+                  <rect x="20" y="152" width="260" height="140" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <g transform="translate(32, 164) scale(0.2)">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </g>
+                  <text x="48" y="180" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">2 initiatives need attention:</text>
+                  <rect x="32" y="192" width="4" height="36" rx="2" fill="#fbbf24"/>
+                  <text x="44" y="208" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600">APAC Expansion</text>
+                  <text x="44" y="222" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="10">Vendor contract delayed 5 days</text>
+                  <rect x="32" y="236" width="4" height="36" rx="2" fill="#fbbf24"/>
+                  <text x="44" y="252" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600">Product Launch v2.1</text>
+                  <text x="44" y="266" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="10">QA milestone at risk — 3 days behind</text>
+                  <text x="32" y="284" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600">Set up meetings with leads →</text>
+
+                  <rect x="80" y="312" width="220" height="32" rx="12" fill="#0eb2af" opacity="0.1"/>
+                  <text x="96" y="333" fill="#1f476a" fontFamily="'Inter', sans-serif" fontSize="12">Yes, schedule those for tomorrow</text>
+
+                  <rect x="20" y="360" width="260" height="56" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <g transform="translate(32, 372) scale(0.2)">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </g>
+                  <text x="48" y="388" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12">Done. 2 meetings scheduled for</text>
+                  <text x="48" y="404" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12">tomorrow at 10am and 2pm.</text>
+
+                  {/* Input bar */}
+                  <rect x="16" y="500" width="288" height="48" rx="24" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
+                  <text x="36" y="529" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13">Ask TARGA anything...</text>
+                  <circle cx="280" cy="524" r="16" fill="#0eb2af"/>
+                  <text x="280" y="529" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="14" fontWeight="700" textAnchor="middle">↑</text>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '12px 0' }}>AI Assistant — Natural language</p>
+              </div>
+
+              {/* Initiative Detail Screen */}
+              <div className="box" style={{ padding: 0, overflow: 'hidden', borderRadius: '24px', border: '3px solid #1e293b' }}>
+                <svg width="100%" viewBox="0 0 320 580" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="320" height="580" fill="#f8fafc" rx="20"/>
+                  {/* Header */}
+                  <rect width="320" height="64" fill="#ffffff" rx="20"/>
+                  <rect x="0" y="44" width="320" height="20" fill="#ffffff"/>
+                  <line x1="0" y1="64" x2="320" y2="64" stroke="#e2e8f0" strokeWidth="1"/>
+                  <text x="24" y="42" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">← Back</text>
+                  <text x="160" y="42" fill="#1e293b" fontFamily="'Space Grotesk', sans-serif" fontSize="14" fontWeight="500" textAnchor="middle">Initiative Detail</text>
+                  {/* Initiative header */}
+                  <rect x="16" y="80" width="288" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <rect x="16" y="80" width="288" height="4" rx="2" fill="#0eb2af"/>
+                  <text x="32" y="112" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="15" fontWeight="600">Q2 Revenue Initiative</text>
+                  <text x="32" y="132" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">Owner: Sarah Chen, VP Sales</text>
+                  <text x="32" y="164" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="22" fontWeight="400">70%</text>
+                  <text x="80" y="164" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">complete</text>
+                  <text x="220" y="164" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">$1.7M / $2.4M</text>
+                  {/* Milestones */}
+                  <text x="24" y="212" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600">Milestones</text>
+                  {/* Milestone items */}
+                  <rect x="16" y="224" width="288" height="56" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <circle cx="36" cy="252" r="10" fill="#0eb2af"/>
+                  <text x="36" y="256" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="700" textAnchor="middle">✓</text>
+                  <text x="56" y="246" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">Pipeline target met</text>
+                  <text x="56" y="264" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="10">Completed Mar 1</text>
+
+                  <rect x="16" y="288" width="288" height="56" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <circle cx="36" cy="316" r="10" fill="#0eb2af"/>
+                  <text x="36" y="320" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="700" textAnchor="middle">✓</text>
+                  <text x="56" y="310" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">Enterprise demos scheduled</text>
+                  <text x="56" y="328" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="10">Completed Feb 28</text>
+
+                  <rect x="16" y="352" width="288" height="56" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <circle cx="36" cy="380" r="10" fill="#0eb2af" opacity="0.2"/>
+                  <circle cx="36" cy="380" r="10" fill="none" stroke="#0eb2af" strokeWidth="2"/>
+                  <text x="56" y="374" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">Close 3 enterprise deals</text>
+                  <text x="56" y="392" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500">In progress — 1 of 3</text>
+
+                  <rect x="16" y="416" width="288" height="56" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1"/>
+                  <circle cx="36" cy="444" r="10" fill="none" stroke="#e2e8f0" strokeWidth="2"/>
+                  <text x="56" y="438" fill="#1e293b" fontFamily="'Inter', sans-serif" fontSize="12" fontWeight="500">Board presentation</text>
+                  <text x="56" y="456" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="10">Due Apr 15</text>
+
+                  {/* Bottom triangle accent */}
+                  <g transform="translate(240, 490) scale(0.7)" opacity="0.06">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </g>
+
+                  {/* Bottom nav */}
+                  <rect x="0" y="500" width="320" height="80" fill="#ffffff" rx="0"/>
+                  <line x1="0" y1="500" x2="320" y2="500" stroke="#e2e8f0" strokeWidth="1"/>
+                  <text x="50" y="536" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Dashboard</text>
+                  <text x="160" y="536" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="600" textAnchor="middle">Initiatives</text>
+                  <text x="270" y="536" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Insights</text>
+                  <rect x="140" y="545" width="40" height="3" rx="1.5" fill="#0eb2af"/>
+                </svg>
+                <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', padding: '12px 0' }}>Initiative Detail — Milestone view</p>
+              </div>
+            </div>
 
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Breakpoints</h3>
@@ -2930,19 +3630,19 @@ export default function Mockups() {
                     <td style={{ fontWeight: '600' }}>Desktop</td>
                     <td style={{ fontFamily: 'monospace' }}>1200px+</td>
                     <td>48px</td>
-                    <td>56px Lora Light</td>
+                    <td>56px Space Grotesk Light</td>
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Tablet</td>
                     <td style={{ fontFamily: 'monospace' }}>768px - 1199px</td>
                     <td>32px</td>
-                    <td>40px Lora Light</td>
+                    <td>40px Space Grotesk Light</td>
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Mobile</td>
                     <td style={{ fontFamily: 'monospace' }}>&lt; 768px</td>
                     <td>16px</td>
-                    <td>32px Lora Light</td>
+                    <td>32px Space Grotesk Light</td>
                   </tr>
                 </tbody>
               </table>
@@ -2968,18 +3668,18 @@ export default function Mockups() {
             </p>
 
             {[
-              { doTitle: 'Logo Usage', doText: 'Use the full lockup at correct proportions. Maintain clear space around the mark. Display on approved background colors.', dontText: 'Stretch, rotate, or skew the mark. Change individual bracket colors. Apply drop shadows, gradients, or effects. Place on busy backgrounds.' },
+              { doTitle: 'Logo Usage', doText: 'Use the full lockup at correct proportions. Maintain clear space around the mark. Display on approved background colors.', dontText: 'Stretch, rotate, or skew the mark. Change individual mark colors. Apply drop shadows, gradients, or effects. Place on busy backgrounds.' },
               { doTitle: 'Color', doText: 'Use Navy for authority, Teal for innovation, Gold for realization. Colors carry meaning tied to the three pillars.', dontText: 'Use colors purely for decoration. Mix with off-brand palette colors. Use Teal or Gold for body text (accessibility failures).' },
-              { doTitle: 'CTAs', doText: 'Drive toward discovery conversations and consultations. Frame the certification program as selective and high-value.', dontText: 'Include shopping carts or transactional language. Use "Buy Now" or "Add to Cart." This is consultative, not e-commerce.' },
+              { doTitle: 'CTAs', doText: 'Drive toward discovery conversations and consultations. Frame the the TARGA platform as selective and high-value.', dontText: 'Include shopping carts or transactional language. Use "Buy Now" or "Add to Cart." This is consultative, not e-commerce.' },
             ].map((pair, i) => (
               <div key={i} className="grid-2" style={{ marginBottom: '24px' }}>
                 <div className="do-card">
                   <h4 style={{ color: '#16a34a', fontWeight: '600', fontSize: '14px', marginBottom: '16px' }}>{'\u2713'} DO - {pair.doTitle}</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>{pair.doText}</p>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>{pair.doText}</p>
                 </div>
                 <div className="dont-card">
                   <h4 style={{ color: '#dc2626', fontWeight: '600', fontSize: '14px', marginBottom: '16px' }}>{'\u2717'} DON'T - {pair.doTitle}</h4>
-                  <p style={{ fontSize: '13px', color: '#475569', margin: 0, lineHeight: '1.7' }}>{pair.dontText}</p>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>{pair.dontText}</p>
                 </div>
               </div>
             ))}
@@ -3038,57 +3738,33 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', borderRadius: '12px', padding: '40px', border: '1px solid #e2e8f0' }}>
                 <div style={{ background: 'white', borderRadius: '8px', padding: '32px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', aspectRatio: '3.5/2', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                   <Icon size={28} />
                   <div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '16px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Steve Smith</p>
-                    <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Managing Partner</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                    <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>CEO</p>
                   </div>
                   <div style={{ fontSize: '10px', color: '#64748b', lineHeight: '1.8' }}>
-                    steve@consultwhitespace.com<br/>
+                    joe@targa.ai<br/>
                     (555) 123-4567
                   </div>
                 </div>
                 <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', marginTop: '12px' }}>Front - 3.5" x 2"</p>
               </div>
               <div style={{ background: 'white', borderRadius: '12px', padding: '40px', border: '1px solid #e2e8f0' }}>
-                <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', borderRadius: '8px', padding: '32px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '32px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                   <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.06 }}>
                     <Icon size={180} />
                   </div>
                   <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-                    <svg height="80" viewBox="0 0 628.8 521.48" xmlns="http://www.w3.org/2000/svg">
-                      <rect fill="rgba(255,255,255,0.06)" x="0" y="410.72" width="628.8" height="110.75"/>
-                      <path fill="#ffffff" d="M405.28,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#ffffff" d="M251.28,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21c0-10.5,8.75-19.25,19.25-19.25,3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                      <path fill="#fbbf24" d="M443.79,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                      <path fill="#00bfa5" d="M328.28.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75c0-32.55,25.9-57.75,57.75-57.75,2.89,0,5.74.21,8.52.61Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M15.65,313.5l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M121.21,368.11c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77v-52.5c0-2.81.11-5.22.33-7.21l-7.88.44v-4.66c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M189.36,368.11c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM196.24,301.9c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M228.65,352.79l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M279.43,369.61c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM306.24,334.7c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M343.26,371.77c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M388.38,396.42c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM426.62,365.56c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M459.36,369.55c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM481.95,365.28c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M527.3,369.78c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                      <path fill="rgba(255,255,255,0.7)" d="M586.13,369.61c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM612.93,334.7c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M37.93,486.98c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M67.3,486.12v-51.84h6.05v51.84h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M95.16,486.98c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM96.1,481.87c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M122.52,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M152.76,442.13c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM149.74,486.12v-36.29h6.05v36.29h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M180.7,486.12c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M198.63,501.96l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M254.21,486.12v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M292.37,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M330.82,486.98c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM331.75,481.87c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M358.18,486.12v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M438.24,486.98c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M469.13,486.12l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M531.55,486.98c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM531.62,481.8c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M558.05,486.12v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                      <path fill="rgba(255,255,255,0.5)" d="M584.69,486.12v-51.84h6.05v51.84h-6.05ZM607.01,486.12l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
+                    <svg height="80" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
+                      <polygon fill="#0eb2af" points="134.33 88.62 112.09 88.72 123.29 65.52 134.33 88.62"/>
+                      <polygon fill="#1f476a" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
+                      <polygon fill="#1f476a" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
+                      <polygon fill="#0eb2af" points="202.4 183.34 195.93 183.37 199.19 176.61 202.4 183.34"/>
+                      <polygon fill="#1f476a" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
+                      <polygon fill="#1f476a" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
+                      <polygon fill="#0eb2af" points="67.03 183.34 60.56 183.37 63.81 176.61 67.03 183.34"/>
                     </svg>
                   </div>
                 </div>
@@ -3101,14 +3777,14 @@ export default function Mockups() {
             <div className="card-white" style={{ marginBottom: '48px' }}>
               <div style={{ maxWidth: '500px', padding: '20px', background: '#fafafa', borderRadius: '8px' }}>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ borderRight: '2px solid #00bfa5', paddingRight: '16px' }}>
+                  <div style={{ borderRight: '2px solid #0eb2af', paddingRight: '16px' }}>
                     <Icon size={36} />
                   </div>
                   <div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Steve Smith</p>
-                    <p style={{ fontSize: '12px', color: '#475569', margin: '0 0 8px 0' }}>Managing Partner, Consult WhiteSpace</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                    <p style={{ fontSize: '12px', color: '#1f476a', margin: '0 0 8px 0' }}>CEO, TARGA AI</p>
                     <div style={{ fontSize: '11px', color: '#64748b', lineHeight: '1.8' }}>
-                      <span>steve@consultwhitespace.com</span>
+                      <span>joe@targa.ai</span>
                       <span style={{ margin: '0 8px', color: '#cbd5e1' }}>|</span>
                       <span>(555) 123-4567</span>
                     </div>
@@ -3116,19 +3792,19 @@ export default function Mockups() {
                   </div>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>Bracket icon + teal divider line. Book credit included for Steve and Bill.</p>
+              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>A-mark icon + teal divider line. Book credit included for Steve and Bill.</p>
             </div>
 
             {/* LinkedIn Banner */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>LinkedIn Banner</h3>
             <div className="card-white" style={{ marginBottom: '48px' }}>
-              <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', borderRadius: '8px', padding: '40px 48px', aspectRatio: '4/1', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '40px 48px', aspectRatio: '4/1', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', left: '-60px', top: '-60px', opacity: 0.04 }}>
                   <Icon size={300} />
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>See Your Organizational Assets Clearly</p>
-                  <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Consulting Certification - Value Collaborator System - Outcome Dynamics</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>See Your Organizational Assets Clearly</p>
+                  <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Consulting Certification - TARGA performance methodology - Outcome Dynamics</p>
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={56} />
@@ -3140,22 +3816,22 @@ export default function Mockups() {
             {/* Presentation Cover */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Presentation Title Slide</h3>
             <div className="card-white" style={{ marginBottom: '48px' }}>
-              <div style={{ background: 'linear-gradient(135deg, #0f172a, #1a2744)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', right: '60px', bottom: '-40px', opacity: 0.04 }}>
                   <Icon size={320} />
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={36} />
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Organizational Asset<br/>Discovery Workshop</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Organizational Asset<br/>Discovery Workshop</p>
                   <div style={{ display: 'flex', gap: '8px', margin: '20px 0 0 0' }}>
-                    <div style={{ height: '2px', width: '40px', background: '#475569', borderRadius: '1px' }}></div>
-                    <div style={{ height: '2px', width: '40px', background: '#00bfa5', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '40px', background: '#1f476a', borderRadius: '1px' }}></div>
+                    <div style={{ height: '2px', width: '40px', background: '#0eb2af', borderRadius: '1px' }}></div>
                     <div style={{ height: '2px', width: '40px', background: '#fbbf24', borderRadius: '1px' }}></div>
                   </div>
                   <p style={{ fontSize: '14px', color: '#94a3b8', margin: '20px 0 0 0' }}>Prepared for Acme Corp - March 2026</p>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>16:9 slide master - pillar divider line below title</p>
+              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>16:9 slide master - brand accent divider line below title</p>
             </div>
 
             {/* Zoom Background */}
@@ -3168,7 +3844,7 @@ export default function Mockups() {
                 <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <Icon size={24} />
                   <div>
-                    <p style={{ fontFamily: 'Lora, serif', fontSize: '13px', fontWeight: '300', color: '#475569', margin: 0 }}>WhiteSpace</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '13px', fontWeight: '300', color: '#1f476a', margin: 0 }}>TARGA AI</p>
                     <p style={{ fontSize: '8px', color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: '500', margin: 0 }}>Clarity Framework</p>
                   </div>
                 </div>
@@ -3180,17 +3856,17 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Engagement Report Cover</h3>
             <div className="card-white">
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '60px', aspectRatio: '8.5/11', maxWidth: '400px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #475569 30%, #00bfa5 30%, #00bfa5 55%, #475569 55%, #475569 75%, #fbbf24 75%)' }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                 <Icon size={36} />
                 <div>
-                  <p style={{ fontFamily: 'Lora, serif', fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Asset Discovery<br/>& Valuation Report</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Asset Discovery<br/>& Valuation Report</p>
                   <div style={{ height: '1px', background: '#e2e8f0', margin: '16px 0' }}></div>
                   <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Prepared for Acme Corp</p>
                   <p style={{ fontSize: '12px', color: '#94a3b8', margin: '4px 0 0 0' }}>March 2026 - Confidential</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Icon size={20} />
-                  <p style={{ fontSize: '10px', color: '#94a3b8', margin: 0 }}>WhiteSpace Clarity Framework</p>
+                  <p style={{ fontSize: '10px', color: '#94a3b8', margin: 0 }}>TARGA AI</p>
                 </div>
               </div>
               <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>8.5" x 11" - Pillar gradient top bar, icon watermark optional</p>
@@ -3232,71 +3908,67 @@ export default function Mockups() {
               };
 
               const iconSvg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.78 231.71">
-  <path fill="#475569" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-  <path fill="#475569" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-  <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-  <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.86 58.3">
+  <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+  <polygon fill="#1f476a" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
 </svg>`;
 
               const iconWhiteSvg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.78 231.71">
-  <path fill="#ffffff" d="M220.27,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-  <path fill="#ffffff" d="M66.27,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21C0,10.5,8.75,1.75,19.25,1.75c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-  <path fill="#fbbf24" d="M258.78,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-  <path fill="#00bfa5" d="M143.27.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75C77,25.2,102.9,0,134.75,0c2.89,0,5.74.21,8.52.61Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.86 58.3">
+  <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+  <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
 </svg>`;
 
               const colorsCss = `:root {
   /* Primary Palette */
-  --wc-slate: #475569;
-  --wc-teal: #00bfa5;
-  --wc-gold: #fbbf24;
-  --wc-blue: #2563eb;
+  --targa-slate: #1f476a;
+  --targa-teal: #0eb2af;
+  --targa-gold: #fbbf24;
+  --targa-blue: #0eb2af;
 
   /* Neutral Grays */
-  --wc-gray-900: #1e293b;
-  --wc-gray-700: #475569;
-  --wc-gray-500: #64748b;
-  --wc-gray-300: #cbd5e1;
-  --wc-gray-200: #e2e8f0;
-  --wc-gray-100: #f1f5f9;
-  --wc-gray-50: #f8fafc;
+  --targa-gray-900: #1e293b;
+  --targa-gray-700: #1f476a;
+  --targa-gray-500: #64748b;
+  --targa-gray-300: #cbd5e1;
+  --targa-gray-200: #e2e8f0;
+  --targa-gray-100: #f1f5f9;
+  --targa-gray-50: #f8fafc;
 
   /* Semantic */
-  --wc-bg-dark: #0f172a;
-  --wc-bg-dark-end: #1a2744;
-  --wc-text-primary: #1e293b;
-  --wc-text-secondary: #475569;
-  --wc-text-muted: #64748b;
-  --wc-text-faint: #94a3b8;
-  --wc-border: #e2e8f0;
-  --wc-border-light: #f1f5f9;
+  --targa-bg-dark: #132f4a;
+  --targa-bg-dark-end: #1a3a5c;
+  --targa-text-primary: #1e293b;
+  --targa-text-secondary: #1f476a;
+  --targa-text-muted: #64748b;
+  --targa-text-faint: #94a3b8;
+  --targa-border: #e2e8f0;
+  --targa-border-light: #f1f5f9;
 
   /* Typography */
-  --wc-font-headline: 'Lora', Georgia, serif;
-  --wc-font-body: 'DM Sans', Arial, sans-serif;
+  --targa-font-headline: 'Space Grotesk', sans-serif;
+  --targa-font-body: 'Inter', Arial, sans-serif;
 
   /* Spacing */
-  --wc-radius-sm: 8px;
-  --wc-radius-md: 12px;
-  --wc-radius-lg: 16px;
-  --wc-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --wc-shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.08);
+  --targa-radius-sm: 8px;
+  --targa-radius-md: 12px;
+  --targa-radius-lg: 16px;
+  --targa-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --targa-shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.08);
 }`;
 
               const files = [
-                { name: 'Icon Mark (SVG)', desc: 'Full color bracket mark, vector', size: '1 KB', available: true, action: () => downloadSvg(iconSvg, 'whitespace-icon-mark.svg') },
-                { name: 'Icon Mark - White (SVG)', desc: 'White brackets for dark backgrounds', size: '1 KB', available: true, action: () => downloadSvg(iconWhiteSvg, 'whitespace-icon-mark-white.svg') },
+                { name: 'Icon Mark (SVG)', desc: 'Full color TARGA iconmark, vector', size: '1 KB', available: true, action: () => downloadSvg(iconSvg, 'targa-icon-mark.svg') },
+                { name: 'Icon Mark - White (SVG)', desc: 'White iconmark for dark backgrounds', size: '1 KB', available: true, action: () => downloadSvg(iconWhiteSvg, 'targa-icon-mark-white.svg') },
                 { name: 'Combimark - Horizontal (SVG)', desc: 'Icon + wordmark lockup, 940px', size: '18 KB', available: true, action: () => {
                   const el = document.querySelector('[data-combimark-h]');
-                  if (el) downloadSvg(el.outerHTML, 'whitespace-combimark-horizontal.svg');
+                  if (el) downloadSvg(el.outerHTML, 'targa-combimark-horizontal.svg');
                 }},
                 { name: 'Combimark - Vertical (SVG)', desc: 'Stacked icon + wordmark', size: '14 KB', available: true, action: () => {
                   const el = document.querySelector('[data-combimark-v]');
-                  if (el) downloadSvg(el.outerHTML, 'whitespace-combimark-vertical.svg');
+                  if (el) downloadSvg(el.outerHTML, 'targa-combimark-vertical.svg');
                 }},
-                { name: 'Color Swatches (CSS)', desc: 'CSS custom properties for web implementation', size: '1 KB', available: true, action: () => downloadText(colorsCss, 'whitespace-colors.css', 'text/css') },
+                { name: 'Color Swatches (CSS)', desc: 'CSS custom properties for web implementation', size: '1 KB', available: true, action: () => downloadText(colorsCss, 'targa-colors.css', 'text/css') },
                 { name: 'Logo Mark (PNG)', desc: 'Raster with transparency, 2048px', size: '-', available: false },
                 { name: 'Brand Guidelines (PDF)', desc: 'Complete printable standards document', size: '-', available: false },
                 { name: 'Presentation Template', desc: 'PowerPoint/Google Slides master deck', size: '-', available: false },
@@ -3305,45 +3977,31 @@ export default function Mockups() {
               return (
                 <>
                   {/* Hidden SVGs for download extraction */}
-                  <svg data-combimark-h xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.29 233.84" style={{ display: 'none' }}>
-                    <rect fill="#f2f2f2" x="311.49" y="123.09" width="628.8" height="110.75"/>
-                    <path fill="#475569" d="M220.27,231.92c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.87c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#475569" d="M66.27,231.92c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21.82C0,11.32,8.75,2.57,19.25,2.57c3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#fbbf24" d="M258.78,4.61c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21.82c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                    <path fill="#00bfa5" d="M143.27,1.43c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V58.57C77,26.02,102.9.82,134.75.82c2.89,0,5.74.21,8.52.61Z"/>
-                    <path fill="#475569" d="M325.17,25.86l-1.44-4.33c-1.78-5.55-2.85-9.14-3.22-10.77l-6.22.22v-4.88h26.97v3.66c-3.04.15-5.18.65-6.44,1.5-1.26.85-1.89,2.24-1.89,4.16,0,1.78.37,3.92,1.11,6.44,1.33,4.96,3.11,10.51,5.33,16.65.37,1.11.81,2.42,1.33,3.94.52,1.52,1.11,3.27,1.78,5.27.44,1.55,1,3.26,1.67,5.11.67,1.85,1.15,3.18,1.44,4,1.48,4,2.59,7.18,3.33,9.55h.22c1.48-5.03,3-9.92,4.55-14.65,2.66-8.58,5.59-17.65,8.77-27.19,3.33-9.99,5.33-16.21,5.99-18.65h3.55c.89,3.04,2.4,7.79,4.55,14.26,2.15,6.48,3.7,11.16,4.66,14.04,2.22,6.37,3.74,10.88,4.55,13.54.59,2,1.55,5,2.89,8.99,1.48,4.29,2.66,7.96,3.55,10.99h.33c1.78-5.77,3.29-10.54,4.55-14.32,3.77-10.73,6.84-19.98,9.21-27.75.81-2.74,1.55-5.03,2.22-6.88,1.41-3.77,2.55-6.47,3.44-8.1l-8.88.33v-4.88h22.53v3.66c-2.66.3-4.68.85-6.05,1.67-1.37.82-2.59,2.28-3.66,4.38-1.07,2.11-2.42,5.57-4.05,10.38l-5.66,16.87c-5.92,17.98-10.69,31.93-14.32,41.85h-3.33l-20.76-59.38-19.54,59.38h-3.22l-19.87-59.05Z"/>
-                    <path fill="#475569" d="M430.73,80.48c2.14,0,3.7-.54,4.66-1.61.96-1.07,1.54-2.46,1.72-4.16.18-1.7.28-4.29.28-7.77V14.43c0-2.81.11-5.22.33-7.21l-7.88.44V3c4.44,0,7.6-.26,9.49-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v33.85c2.59-2.15,5.51-3.9,8.77-5.27,3.26-1.37,6.4-2.05,9.43-2.05,6.36,0,10.99,2,13.88,5.99,2.89,4,4.37,10.29,4.44,18.87l.11,20.65c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-15.54c0-6.36-1-11.12-3-14.26-2-3.14-5.14-4.72-9.44-4.72-2.74,0-5.46.65-8.16,1.94-2.7,1.3-4.87,2.94-6.49,4.94v32.75c0,2.89-.19,5.4-.56,7.55l6.99-.33v4.55h-22.64v-3.33Z"/>
-                    <path fill="#475569" d="M498.88,80.48c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.48-2.44,1.67-4.11.18-1.67.28-4.27.28-7.83v-25.31c0-2.15.15-4.55.44-7.21l-7.88.44v-4.66c4.37,0,7.49-.26,9.38-.78,1.89-.52,3.35-1.26,4.38-2.22h3.22v44.84c0,3.33-.15,5.85-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM505.76,14.26c-1.18-1.29-1.78-2.83-1.78-4.61s.61-3.33,1.83-4.66c1.22-1.33,2.61-2,4.16-2,1.7,0,3.12.65,4.27,1.94,1.15,1.3,1.72,2.87,1.72,4.72s-.61,3.31-1.83,4.61c-1.22,1.3-2.65,1.94-4.27,1.94s-2.92-.65-4.11-1.94Z"/>
-                    <path fill="#475569" d="M538.18,65.16l.22-32.19-8.55.11v-4.77c3.55-.07,6.57-1.68,9.05-4.83,2.48-3.14,4.31-6.72,5.49-10.71h3.77v15.54h18.65v4.33l-18.65.22c-.08,11.32-.13,19.17-.17,23.53-.04,4.37-.06,6.81-.06,7.33,0,5.25.63,9.16,1.89,11.71,1.26,2.55,3.44,3.83,6.55,3.83,1.92,0,3.83-.59,5.72-1.78,1.89-1.18,3.53-2.81,4.94-4.88l3,2.44c-2.89,4.29-5.74,7.12-8.55,8.49-2.81,1.37-5.55,2.05-8.21,2.05-10.14,0-15.17-6.81-15.1-20.42Z"/>
-                    <path fill="#475569" d="M588.96,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM615.76,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                    <path fill="#475569" d="M652.78,84.14c-3.52-.96-6.6-2.37-9.27-4.22l.55,4.77h-5.77l-.67-23.64h4.33c.37,6.37,2.55,11.27,6.55,14.71,4,3.44,9.06,5.16,15.21,5.16,4.51,0,8.31-1.24,11.38-3.72,3.07-2.48,4.61-5.86,4.61-10.16,0-3.18-.87-5.9-2.61-8.16-1.74-2.26-3.88-4.14-6.44-5.66-2.55-1.52-6.01-3.27-10.38-5.27-4.96-2.37-8.9-4.44-11.82-6.22-2.92-1.78-5.42-4.12-7.49-7.05-2.07-2.92-3.11-6.53-3.11-10.82,0-2.96.68-5.92,2.05-8.88,1.37-2.96,3.74-5.48,7.1-7.55,3.37-2.07,7.83-3.11,13.38-3.11,3.33,0,6.68.43,10.04,1.28,3.37.85,6.46,2.31,9.27,4.38l-.44-4.77h5.66v24.42h-4c-.37-5.84-2.24-10.78-5.61-14.82-3.37-4.03-8.08-6.05-14.15-6.05-4.44,0-7.92,1.24-10.43,3.72-2.52,2.48-3.77,5.57-3.77,9.27,0,2.96.85,5.51,2.55,7.66,1.7,2.15,3.77,3.92,6.22,5.33,2.44,1.41,5.88,3.15,10.32,5.22,5.03,2.29,9.08,4.37,12.16,6.22,3.07,1.85,5.68,4.27,7.83,7.27,2.15,3,3.22,6.68,3.22,11.04s-1.02,7.81-3.05,10.99c-2.04,3.18-5.01,5.66-8.94,7.44-3.92,1.78-8.59,2.66-13.99,2.66-3.48,0-6.98-.48-10.49-1.44Z"/>
-                    <path fill="#475569" d="M697.9,108.78c2.15,0,3.68-.54,4.61-1.61.92-1.07,1.46-2.41,1.61-4,.15-1.59.26-4.24.33-7.94l.22-53.61c0-3.11.15-5.51.44-7.21l-7.88.44v-4.66c4.37,0,7.36-.24,8.99-.72,1.63-.48,2.96-1.24,4-2.28h3.33c.29,3.63.44,5.62.44,5.99,2.22-2,4.88-3.61,7.99-4.83,3.11-1.22,6.18-1.83,9.21-1.83,4.37,0,8.4,1.13,12.1,3.39,3.7,2.26,6.68,5.48,8.94,9.66,2.26,4.18,3.39,9.01,3.39,14.49,0,6.14-1.3,11.6-3.89,16.37-2.59,4.77-6.05,8.49-10.38,11.16-4.33,2.66-9.01,4-14.04,4s-9.55-1.22-13.32-3.66v18.43c0,3.33-.15,5.84-.44,7.55l6.99-.33v4.55h-22.64v-3.33ZM736.14,77.92c2.55-2.15,4.53-5.14,5.94-8.99,1.4-3.85,2.11-8.21,2.11-13.1,0-6.66-1.43-12.3-4.27-16.93-2.85-4.62-7.09-6.94-12.71-6.94-2.44,0-4.81.59-7.1,1.78-2.29,1.18-4.29,2.66-5.99,4.44.07.52.11,2.77.11,6.77l-.11,31.86c3.77,2.89,8.1,4.33,12.99,4.33,3.48,0,6.49-1.07,9.05-3.22Z"/>
-                    <path fill="#475569" d="M768.89,81.92c-2.85-2.44-4.27-5.62-4.27-9.55,0-4.29,1.72-7.92,5.16-10.88,3.44-2.96,7.77-5.16,12.99-6.6,5.22-1.44,10.45-2.13,15.71-2.05v-6.88c0-4.81-.7-8.56-2.11-11.27-1.41-2.7-4.4-4.05-8.99-4.05-2.29,0-4.48.48-6.55,1.44-2.07.96-3.59,2.41-4.55,4.33.96,1.04,1.44,2.44,1.44,4.22,0,1.11-.41,2.16-1.22,3.16-.82,1-2,1.5-3.55,1.5s-2.77-.5-3.66-1.5c-.89-1-1.33-2.31-1.33-3.94,0-2.44.94-4.68,2.83-6.72,1.89-2.03,4.51-3.64,7.88-4.83,3.37-1.18,7.12-1.78,11.27-1.78,6.22,0,10.8,1.65,13.76,4.94,2.96,3.29,4.4,8.49,4.33,15.6l-.11,24.98c0,2.37-.15,4.88-.44,7.55l7.88-.44v4.66h-15.87c-.22-1.11-.48-3.22-.78-6.33-5.4,5.4-11.21,8.1-17.43,8.1-5.4,0-9.53-1.22-12.38-3.66ZM791.47,77.64c2.29-1.07,4.62-2.72,6.99-4.94-.07-1.11-.11-3-.11-5.66l.11-10.43c-6.07.22-11.47,1.46-16.21,3.72-4.74,2.26-7.1,5.72-7.1,10.38,0,2.74.81,4.85,2.44,6.33,1.63,1.48,3.7,2.22,6.22,2.22,2.81,0,5.37-.54,7.66-1.61Z"/>
-                    <path fill="#475569" d="M836.82,82.14c-4.18-2.29-7.49-5.59-9.93-9.88-2.44-4.29-3.66-9.36-3.66-15.21,0-5.18,1.24-10.12,3.72-14.82,2.48-4.7,5.92-8.49,10.32-11.38,4.4-2.89,9.38-4.33,14.93-4.33,4,0,7.55.63,10.66,1.89,3.11,1.26,5.53,2.92,7.27,5,1.74,2.07,2.61,4.33,2.61,6.77,0,1.7-.48,3.11-1.44,4.22-.96,1.11-2.29,1.66-4,1.66s-2.85-.54-3.66-1.61c-.82-1.07-1.22-2.2-1.22-3.39,0-1.85.55-3.33,1.67-4.44-.82-2.29-2.39-3.87-4.72-4.72-2.33-.85-4.64-1.28-6.94-1.28-3.4,0-6.46.93-9.16,2.77-2.7,1.85-4.83,4.55-6.38,8.1-1.55,3.55-2.33,7.81-2.33,12.77s.79,9.36,2.39,13.21c1.59,3.85,3.83,6.86,6.71,9.05,2.89,2.18,6.22,3.27,9.99,3.27,3.33,0,6.6-.91,9.82-2.72,3.22-1.81,5.75-4.09,7.6-6.83l2.89,2.22c-2.74,4.29-6.27,7.55-10.6,9.77-4.33,2.22-8.57,3.33-12.71,3.33-5.03,0-9.64-1.15-13.82-3.44Z"/>
-                    <path fill="#475569" d="M895.65,81.97c-4.11-2.4-7.35-5.84-9.71-10.32-2.37-4.48-3.55-9.64-3.55-15.48,0-5.18,1.18-10.05,3.55-14.6,2.37-4.55,5.68-8.2,9.93-10.93,4.25-2.74,9.08-4.11,14.49-4.11,4.22,0,8.03.93,11.43,2.77,3.4,1.85,6.1,4.61,8.1,8.27s3,8.16,3,13.49l-39.07.67c-.07,8.88,1.39,15.8,4.38,20.76,3,4.96,7.64,7.44,13.93,7.44,3.4,0,6.9-.89,10.49-2.66,3.59-1.78,6.34-3.96,8.27-6.55l2.66,2.22c-2.81,4.29-6.46,7.48-10.93,9.55-4.48,2.07-8.86,3.11-13.15,3.11-5.11,0-9.71-1.2-13.82-3.61ZM922.46,47.06c0-4.44-1-8.25-3-11.43-2-3.18-5-4.77-8.99-4.77-9.18,0-14.62,5.4-16.32,16.21h28.31Z"/>
-                    <path fill="#475569" d="M350.41,199.35c-4.9,0-9.13-1.09-12.71-3.28-3.58-2.18-6.32-5.23-8.24-9.14-1.92-3.91-2.88-8.46-2.88-13.64s.96-9.73,2.88-13.64c1.92-3.91,4.67-6.96,8.24-9.14,3.58-2.18,7.81-3.28,12.71-3.28,5.76,0,10.44,1.37,14.04,4.1s5.9,6.6,6.91,11.59h-6.7c-.77-3.12-2.33-5.63-4.68-7.52-2.35-1.9-5.54-2.84-9.58-2.84-3.55,0-6.66.83-9.32,2.48s-4.72,4.03-6.16,7.13c-1.44,3.1-2.16,6.8-2.16,11.12s.72,8.03,2.16,11.12,3.49,5.47,6.16,7.13c2.66,1.66,5.77,2.48,9.32,2.48,4.03,0,7.22-.92,9.58-2.77,2.35-1.85,3.91-4.31,4.68-7.38h6.7c-1.01,4.85-3.31,8.64-6.91,11.38-3.6,2.74-8.28,4.1-14.04,4.1Z"/>
-                    <path fill="#475569" d="M379.78,198.48v-51.84h6.05v51.84h-6.05Z"/>
-                    <path fill="#475569" d="M407.65,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM408.58,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                    <path fill="#475569" d="M435.01,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                    <path fill="#475569" d="M465.25,154.49c-1.2,0-2.2-.4-2.99-1.19s-1.19-1.79-1.19-2.99.4-2.17,1.19-2.92c.79-.74,1.79-1.12,2.99-1.12s2.14.37,2.95,1.12c.82.75,1.22,1.72,1.22,2.92s-.41,2.2-1.22,2.99c-.82.79-1.8,1.19-2.95,1.19ZM462.22,198.48v-36.29h6.05v36.29h-6.05Z"/>
-                    <path fill="#475569" d="M493.18,198.48c-2.16,0-4.03-.33-5.62-1.01-1.58-.67-2.8-1.81-3.64-3.42-.84-1.61-1.26-3.78-1.26-6.52v-20.23h-6.34v-5.11h6.34l.79-8.78h5.26v8.78h10.51v5.11h-10.51v20.23c0,2.26.46,3.78,1.37,4.57.91.79,2.52,1.19,4.82,1.19h3.89v5.18h-5.62Z"/>
-                    <path fill="#475569" d="M511.11,214.32l8.86-19.87h-2.09l-14.26-32.26h6.55l11.81,27.72,12.46-27.72h6.26l-23.26,52.13h-6.34Z"/>
-                    <path fill="#475569" d="M566.69,198.48v-50.4h30.67v4.97h-24.62v17.71h20.95v4.9h-20.95v22.82h-6.05Z"/>
-                    <path fill="#475569" d="M604.85,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                    <path fill="#475569" d="M643.3,199.35c-2.93,0-5.38-.52-7.34-1.55-1.97-1.03-3.43-2.4-4.39-4.1-.96-1.7-1.44-3.56-1.44-5.58,0-2.45.64-4.52,1.91-6.23,1.27-1.7,3.07-3,5.4-3.89,2.33-.89,5.08-1.33,8.24-1.33h9.58c0-2.25-.35-4.14-1.04-5.65-.7-1.51-1.7-2.65-3.02-3.42-1.32-.77-2.96-1.15-4.93-1.15-2.3,0-4.3.58-5.98,1.73-1.68,1.15-2.71,2.86-3.1,5.11h-6.19c.29-2.59,1.16-4.76,2.63-6.52,1.46-1.75,3.32-3.1,5.58-4.03,2.26-.94,4.61-1.4,7.06-1.4,3.36,0,6.16.61,8.39,1.84,2.23,1.22,3.9,2.93,5,5.11,1.1,2.18,1.66,4.76,1.66,7.74v22.46h-5.4l-.36-6.41c-.48,1.01-1.09,1.96-1.84,2.84-.74.89-1.61,1.66-2.59,2.3-.98.65-2.12,1.16-3.42,1.55-1.3.38-2.76.58-4.39.58ZM644.24,194.24c1.68,0,3.2-.35,4.57-1.04,1.37-.7,2.53-1.66,3.49-2.88.96-1.22,1.69-2.58,2.2-4.07.5-1.49.76-3.05.76-4.68v-.22h-9.07c-2.35,0-4.25.28-5.69.83s-2.47,1.32-3.1,2.3c-.62.98-.94,2.1-.94,3.35s.3,2.42.9,3.38c.6.96,1.49,1.71,2.66,2.23,1.18.53,2.58.79,4.21.79Z"/>
-                    <path fill="#475569" d="M670.66,198.48v-36.29h5.47l.36,5.18c1.15-1.87,2.7-3.35,4.64-4.43,1.94-1.08,4.07-1.62,6.37-1.62,1.87,0,3.56.25,5.08.76,1.51.5,2.86,1.27,4.03,2.3,1.18,1.03,2.1,2.34,2.77,3.92,1.25-2.21,2.98-3.92,5.18-5.15,2.21-1.22,4.54-1.84,6.98-1.84,2.83,0,5.28.57,7.34,1.69,2.06,1.13,3.67,2.83,4.82,5.11,1.15,2.28,1.73,5.17,1.73,8.68v21.67h-5.98v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.6-2.74-6.34-2.74-1.87,0-3.55.49-5.04,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05v-21.02c0-3.65-.74-6.38-2.23-8.21-1.49-1.82-3.58-2.74-6.26-2.74-1.82,0-3.48.49-4.97,1.48-1.49.98-2.66,2.41-3.53,4.28-.86,1.87-1.3,4.18-1.3,6.91v19.3h-6.05Z"/>
-                    <path fill="#475569" d="M750.72,199.35c-3.36,0-6.36-.79-9-2.38-2.64-1.58-4.71-3.8-6.19-6.66-1.49-2.86-2.23-6.18-2.23-9.97s.73-7.18,2.2-10.01c1.46-2.83,3.53-5.04,6.19-6.62s5.72-2.38,9.18-2.38,6.58.79,9.07,2.38c2.5,1.58,4.4,3.66,5.72,6.23,1.32,2.57,1.98,5.39,1.98,8.46v1.51c0,.53-.02,1.13-.07,1.8h-29.74v-4.68h23.83c-.14-3.31-1.24-5.9-3.28-7.78-2.04-1.87-4.6-2.81-7.67-2.81-2.02,0-3.91.47-5.69,1.4-1.78.94-3.19,2.3-4.25,4.1-1.06,1.8-1.58,4.04-1.58,6.73v2.02c0,2.98.54,5.47,1.62,7.49,1.08,2.02,2.5,3.53,4.25,4.54,1.75,1.01,3.64,1.51,5.65,1.51,2.54,0,4.64-.56,6.3-1.69,1.66-1.13,2.87-2.67,3.64-4.64h5.98c-.62,2.21-1.66,4.17-3.1,5.87-1.44,1.7-3.23,3.06-5.36,4.07-2.14,1.01-4.62,1.51-7.45,1.51Z"/>
-                    <path fill="#475569" d="M781.61,198.48l-10.66-36.29h6.05l8.28,30.6h-1.08l9-30.6h6.84l9.14,30.53-1.15.07,8.21-30.6h6.12l-10.58,36.29h-6.19l-9.5-31.97h1.22l-9.5,31.97h-6.19Z"/>
-                    <path fill="#475569" d="M844.04,199.35c-3.36,0-6.38-.78-9.07-2.34-2.69-1.56-4.8-3.77-6.34-6.62-1.54-2.86-2.3-6.18-2.3-9.97s.78-7.26,2.34-10.12c1.56-2.85,3.7-5.06,6.41-6.62,2.71-1.56,5.75-2.34,9.11-2.34s6.52.78,9.18,2.34,4.78,3.77,6.34,6.62c1.56,2.86,2.34,6.21,2.34,10.04s-.79,7.19-2.38,10.04c-1.58,2.86-3.72,5.06-6.41,6.62-2.69,1.56-5.76,2.34-9.22,2.34ZM844.11,194.16c2.06,0,3.98-.51,5.76-1.55,1.78-1.03,3.22-2.58,4.32-4.64,1.1-2.06,1.66-4.61,1.66-7.63s-.54-5.63-1.62-7.67c-1.08-2.04-2.5-3.58-4.25-4.61-1.75-1.03-3.68-1.55-5.8-1.55s-3.92.52-5.72,1.55c-1.8,1.03-3.24,2.57-4.32,4.61s-1.62,4.6-1.62,7.67.54,5.57,1.62,7.63c1.08,2.06,2.5,3.61,4.25,4.64,1.75,1.03,3.66,1.55,5.72,1.55Z"/>
-                    <path fill="#475569" d="M870.53,198.48v-36.29h5.47l.43,6.91c.82-1.63,1.86-3.02,3.13-4.18,1.27-1.15,2.81-2.04,4.61-2.66,1.8-.62,3.85-.94,6.16-.94v6.34h-2.23c-1.54,0-3,.21-4.39.61-1.39.41-2.63,1.07-3.71,1.98-1.08.91-1.92,2.15-2.52,3.71-.6,1.56-.9,3.49-.9,5.8v18.72h-6.05Z"/>
-                    <path fill="#475569" d="M897.17,198.48v-51.84h6.05v51.84h-6.05ZM919.49,198.48l-17.28-19.87,15.77-16.42h7.42l-18.07,18.58.07-4.32,19.8,22.03h-7.7Z"/>
+                  <svg data-combimark-h xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.9 114.15" style={{ display: 'none' }}>
+                    <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
+                    <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
+                    <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                    <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
+                    <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
+                    <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
+                    <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                    <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
+                    <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                    <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
+                    <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
                   </svg>
-                  <svg data-combimark-v xmlns="http://www.w3.org/2000/svg" viewBox="0 0 628.8 521.48" style={{ display: 'none' }}>
-                    <rect fill="#f2f2f2" x="0" y="410.72" width="628.8" height="110.75"/>
-                    <path fill="#475569" d="M405.28,231.1c-2.78.4-5.62.61-8.51.61-31.86,0-57.76-25.21-57.76-57.76V57.05c0-7.95-4.41-14.67-10.73-17.89,2.58-1.32,5.48-2.06,8.52-2.06,10.5,0,19.25,8.75,19.25,19.95v116.9c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#475569" d="M251.28,231.1c-2.78.4-5.63.61-8.52.61-31.85,0-57.75-25.21-57.75-57.76V21c0-10.5,8.75-19.25,19.25-19.25,3.04,0,5.94.74,8.52,2.04-6.32,3.18-10.73,9.75-10.73,17.21v152.95c0,29.59,21.41,53.12,49.23,57.15Z"/>
-                    <path fill="#fbbf24" d="M443.79,3.79c-6.32,3.17-10.74,9.75-10.74,17.21v153.65c0,11.2-8.75,19.95-19.25,19.95-1.39,0-2.76-.15-4.07-.45-1.55-.35-3.04-.89-4.44-1.61.03-.01.05-.03.08-.04,1.59-.82,3.06-1.86,4.36-3.09,3.85-3.62,6.29-8.85,6.29-14.76V21c0-10.5,8.75-19.25,19.25-19.25,2.99,0,5.85.72,8.4,1.98.04.02.08.04.12.06Z"/>
-                    <path fill="#00bfa5" d="M328.28.61c-27.82,4.03-49.23,27.55-49.23,57.14v116.9c0,11.2-8.75,19.95-19.25,19.95-3.04,0-5.94-.74-8.52-2.06,6.32-3.22,10.73-9.94,10.73-17.89V57.75c0-32.55,25.9-57.75,57.75-57.75,2.89,0,5.74.21,8.52.61Z"/>
+                  <svg data-combimark-v xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.9 114.15" style={{ display: 'none' }}>
+                    <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
+                    <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
+                    <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                    <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
+                    <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
+                    <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
+                    <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                    <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
+                    <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                    <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
+                    <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
                   </svg>
 
                   {files.map((file, i) => (
@@ -3353,7 +4011,7 @@ export default function Mockups() {
                         <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>{file.desc}{file.available ? ` - ${file.size}` : ''}</p>
                       </div>
                       {file.available ? (
-                        <button onClick={file.action} style={{ background: '#2563eb', color: 'white', border: 'none', padding: '8px 20px', borderRadius: '6px', cursor: 'pointer', fontSize: '12px', fontWeight: '600', whiteSpace: 'nowrap', transition: 'all 0.2s ease' }}>Download</button>
+                        <button onClick={file.action} style={{ background: '#0eb2af', color: 'white', border: 'none', padding: '8px 20px', borderRadius: '6px', cursor: 'pointer', fontSize: '12px', fontWeight: '600', whiteSpace: 'nowrap', transition: 'all 0.2s ease' }}>Download</button>
                       ) : (
                         <span style={{ fontSize: '12px', fontWeight: '500', color: '#94a3b8', padding: '8px 20px', background: '#f8fafc', borderRadius: '6px', whiteSpace: 'nowrap' }}>Coming Soon</span>
                       )}
@@ -3365,7 +4023,7 @@ export default function Mockups() {
 
             <div className="card-white" style={{ marginTop: '32px', textAlign: 'center' }}>
               <p style={{ fontSize: '14px', color: '#64748b' }}>Questions about assets or need custom formats?</p>
-              <p style={{ fontSize: '14px', color: '#1e293b', fontWeight: '600', marginTop: '8px' }}>Contact Steve Smith</p>
+              <p style={{ fontSize: '14px', color: '#1e293b', fontWeight: '600', marginTop: '8px' }}>Contact Joe Thompson</p>
             </div>
           </>
         )}
@@ -3381,9 +4039,9 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>8-Week Rollout Roadmap</h3>
               {[
-                { week: 'Weeks 1-2', title: 'Internal Training', desc: 'Steve, Bill, and team onboard to brand system', color: '#475569' },
-                { week: 'Weeks 3-4', title: 'Asset Generation', desc: 'Business cards, templates, signage, collateral produced', color: '#475569' },
-                { week: 'Weeks 5-6', title: 'Website & LinkedIn Launch', desc: 'Site goes live, LinkedIn video series begins', color: '#00bfa5' },
+                { week: 'Weeks 1-2', title: 'Internal Training', desc: 'Steve, Bill, and team onboard to brand system', color: '#1f476a' },
+                { week: 'Weeks 3-4', title: 'Asset Generation', desc: 'Business cards, templates, signage, collateral produced', color: '#1f476a' },
+                { week: 'Weeks 5-6', title: 'Website & LinkedIn Launch', desc: 'Site goes live, LinkedIn video series begins', color: '#0eb2af' },
                 { week: 'Weeks 7-8', title: 'Program Go-Live', desc: 'Certification program opens, consultation bookings active', color: '#fbbf24' },
               ].map((phase, i) => (
                 <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', padding: '20px', background: '#f8fafc', borderRadius: '8px', borderLeft: `3px solid ${phase.color}`, marginBottom: '12px' }}>
