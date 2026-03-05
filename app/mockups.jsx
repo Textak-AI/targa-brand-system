@@ -3752,18 +3752,35 @@ export default function Mockups() {
                 <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', marginTop: '12px' }}>Front - 3.5" x 2"</p>
               </div>
               <div style={{ background: 'white', borderRadius: '12px', padding: '40px', border: '1px solid #e2e8f0' }}>
-                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '32px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.06 }}>
-                    <Icon size={180} />
-                  </div>
-                  <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-                    <svg height="80" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
+                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                  {/* Subtle pattern background */}
+                  <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                      <pattern id="bcPattern" x="0" y="0" width="60" height="69" patternUnits="userSpaceOnUse">
+                        <g opacity="0.04">
+                          <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                          <polygon fill="#0eb2af" points="30,31.5 36,43.5 24,43.5"/>
+                        </g>
+                        <g opacity="0.025" transform="translate(30,34.5) scale(1,-1) translate(-30,-21.75)">
+                          <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
+                        </g>
+                      </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#bcPattern)"/>
+                  </svg>
+                  {/* Centered stacked combimark */}
+                  <div style={{ position: 'relative', zIndex: 1, opacity: 0.12 }}>
+                    <svg height="100" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
                       <polygon fill="#0eb2af" points="134.33 88.62 112.09 88.72 123.29 65.52 134.33 88.62"/>
-                      <polygon fill="#1f476a" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
-                      <polygon fill="#1f476a" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
+                      <polygon fill="#ffffff" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
+                      <path fill="#ffffff" d="M172.56,173.47c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                      <polygon fill="#ffffff" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
                       <polygon fill="#0eb2af" points="202.4 183.34 195.93 183.37 199.19 176.61 202.4 183.34"/>
-                      <polygon fill="#1f476a" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
-                      <polygon fill="#1f476a" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
+                      <polygon fill="#ffffff" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
+                      <path fill="#ffffff" d="M106.28,174.68l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                      <polygon fill="#ffffff" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
+                      <path fill="#0eb2af" d="M232.22,145.63l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
+                      <rect fill="#0eb2af" x="243.82" y="146.62" width="2.36" height="15.63"/>
                       <polygon fill="#0eb2af" points="67.03 183.34 60.56 183.37 63.81 176.61 67.03 183.34"/>
                     </svg>
                   </div>
