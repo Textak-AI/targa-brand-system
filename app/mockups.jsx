@@ -2135,9 +2135,9 @@ export default function Mockups() {
         {/* ==================== CERTIFICATION ==================== */}
         {activeTab === 'certification' && (
           <>
-            <h2 className="section-title">Certification Program</h2>
+            <h2 className="section-title">Platform Training</h2>
             <p className="section-subtitle">
-              A highly selective program for consultants who want to master the TARGA performance methodology. Below: how the brand system creates a cohesive, modular training experience.
+              Structured onboarding and proficiency training for enterprise teams adopting the TARGA AI platform. Below: how the brand system creates a cohesive, modular training experience.
             </p>
 
             {/* Program header card */}
@@ -2146,32 +2146,32 @@ export default function Mockups() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                   <Icon size={48} />
                   <div>
-                    <h2>TARGA AI Certification</h2>
-                    <p>Master the TARGA performance methodology. Transform how organizations see their assets.</p>
+                    <h2>TARGA AI Platform Training</h2>
+                    <p>Master the TARGA AI platform. Turn strategic goals into measurable outcomes.</p>
                   </div>
                 </div>
               </div>
               <div className="grid-3">
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#1f476a', marginBottom: '8px' }}>2-3</p>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Candidates per cohort</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#1f476a', marginBottom: '8px' }}>3</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Training modules</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#0eb2af', marginBottom: '8px' }}>3</p>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Core pillars completed</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#0eb2af', marginBottom: '8px' }}>Self-Paced</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>On-demand access</p>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#fbbf24', marginBottom: '8px' }}>1:1</p>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Personal vetting by Joe Thompson</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '40px', fontWeight: '300', color: '#fbbf24', marginBottom: '8px' }}>Live</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Guided onboarding sessions</p>
                 </div>
               </div>
             </div>
 
             {/* Selectivity messaging */}
             <div className="card-white">
-              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Why Selective?</h3>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Why Structured Training?</h3>
               <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', maxWidth: '700px' }}>
-                The TARGA AI Certification is not a commodity credential. Each candidate is personally vetted to ensure they have the experience, mindset, and commitment to represent the methodology at the highest level. This selectivity is what makes certified consultants immediately credible with enterprise clients.
+                TARGA AI is not a task tracker — it's a leadership performance platform. Getting full value from the system requires understanding how the three pillars work together. Structured training ensures every user, from the CEO to the implementation lead, knows how to turn strategic inputs into measurable outcomes from day one.
               </p>
             </div>
 
@@ -2179,7 +2179,7 @@ export default function Mockups() {
             <div style={{ borderTop: '2px solid #e2e8f0', marginTop: '48px', paddingTop: '48px' }}>
               <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '8px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Training Design System</h3>
               <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '40px', maxWidth: '640px', lineHeight: '1.7' }}>
-                These modular components show how the brand system translates into training materials for enrolled consultants. Every element uses the same mark geometry, brand colors, and typography.
+                These modular components show how the brand system translates into training materials for platform users. Every element uses the same mark geometry, brand colors, and typography.
               </p>
 
               {/* Module navigation cards */}
@@ -2256,13 +2256,13 @@ export default function Mockups() {
               </div>
 
               {/* Progress dashboard mockup */}
-              <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Consultant Dashboard</h4>
+              <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Training Dashboard</h4>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '32px', marginBottom: '48px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '32px' }}>
                   <div style={{ width: '48px', height: '48px', background: '#1f476a', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400' }}>JD</div>
                   <div>
                     <p style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Jane Davidson</p>
-                    <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Cohort 2026-A - In Progress</p>
+                    <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Enterprise Pilot - In Progress</p>
                   </div>
                 </div>
                 {/* Pillar progress bars */}
@@ -2325,9 +2325,9 @@ export default function Mockups() {
                   <div style={{ position: 'relative', padding: '24px 32px' }}>
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '3px', height: '100%', background: 'linear-gradient(to bottom, #1f476a, #0eb2af, #fbbf24)', borderRadius: '2px' }}></div>
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '300', color: '#1e293b', lineHeight: '1.6', fontStyle: 'italic', textAlign: 'left', margin: 0 }}>
-                      "The best consultants don't just see assets - they see the connections between them."
+                      "The platform should feel like a conversation with your most prepared advisor."
                     </p>
-                    <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'left', marginTop: '8px' }}>- Bill Adams, Outcome Dynamics</p>
+                    <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'left', marginTop: '8px' }}>- Joe Thompson, CEO</p>
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '12px' }}>Gradient accent line for attributed quotes</p>
                 </div>
@@ -2347,14 +2347,14 @@ export default function Mockups() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '40px' }}>
-              <button className="btn btn-primary">Schedule a Discovery Conversation</button>
+              <button className="btn btn-primary">Request a Demo</button>
             </div>
           </>
         )}
 
         {/* ==================== CURRICULUM ==================== */}
         {activeTab === 'curriculum' && (
-          <Placeholder icon="&#128218;" title="Curriculum" description="Module breakdown, learning objectives, lesson content, and assessment methods for the the TARGA platform." />
+          <Placeholder icon="&#128218;" title="Sales Deck" description="Module breakdown, learning objectives, lesson content, and assessment methods for the TARGA AI platform." />
         )}
 
         {/* ==================== EMAIL ==================== */}
@@ -2393,17 +2393,17 @@ export default function Mockups() {
                 </div>
               </div>
               <div className="card-white" style={{ margin: 0 }}>
-                <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>Bill Adams</p>
+                <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>Mark Sternberger</p>
                 <div style={{ background: '#fafafa', borderRadius: '8px', padding: '24px' }}>
                   <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                     <div style={{ borderRight: '2px solid #0eb2af', paddingRight: '16px', flexShrink: 0 }}>
                       <Icon size={36} />
                     </div>
                     <div>
-                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Bill Adams</p>
-                      <p style={{ fontSize: '12px', color: '#1f476a', margin: '0 0 10px 0' }}>Founder, TARGA performance methodology</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '15px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Mark Sternberger</p>
+                      <p style={{ fontSize: '12px', color: '#1f476a', margin: '0 0 10px 0' }}>CTO, TARGA AI</p>
                       <div style={{ fontSize: '11px', color: '#64748b', lineHeight: '1.8' }}>
-                        info@targa.ai<br/>
+                        mark@targa.ai<br/>
                         (555) 987-6543
                       </div>
                       <div style={{ display: 'flex', gap: '6px', marginTop: '10px' }}>
@@ -2411,7 +2411,7 @@ export default function Mockups() {
                         <div style={{ height: '2px', width: '16px', background: '#0eb2af', borderRadius: '1px' }}></div>
                         <div style={{ height: '2px', width: '16px', background: '#fbbf24', borderRadius: '1px' }}></div>
                       </div>
-                      <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>Author: Outcome Dynamics (Forbes Books, Sept 2026)</p>
+                      <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>TARGA AI - targa.ai</p>
                     </div>
                   </div>
                 </div>
@@ -2509,26 +2509,24 @@ export default function Mockups() {
               </div>
             </div>
 
-            {/* Marketing Email - Book Announcement */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Marketing Email - Book Announcement</h3>
+            {/* Marketing Email - Platform Launch */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Marketing Email - Platform Launch</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
-                  {/* Navy header for book */}
+                  {/* Navy header for launch */}
                   <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '32px', position: 'relative', overflow: 'hidden' }}>
                     <div style={{ position: 'absolute', left: '-40px', bottom: '-40px', opacity: 0.06 }}>
                       <Icon size={160} />
                     </div>
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center', position: 'relative', zIndex: 1 }}>
-                      {/* Book mockup */}
-                      <div style={{ width: '80px', height: '110px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '3px', boxShadow: '6px 3px 16px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '12px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.08)' }}>
-                        <Icon size={18} />
-                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '8px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '6px', lineHeight: '1.3' }}>Outcome Dynamics</p>
+                      <div style={{ width: '80px', height: '80px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '12px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '12px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.08)' }}>
+                        <Icon size={32} />
                       </div>
                       <div>
-                        <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Coming September 2026</p>
-                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 4px 0' }}>Outcome Dynamics</p>
-                        <p style={{ fontSize: '11px', color: '#cbd5e1', margin: 0 }}>By Bill Adams - Forbes Books</p>
+                        <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Now Available</p>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 4px 0' }}>TARGA AI 2.0</p>
+                        <p style={{ fontSize: '11px', color: '#cbd5e1', margin: 0 }}>AI-Native Leadership Platform</p>
                       </div>
                     </div>
                   </div>
@@ -2538,14 +2536,14 @@ export default function Mockups() {
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '10px', width: '85%' }}></div>
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '24px', width: '70%' }}></div>
 
-                    <div style={{ borderLeft: '3px solid #fbbf24', paddingLeft: '16px', marginBottom: '24px' }}>
+                    <div style={{ borderLeft: '3px solid #0eb2af', paddingLeft: '16px', marginBottom: '24px' }}>
                       <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '14px', fontWeight: '300', color: '#1e293b', fontStyle: 'italic', lineHeight: '1.6', margin: 0 }}>
-                        "Organizations sit on millions in unrealized value - not because they lack resources, but because they lack clarity."
+                        "What if you could see — at a glance — what actually drives enterprise value in your organization?"
                       </p>
                     </div>
 
                     <div style={{ textAlign: 'center' }}>
-                      <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Learn More About the Book</button>
+                      <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Request a Demo</button>
                     </div>
                   </div>
                   <div style={{ padding: '20px 32px', borderTop: '1px solid #f1f5f9', textAlign: 'center' }}>
@@ -2558,15 +2556,15 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Design Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: '0 0 12px 0' }}>
-                    Navy gradient header to differentiate from the standard outreach template. Book cover mockup left, title and publishing details right. Gold accent for the launch date.
+                    Navy gradient header to differentiate from the standard outreach template. Platform icon left, launch details right. Gold accent for availability status.
                   </p>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Pull quote uses Gold accent line to tie to the Value pillar. Single CTA - either "Learn More" pre-launch or "Order Now" post-launch.
+                    Pull quote uses Teal accent line to tie to the Intelligence pillar. Single CTA - "Request a Demo" or "Join the Pilot."
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Send Sequence</h4>
-                  {['Teaser (June): Key insight, no cover', 'Reveal (July): Full cover + launch date', 'Pre-order (August): Direct CTA', 'Launch (September): Personal note from Bill', 'Follow-up (October): Early reader reactions'].map((item, i) => (
+                  {['Teaser (May): Key capability preview', 'Feature reveal (June): Full platform screenshots', 'Early access (July): Pilot signup CTA', 'Launch (August): Personal note from Joe Thompson', 'Follow-up (September): Pilot success stories'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'flex-start' }}>
                       <span style={{ fontSize: '11px', fontWeight: '600', color: '#1f476a', background: '#1f476a10', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
                       <span style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.5' }}>{item}</span>
@@ -2577,7 +2575,7 @@ export default function Mockups() {
             </div>
 
             {/* Transactional/Welcome Email */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certification Welcome Email</h3>
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Platform Onboarding Email</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
@@ -2587,7 +2585,7 @@ export default function Mockups() {
                     <div style={{ textAlign: 'center', marginBottom: '24px' }}>
                       <Icon size={36} />
                       <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '300', color: '#1e293b', margin: '16px 0 4px 0' }}>Welcome to the Program</p>
-                      <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Your certification journey begins now.</p>
+                      <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Your platform onboarding begins now.</p>
                     </div>
 
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '10px', width: '100%' }}></div>
@@ -2598,7 +2596,7 @@ export default function Mockups() {
                     {[
                       { num: '1', label: 'Access your learning portal', color: '#1f476a' },
                       { num: '2', label: 'Review Module 01: Plan & Capture', color: '#0eb2af' },
-                      { num: '3', label: 'Schedule your first mentoring session', color: '#fbbf24' },
+                      { num: '3', label: 'Schedule your first onboarding session', color: '#fbbf24' },
                     ].map((step, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px', padding: '12px 16px', background: '#f8fafc', borderRadius: '8px' }}>
                         <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: step.color, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '12px', fontWeight: '600', flexShrink: 0 }}>{step.num}</div>
@@ -2620,7 +2618,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Template Purpose</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Sent immediately after a consultant is accepted into the the TARGA platform. This is their first branded touchpoint as an enrolled participant - it should feel premium and welcoming, not transactional. The three numbered steps use brand colors to foreshadow the platform structure.
+                    Sent immediately after a new enterprise team is onboarded to the TARGA AI platform. This is their first branded touchpoint as a platform user - it should feel premium and welcoming, not transactional. The three numbered steps use brand colors to foreshadow the platform structure.
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
@@ -2689,28 +2687,28 @@ export default function Mockups() {
                     <td>Schedule a Discovery Conversation</td>
                   </tr>
                   <tr>
-                    <td style={{ fontWeight: '600' }}>Book Announcement</td>
+                    <td style={{ fontWeight: '600' }}>Platform Launch</td>
                     <td>Navy gradient</td>
-                    <td>Book campaign sequence</td>
-                    <td>Learn More / Order Now</td>
+                    <td>Launch campaign sequence</td>
+                    <td>Request a Demo / Join the Pilot</td>
                   </tr>
                   <tr>
-                    <td style={{ fontWeight: '600' }}>Certification Welcome</td>
+                    <td style={{ fontWeight: '600' }}>Platform Onboarding</td>
                     <td>Pillar top bar (white bg)</td>
-                    <td>Acceptance into program</td>
+                    <td>New team provisioned</td>
                     <td>Access Your Portal</td>
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Module Completion</td>
                     <td>Pillar color of completed module</td>
-                    <td>Module assessment passed</td>
+                    <td>Training module completed</td>
                     <td>Continue to Next Module</td>
                   </tr>
                   <tr>
-                    <td style={{ fontWeight: '600' }}>Certification Complete</td>
-                    <td>Dark gradient + certificate preview</td>
-                    <td>All three pillars passed</td>
-                    <td>Download Your Certificate</td>
+                    <td style={{ fontWeight: '600' }}>Training Complete</td>
+                    <td>Dark gradient + completion summary</td>
+                    <td>All three modules completed</td>
+                    <td>Explore Advanced Features</td>
                   </tr>
                 </tbody>
               </table>
@@ -2744,7 +2742,7 @@ export default function Mockups() {
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '300', color: 'white', lineHeight: '1.4', margin: '0 0 16px 0', maxWidth: '320px' }}>
                       Most organizations undervalue what they already have.
                     </p>
-                    <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Bill Adams - Outcome Dynamics</p>
+                    <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Joe Thompson - TARGA AI</p>
                   </div>
                 </div>
                 {/* Post caption preview */}
@@ -2775,8 +2773,8 @@ export default function Mockups() {
               </div>
             </div>
 
-            {/* LinkedIn Post - Certification Announcement */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certification Announcement</h3>
+            {/* LinkedIn Post - Pilot Launch Announcement */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Pilot Launch Announcement</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 <div style={{ background: 'white', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627', border: '1px solid #f1f5f9' }}>
@@ -2786,11 +2784,11 @@ export default function Mockups() {
                   </div>
                   <div style={{ position: 'relative', zIndex: 1 }}>
                     <Icon size={32} />
-                    <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>Now Certified</p>
-                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Jane Davidson</p>
-                    <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>TARGA AI - Cohort 2026-A</p>
+                    <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>Now Live</p>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Pilot Program Launch</p>
+                    <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>TARGA AI - Enterprise Beta 2026</p>
                     <div style={{ display: 'flex', gap: '16px' }}>
-                      {['Plan & Capture', 'Visibility & Sync', 'Performance & Impact'].map((p, i) => (
+                      {['Visibility', 'Intelligence', 'Value'].map((p, i) => (
                         <span key={i} style={{ fontSize: '10px', fontWeight: '600', color: ['#1f476a', '#0eb2af', '#d97706'][i], background: ['#1f476a10', '#0eb2af10', '#fbbf2410'][i], padding: '4px 10px', borderRadius: '12px' }}>{p}</span>
                       ))}
                     </div>
@@ -2798,7 +2796,7 @@ export default function Mockups() {
                 </div>
                 <div style={{ padding: '20px' }}>
                   <p style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Congratulate by name. Mention cohort and pillars completed. Reinforce selectivity. Tag the certified consultant.
+                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Announce pilot milestone. Mention platform capabilities and the three pillars. Reinforce enterprise positioning. Tag pilot partners where permitted.
                   </p>
                 </div>
               </div>
@@ -2806,20 +2804,20 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>When to Use</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Post from the company page when a consultant completes certification. The certified consultant should reshare with their own commentary. This is the highest-engagement content type - it's personal, celebratory, and demonstrates program traction.
+                    Post from the company page when a new pilot customer goes live on the platform. Tag the partner company where NDA allows. This drives social proof and demonstrates market traction.
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Light background with brand gradient top bar. Pillar tags visually reinforce what was mastered. Clean, credential-forward - not promotional.
+                    Light background with brand gradient top bar. Pillar tags visually reinforce the platform framework. Clean, milestone-forward — not promotional.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* LinkedIn Post - Book Promo */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Book Launch - Outcome Dynamics</h3>
+            {/* LinkedIn Post - Platform Launch */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Platform Launch</h3>
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
@@ -2827,29 +2825,29 @@ export default function Mockups() {
                     <Icon size={280} />
                   </div>
                   <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '32px', height: '100%' }}>
-                    {/* Book mockup */}
-                    <div style={{ width: '120px', height: '160px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '4px', boxShadow: '8px 4px 20px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '16px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.1)' }}>
+                    {/* Platform mockup */}
+                    <div style={{ width: '120px', height: '160px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '8px', boxShadow: '8px 4px 20px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '16px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.1)' }}>
                       <Icon size={24} />
-                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '11px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '8px', lineHeight: '1.2' }}>Outcome Dynamics</p>
-                      <p style={{ fontSize: '7px', color: '#94a3b8', textAlign: 'center', marginTop: '4px' }}>Bill Adams</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '11px', fontWeight: '400', color: 'white', textAlign: 'center', marginTop: '8px', lineHeight: '1.2' }}>TARGA AI</p>
+                      <p style={{ fontSize: '7px', color: '#94a3b8', textAlign: 'center', marginTop: '4px' }}>Platform 2.0</p>
                     </div>
                     <div>
-                      <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 8px 0' }}>September 2026</p>
-                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 8px 0' }}>Outcome<br/>Dynamics</p>
-                      <p style={{ fontSize: '11px', color: '#cbd5e1', lineHeight: '1.5', margin: 0 }}>The definitive guide to organizational asset conversion. Forbes Books.</p>
+                      <p style={{ fontSize: '10px', fontWeight: '600', color: '#fbbf24', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 8px 0' }}>July 2026</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: 'white', lineHeight: '1.3', margin: '0 0 8px 0' }}>TARGA AI<br/>Platform 2.0</p>
+                      <p style={{ fontSize: '11px', color: '#cbd5e1', lineHeight: '1.5', margin: 0 }}>AI-native agentic architecture. The next generation Leader Experience.</p>
                     </div>
                   </div>
                 </div>
                 <div style={{ padding: '20px' }}>
                   <p style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Announce the book with a key insight from it. Link to pre-order or landing page. Use the book launch as a credibility anchor for all other content.
+                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Announce the platform milestone with a key capability. Link to demo request or landing page. Use the launch as a credibility anchor for all other content.
                   </p>
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Campaign Sequence</h4>
-                  {['Teaser: Key insight from the book (no cover reveal)', 'Cover reveal: Full visual with launch date', 'Pre-order: Direct CTA with landing page link', 'Launch day: Personal post from Bill', 'Post-launch: Reader testimonials and press'].map((item, i) => (
+                  {['Teaser: Key capability preview (no full UI reveal)', 'Feature reveal: Full platform screenshots with launch date', 'Early access: Direct CTA for pilot signups', 'Launch day: Personal post from Joe Thompson', 'Post-launch: Pilot success stories and testimonials'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '10px', alignItems: 'flex-start' }}>
                       <span style={{ fontSize: '11px', fontWeight: '600', color: '#1f476a', background: '#1f476a10', padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>{i + 1}</span>
                       <span style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.5' }}>{item}</span>
@@ -2859,7 +2857,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Navy gradient background to differentiate from thought leadership posts. Book mockup left, copy right. Gold accent for launch date.
+                    Navy gradient background to differentiate from thought leadership posts. Platform mockup left, copy right. Gold accent for launch date.
                   </p>
                 </div>
               </div>
@@ -2877,8 +2875,8 @@ export default function Mockups() {
                       <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.6)', fontWeight: '500' }}>TARGA AI</span>
                     </div>
                     <div style={{ position: 'absolute', bottom: '0', left: '0', right: '0', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', padding: '40px 24px 20px 24px', zIndex: 2 }}>
-                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>Why Consultants Leave McKinsey</p>
-                      <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0 }}>Joe Thompson & Bill Adams - Episode 3</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>Why CEOs Fly Blind on Enterprise Value</p>
+                      <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0 }}>Joe Thompson - Episode 1</p>
                     </div>
                     {/* Play button */}
                     <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid rgba(255,255,255,0.3)', zIndex: 2 }}>
@@ -2898,9 +2896,9 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>LinkedIn Video Series</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: '0 0 16px 0' }}>
-                    6-episode series tied to the Outcome Dynamics launch. Each episode maps to the methodology and builds toward the certification pitch.
+                    6-episode series tied to the TARGA AI platform launch. Each episode maps to enterprise pain points and builds toward the demo request.
                   </p>
-                  {['Competitive differentiation', 'Client story as proof', 'Methodology deep-dive', 'Asset discovery walkthrough', 'Book preview / key insights', 'Certification program overview'].map((ep, i) => (
+                  {['Why CEOs fly blind on enterprise value', 'How fragmented tools fail leadership teams', 'The Leader Experience — defining a new category', 'Inside the platform: AI-native visibility', 'Pilot customer story: measurable outcomes', 'Request a demo: the 100 CEO initiative'].map((ep, i) => (
                     <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'center' }}>
                       <span style={{ fontSize: '10px', fontWeight: '600', color: ['#1f476a', '#0eb2af', '#1f476a', '#0eb2af', '#d97706', '#1f476a'][i], background: ['#1f476a10', '#0eb2af10', '#1f476a10', '#0eb2af10', '#fbbf2410', '#1f476a10'][i], padding: '2px 8px', borderRadius: '4px', flexShrink: 0 }}>EP {i + 1}</span>
                       <span style={{ fontSize: '12px', color: '#64748b' }}>{ep}</span>
@@ -2943,13 +2941,13 @@ export default function Mockups() {
         {/* ==================== CERTIFICATE ==================== */}
         {activeTab === 'certificate' && (
           <>
-            <h2 className="section-title">Certificate Design</h2>
+            <h2 className="section-title">Sales Collateral</h2>
             <p className="section-subtitle">
-              Certification credential, digital badge, and display guidelines for certified TARGA consultants.
+              One-pagers, leave-behinds, and branded collateral templates for CEO conversations and pilot engagements.
             </p>
 
             {/* Certificate mockup */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Certificate of Completion</h3>
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Executive One-Pager</h3>
             <div className="card-white" style={{ padding: '48px', marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '2px solid #e2e8f0', borderRadius: '4px', padding: '60px', maxWidth: '720px', margin: '0 auto', position: 'relative', overflow: 'hidden' }}>
                 {/* Top pillar bar */}
@@ -2962,20 +2960,19 @@ export default function Mockups() {
                 <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <Icon size={40} />
                   <p style={{ fontSize: '10px', fontWeight: '600', color: '#64748b', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 4px 0' }}>TARGA AI</p>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', margin: '24px 0 8px 0' }}>Certificate of Completion</p>
-                  <p style={{ fontSize: '14px', color: '#64748b', margin: '0 0 32px 0' }}>This certifies that</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', margin: '24px 0 8px 0' }}>The Leader Experience™</p>
+                  <p style={{ fontSize: '14px', color: '#64748b', margin: '0 0 32px 0' }}>AI-Powered Value Creation for Enterprise Leaders</p>
 
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '400', color: '#1e293b', margin: '0 0 8px 0', borderBottom: '1px solid #e2e8f0', paddingBottom: '8px', display: 'inline-block', minWidth: '300px' }}>Jane Davidson</p>
                   <p style={{ fontSize: '14px', color: '#64748b', margin: '16px 0 32px 0', lineHeight: '1.7', maxWidth: '480px', marginLeft: 'auto', marginRight: 'auto' }}>
-                    has successfully completed all requirements of the TARGA AI Certification program and demonstrated mastery of the TARGA performance methodology.
+                    The leadership performance platform that turns strategic goals into measurable outcomes — giving executives real-time visibility into what drives enterprise value.
                   </p>
 
                   {/* Pillar badges */}
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '32px' }}>
                     {[
-                      { label: 'Plan & Capture', color: '#1f476a' },
-                      { label: 'Visibility & Sync', color: '#0eb2af' },
-                      { label: 'Performance & Impact', color: '#fbbf24' },
+                      { label: 'Visibility', color: '#1f476a' },
+                      { label: 'Intelligence', color: '#0eb2af' },
+                      { label: 'Value', color: '#fbbf24' },
                     ].map((p, i) => (
                       <div key={i} style={{ textAlign: 'center' }}>
                         <div style={{ width: '48px', height: '48px', borderRadius: '50%', border: `2px solid ${p.color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 6px auto' }}>
@@ -2986,86 +2983,80 @@ export default function Mockups() {
                     ))}
                   </div>
 
-                  {/* Signatures */}
+                  {/* Contact */}
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '80px', marginTop: '24px' }}>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ borderBottom: '1px solid #cbd5e1', width: '160px', marginBottom: '8px', height: '24px' }}></div>
                       <p style={{ fontSize: '12px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
-                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>CEO</p>
-                    </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ borderBottom: '1px solid #cbd5e1', width: '160px', marginBottom: '8px', height: '24px' }}></div>
-                      <p style={{ fontSize: '12px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Bill Adams</p>
-                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Founder, TARGA performance methodology</p>
+                      <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>CEO, TARGA AI</p>
                     </div>
                   </div>
 
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginTop: '32px', fontSize: '11px', color: '#94a3b8' }}>
-                    <span>Cohort 2026-A</span>
+                    <span>targa.ai</span>
                     <span>|</span>
-                    <span>Issued March 15, 2026</span>
+                    <span>Request a Demo</span>
                     <span>|</span>
-                    <span>Credential ID: WCF-2026-0042</span>
+                    <span>joe@targa.ai</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Digital Badge */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Digital Badge</h3>
+            {/* Branded Assets */}
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Branded Assets</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
-                <div style={{ width: '120px', height: '120px', borderRadius: '50%', background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '3px solid #0eb2af', boxShadow: '0 0 0 6px #132f4a, 0 0 0 8px #1f476a' }}>
+                <div style={{ width: '120px', height: '120px', borderRadius: '12px', background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '1px solid rgba(255,255,255,0.1)' }}>
                   <Icon size={32} />
-                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#0eb2af', letterSpacing: '1px', textTransform: 'uppercase', marginTop: '4px' }}>Certified</p>
+                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#0eb2af', letterSpacing: '1px', textTransform: 'uppercase', marginTop: '4px' }}>One-Pager</p>
                 </div>
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>LinkedIn Badge</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>120x120px - Profile credential</p>
+                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Executive Summary</p>
+                <p style={{ fontSize: '12px', color: '#64748b' }}>8.5" x 11" - CEO leave-behind</p>
               </div>
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
                 <div style={{ width: '120px', height: '120px', borderRadius: '12px', background: 'white', border: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto' }}>
                   <Icon size={28} />
-                  <p style={{ fontSize: '8px', fontWeight: '600', color: '#1f476a', letterSpacing: '0.5px', marginTop: '6px' }}>CERTIFIED</p>
+                  <p style={{ fontSize: '8px', fontWeight: '600', color: '#1f476a', letterSpacing: '0.5px', marginTop: '6px' }}>TRIFOLD</p>
                   <div style={{ display: 'flex', gap: '3px', marginTop: '4px' }}>
                     <div style={{ width: '12px', height: '2px', background: '#1f476a', borderRadius: '1px' }}></div>
                     <div style={{ width: '12px', height: '2px', background: '#0eb2af', borderRadius: '1px' }}></div>
                     <div style={{ width: '12px', height: '2px', background: '#fbbf24', borderRadius: '1px' }}></div>
                   </div>
                 </div>
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Email Badge</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Light variant for signatures</p>
+                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Trifold Brochure</p>
+                <p style={{ fontSize: '12px', color: '#64748b' }}>Event and meeting handout</p>
               </div>
               <div className="box" style={{ textAlign: 'center', padding: '40px' }}>
                 <div style={{ width: '120px', height: '120px', borderRadius: '12px', background: '#f8fafc', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto', border: '1px solid #e2e8f0' }}>
-                  <div style={{ fontSize: '32px', color: '#1f476a' }}>{'\u2764'}</div>
-                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', marginTop: '4px' }}>SCAN TO VERIFY</p>
+                  <Icon size={28} />
+                  <p style={{ fontSize: '7px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', marginTop: '4px' }}>SALES SHEET</p>
                 </div>
-                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>QR Verification</p>
-                <p style={{ fontSize: '12px', color: '#64748b' }}>Links to credential page</p>
+                <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b' }}>Feature Comparison</p>
+                <p style={{ fontSize: '12px', color: '#64748b' }}>Competitive positioning sheet</p>
               </div>
             </div>
 
             {/* Credential display guidelines */}
             <div className="card-white">
-              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Credential Display Rules</h3>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Collateral Guidelines</h3>
               <div className="grid-2">
                 <div className="do-card">
                   <h4 style={{ color: '#16a34a', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2713'} Approved Uses</h4>
                   <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
-                    LinkedIn profile credentials section. Email signature badge. Consulting proposals and engagement decks. Personal website or portfolio. Conference speaker bios.
+                    CEO meeting leave-behinds. Conference and event handouts. Email attachments for discovery follow-ups. Pilot engagement onboarding packets. Digital download from targa.ai.
                   </p>
                 </div>
                 <div className="dont-card">
                   <h4 style={{ color: '#dc2626', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2717'} Not Permitted</h4>
                   <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
-                    Modifying the badge colors or layout. Claiming certification without completing all three pillars. Using "TARGA Certified" without the full credential ID. Displaying an expired credential.
+                    Modifying brand colors, typography, or layout. Adding third-party logos without approval. Including pricing on collateral distributed externally. Using outdated platform screenshots.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="card-white">
-              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Certificate Specifications</h3>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Collateral Specifications</h3>
               <table className="spec-table">
                 <thead>
                   <tr>
@@ -3074,11 +3065,11 @@ export default function Mockups() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ fontWeight: '600' }}>Print Size</td><td>11" x 8.5" (landscape)</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Paper</td><td>100lb premium linen or cotton stock</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Space Grotesk Light (name), Inter (body), uppercase tracking for labels</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>One-Pager</td><td>8.5" x 11" (portrait), 100lb premium stock</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Trifold</td><td>8.5" x 11" folded to 3.67" x 8.5", 100lb gloss</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Space Grotesk Light (headlines), Inter (body), uppercase tracking for labels</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Top Bar</td><td>4px pillar gradient (Navy 30% / Teal 25% / Navy 20% / Gold 25%)</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Credential ID</td><td>Format: WCF-[YEAR]-[SEQUENTIAL 4-DIGIT]</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>CTA</td><td>"Request a Demo" or "Schedule a Discovery Conversation"</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Digital Format</td><td>PDF with embedded fonts, 300 DPI for print</td></tr>
                 </tbody>
               </table>
@@ -3091,7 +3082,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Presentation Deck</h2>
             <p className="section-subtitle">
-              Slide masters, layout patterns, and formatting guidelines for consulting presentations and workshop decks.
+              Slide masters, layout patterns, and formatting guidelines for sales presentations and workshop decks.
             </p>
 
             {/* Title slide */}
@@ -3252,8 +3243,8 @@ export default function Mockups() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                   <Icon size={36} />
                   <div>
-                    <h2>Goals, Plans & Objectives Capture Workshop</h2>
-                    <p>A structured full-day engagement using the TARGA AI</p>
+                    <h2>Strategic Goals & Value Mapping Workshop</h2>
+                    <p>A structured full-day engagement using the TARGA AI platform</p>
                   </div>
                 </div>
               </div>
@@ -3314,16 +3305,16 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', marginTop: '48px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Workshop Deliverables</h3>
             <div className="grid-3" style={{ marginBottom: '48px' }}>
               <div className="box accent-navy" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#1f476a', marginBottom: '8px' }}>Asset Gap Map</h4>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Complete inventory of organizational assets with utilization scores and unrealized potential estimates.</p>
+                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#1f476a', marginBottom: '8px' }}>Strategic Priority Matrix</h4>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Complete inventory of strategic initiatives scored by impact, resource readiness, and timeline feasibility.</p>
               </div>
               <div className="box accent-teal" style={{ paddingLeft: '28px' }}>
-                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#0eb2af', marginBottom: '8px' }}>Asset System Map</h4>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Visual dependency map showing how assets connect, where bottlenecks exist, and where value multiplies.</p>
+                <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#0eb2af', marginBottom: '8px' }}>Initiative Dependency Map</h4>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Visual dependency map showing how initiatives connect, where bottlenecks exist, and where value multiplies.</p>
               </div>
               <div className="box accent-gold" style={{ paddingLeft: '28px' }}>
                 <h4 style={{ fontSize: '14px', fontWeight: '600', color: '#d97706', marginBottom: '8px' }}>90-Day Action Plan</h4>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Prioritized conversion initiatives with owners, timelines, KPIs, and expected value capture for each.</p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Prioritized execution initiatives with owners, timelines, KPIs, and expected value outcomes for each.</p>
               </div>
             </div>
 
@@ -3333,7 +3324,7 @@ export default function Mockups() {
               <div className="grid-2">
                 <div>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Printed Materials</h4>
-                  {['Participant workbook (branded, spiral-bound)', 'Asset inventory worksheets (per participant)', 'System mapping templates (A3 format)', '90-day planning templates', 'Certificate of participation'].map((item, i) => (
+                  {['Participant workbook (branded, spiral-bound)', 'Strategic initiative worksheets (per participant)', 'Initiative mapping templates (A3 format)', '90-day planning templates', 'Workshop summary document'].map((item, i) => (
                     <div key={i} className="checklist-item">
                       <div className="checklist-icon">{'\u2713'}</div>
                       <div className="checklist-text">{item}</div>
@@ -3360,7 +3351,7 @@ export default function Mockups() {
                   The three sessions are sequenced intentionally - Plan & Capture must complete before Visibility & Sync begins, and Visibility before Performance & Impact. Do not allow the group to jump ahead to solutions before the strategic capture is thorough. The most common facilitator mistake is letting the group rush past discovery.
                 </p>
                 <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', margin: 0 }}>
-                  Use the brand colors physically in the room - slate post-its for assets, teal for system connections, gold for value conversion opportunities. This reinforces the methodology visually and makes the Asset System Map immediately legible.
+                  Use the brand colors physically in the room - navy post-its for strategic goals, teal for initiative connections, gold for value creation opportunities. This reinforces the platform framework visually and makes the Initiative Dependency Map immediately legible.
                 </p>
               </div>
             </div>
@@ -3670,7 +3661,7 @@ export default function Mockups() {
             {[
               { doTitle: 'Logo Usage', doText: 'Use the full lockup at correct proportions. Maintain clear space around the mark. Display on approved background colors.', dontText: 'Stretch, rotate, or skew the mark. Change individual mark colors. Apply drop shadows, gradients, or effects. Place on busy backgrounds.' },
               { doTitle: 'Color', doText: 'Use Navy for authority, Teal for innovation, Gold for realization. Colors carry meaning tied to the three pillars.', dontText: 'Use colors purely for decoration. Mix with off-brand palette colors. Use Teal or Gold for body text (accessibility failures).' },
-              { doTitle: 'CTAs', doText: 'Drive toward discovery conversations and consultations. Frame the the TARGA platform as selective and high-value.', dontText: 'Include shopping carts or transactional language. Use "Buy Now" or "Add to Cart." This is consultative, not e-commerce.' },
+              { doTitle: 'CTAs', doText: 'Drive toward discovery conversations and consultations. Frame the TARGA AI platform as selective and high-value.', dontText: 'Include shopping carts or transactional language. Use "Buy Now" or "Add to Cart." This is consultative, not e-commerce.' },
             ].map((pair, i) => (
               <div key={i} className="grid-2" style={{ marginBottom: '24px' }}>
                 <div className="do-card">
@@ -3752,35 +3743,18 @@ export default function Mockups() {
                 <p style={{ fontSize: '12px', color: '#64748b', textAlign: 'center', marginTop: '12px' }}>Front - 3.5" x 2"</p>
               </div>
               <div style={{ background: 'white', borderRadius: '12px', padding: '40px', border: '1px solid #e2e8f0' }}>
-                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                  {/* Subtle pattern background */}
-                  <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <defs>
-                      <pattern id="bcPattern" x="0" y="0" width="60" height="69" patternUnits="userSpaceOnUse">
-                        <g opacity="0.04">
-                          <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
-                          <polygon fill="#0eb2af" points="30,31.5 36,43.5 24,43.5"/>
-                        </g>
-                        <g opacity="0.025" transform="translate(30,34.5) scale(1,-1) translate(-30,-21.75)">
-                          <polygon fill="#ffffff" points="30,3 54,43.5 42,43.5 30,22.5 18,43.5 6,43.5"/>
-                        </g>
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#bcPattern)"/>
-                  </svg>
-                  {/* Centered stacked combimark */}
-                  <div style={{ position: 'relative', zIndex: 1, opacity: 0.12 }}>
-                    <svg height="100" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
+                <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '32px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                  <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.06 }}>
+                    <Icon size={180} />
+                  </div>
+                  <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
+                    <svg height="80" viewBox="0 0 246.18 195.77" xmlns="http://www.w3.org/2000/svg">
                       <polygon fill="#0eb2af" points="134.33 88.62 112.09 88.72 123.29 65.52 134.33 88.62"/>
-                      <polygon fill="#ffffff" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
-                      <path fill="#ffffff" d="M172.56,173.47c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
-                      <polygon fill="#ffffff" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
+                      <polygon fill="#1f476a" points="177.78 113.68 158.08 113.76 123.44 41.28 88.35 114.06 68.4 114.15 112.75 22.18 120.07 6.97 123.44 0 177.78 113.68"/>
+                      <polygon fill="#1f476a" points="220.02 194.14 216.6 194.16 199.28 157.93 181.74 194.31 178.23 194.33 199.26 150.71 220.02 194.14"/>
                       <polygon fill="#0eb2af" points="202.4 183.34 195.93 183.37 199.19 176.61 202.4 183.34"/>
-                      <polygon fill="#ffffff" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
-                      <path fill="#ffffff" d="M106.28,174.68l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
-                      <polygon fill="#ffffff" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
-                      <path fill="#0eb2af" d="M232.22,145.63l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
-                      <rect fill="#0eb2af" x="243.82" y="146.62" width="2.36" height="15.63"/>
+                      <polygon fill="#1f476a" points="84.7 194.15 81.28 194.16 63.97 157.93 46.42 194.31 42.91 194.33 63.95 150.71 84.7 194.15"/>
+                      <polygon fill="#1f476a" points="45.35 150.09 43.94 153.01 21.9 153.01 21.9 194.85 18.54 194.85 18.54 153.01 0 153.01 1.4 150.1 45.35 150.09"/>
                       <polygon fill="#0eb2af" points="67.03 183.34 60.56 183.37 63.81 176.61 67.03 183.34"/>
                     </svg>
                   </div>
@@ -3805,11 +3779,11 @@ export default function Mockups() {
                       <span style={{ margin: '0 8px', color: '#cbd5e1' }}>|</span>
                       <span>(555) 123-4567</span>
                     </div>
-                    <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>Author of Outcome Dynamics (Forbes Books, Sept 2026)</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8', marginTop: '8px', fontStyle: 'italic' }}>The Leader Experience™ - targa.ai</p>
                   </div>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>A-mark icon + teal divider line. Book credit included for Steve and Bill.</p>
+              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>A-mark icon + teal divider line. LX tagline included for brand reinforcement.</p>
             </div>
 
             {/* LinkedIn Banner */}
@@ -3821,7 +3795,7 @@ export default function Mockups() {
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>See Your Organizational Assets Clearly</p>
-                  <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Consulting Certification - TARGA performance methodology - Outcome Dynamics</p>
+                  <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The Leader Experience™ - AI-Powered Value Creation</p>
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={56} />
@@ -3839,7 +3813,7 @@ export default function Mockups() {
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={36} />
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Organizational Asset<br/>Discovery Workshop</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Enterprise Value<br/>Creation Workshop</p>
                   <div style={{ display: 'flex', gap: '8px', margin: '20px 0 0 0' }}>
                     <div style={{ height: '2px', width: '40px', background: '#1f476a', borderRadius: '1px' }}></div>
                     <div style={{ height: '2px', width: '40px', background: '#0eb2af', borderRadius: '1px' }}></div>
@@ -4056,10 +4030,10 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>8-Week Rollout Roadmap</h3>
               {[
-                { week: 'Weeks 1-2', title: 'Internal Training', desc: 'Steve, Bill, and team onboard to brand system', color: '#1f476a' },
+                { week: 'Weeks 1-2', title: 'Internal Training', desc: 'Joe, Mark, and team onboard to brand system', color: '#1f476a' },
                 { week: 'Weeks 3-4', title: 'Asset Generation', desc: 'Business cards, templates, signage, collateral produced', color: '#1f476a' },
                 { week: 'Weeks 5-6', title: 'Website & LinkedIn Launch', desc: 'Site goes live, LinkedIn video series begins', color: '#0eb2af' },
-                { week: 'Weeks 7-8', title: 'Program Go-Live', desc: 'Certification program opens, consultation bookings active', color: '#fbbf24' },
+                { week: 'Weeks 7-8', title: 'Platform Go-Live', desc: 'Pilot program launches, demo bookings active', color: '#fbbf24' },
               ].map((phase, i) => (
                 <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', padding: '20px', background: '#f8fafc', borderRadius: '8px', borderLeft: `3px solid ${phase.color}`, marginBottom: '12px' }}>
                   <div style={{ minWidth: '80px' }}>
