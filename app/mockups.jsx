@@ -873,7 +873,7 @@ export default function Mockups() {
                 <strong> LX — the Leader Experience™</strong>.
               </p>
               <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', maxWidth: '760px' }}>
-                The platform rests on three pillars — Visibility, Intelligence, and Value — each 
+                The platform delivers three core capabilities — Visibility, Intelligence, and Value — each 
                 representing a layer in the journey from strategic intent to enterprise value creation.
               </p>
             </div>
@@ -1777,10 +1777,10 @@ export default function Mockups() {
                 </div>
                 {/* Right: text content */}
                 <div style={{ flex: 1 }}>
-                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '12px' }}>Visibility & Sync</p>
+                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '12px' }}>Intelligence</p>
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', marginBottom: '16px' }}>See every initiative at a glance. Act before problems become crises.</p>
                   <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', marginBottom: '24px' }}>
-                    TARGA's Visibility & Sync engine connects goals to execution in real time. 
+                    TARGA's Intelligence engine connects goals to execution in real time. 
                     AI surfaces risks before they escalate, syncs resources automatically, and 
                     gives you the single view your leadership team has been asking for.
                   </p>
@@ -1794,11 +1794,11 @@ export default function Mockups() {
                       </div>
                     ))}
                   </div>
-                  <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Explore Visibility & Sync</button>
+                  <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Explore the Platform</button>
                 </div>
               </div>
               <div style={{ background: '#ffffff', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
-                <strong style={{ color: '#1e293b' }}>Feature Spotlight</strong> — Animated pattern inside the product screenshot card creates depth. Light background keeps focus on the text content. Pillar label in teal anchors the section to the brand framework.
+                <strong style={{ color: '#1e293b' }}>Feature Spotlight</strong> — Animated pattern inside the product screenshot card creates depth. Light background keeps focus on the text content. Capability label in teal anchors the section to the brand framework.
               </div>
             </div>
 
@@ -1885,19 +1885,19 @@ export default function Mockups() {
             </div>
 
             <div className="card-white">
-              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Messaging Pillars</h3>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Messaging Framework</h3>
               <div className="grid-3">
                 <div className="box accent-navy" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Plan & Capture</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Swift, structured capture of goals and strategic objectives. Leaders see the full picture before they act.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Visibility</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Real-time executive dashboards that cut through noise — surfacing goal progress, team alignment, and strategic gaps at a glance.</p>
                 </div>
                 <div className="box accent-teal" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Visibility & Sync</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Dynamic views of initiatives, resources, and milestones. Everything connected, nothing siloed.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Intelligence</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>AI-native architecture that responds to natural language, automates executive workflows, and surfaces insights proactively.</p>
                 </div>
                 <div className="box accent-gold" style={{ paddingLeft: '28px' }}>
-                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Performance & Impact</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Execution, refinement, and measurable value outcomes. ROI that speaks to the board, not the backlog.</p>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Value</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>Enterprise value creation management — measuring outcomes in dollars, not checkboxes. ROI that speaks to the board, not the backlog.</p>
                 </div>
               </div>
             </div>
@@ -2171,7 +2171,7 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Why Structured Training?</h3>
               <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', maxWidth: '700px' }}>
-                TARGA AI is not a task tracker — it's a leadership performance platform. Getting full value from the system requires understanding how the three pillars work together. Structured training ensures every user, from the CEO to the implementation lead, knows how to turn strategic inputs into measurable outcomes from day one.
+                TARGA AI is not a task tracker — it's a leadership performance platform. Getting full value from the system requires understanding how Visibility, Intelligence, and Value work together. Structured training ensures every user, from the CEO to the implementation lead, knows how to turn strategic inputs into measurable outcomes from day one.
               </p>
             </div>
 
@@ -2186,9 +2186,9 @@ export default function Mockups() {
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Module Cards</h4>
               <div className="grid-3" style={{ marginBottom: '48px' }}>
                 {[
-                  { num: '01', title: 'Plan & Capture', subtitle: 'Goals, Plans & Objectives Capture', color: '#1f476a', progress: 100 },
-                  { num: '02', title: 'Visibility & Sync', subtitle: 'Initiative Tracking & Resource Sync', color: '#0eb2af', progress: 65 },
-                  { num: '03', title: 'Performance & Impact', subtitle: 'Execution, Refinement & Assessment', color: '#fbbf24', progress: 0 },
+                  { num: '01', title: 'Visibility', subtitle: 'Strategic Goals, Dashboards & Alignment', color: '#1f476a', progress: 100 },
+                  { num: '02', title: 'Intelligence', subtitle: 'AI Workflows, Natural Language & Automation', color: '#0eb2af', progress: 65 },
+                  { num: '03', title: 'Value', subtitle: 'Execution, Measurement & ROI Reporting', color: '#fbbf24', progress: 0 },
                 ].map((mod, i) => (
                   <div key={i} style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', transition: 'all 0.2s ease' }}>
                     <div style={{ height: '4px', background: mod.color }}></div>
@@ -2217,8 +2217,8 @@ export default function Mockups() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <Icon size={28} />
                     <div>
-                      <p style={{ fontSize: '11px', color: '#0eb2af', fontWeight: '600', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 2px 0' }}>Module 02 - Visibility & Sync</p>
-                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', margin: 0 }}>Lesson 2.3: Mapping Asset Dependencies</p>
+                      <p style={{ fontSize: '11px', color: '#0eb2af', fontWeight: '600', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 2px 0' }}>Module 02 - Intelligence</p>
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', margin: 0 }}>Lesson 2.3: Configuring AI Workflows</p>
                     </div>
                   </div>
                   <span style={{ fontSize: '12px', color: '#64748b', background: 'rgba(255,255,255,0.08)', padding: '6px 14px', borderRadius: '6px' }}>45 min</span>
@@ -2233,7 +2233,7 @@ export default function Mockups() {
                     {/* Key concept callout */}
                     <div style={{ borderLeft: '3px solid #0eb2af', background: '#f0fdfa', padding: '20px 24px', borderRadius: '0 8px 8px 0', marginBottom: '24px' }}>
                       <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '0.5px', textTransform: 'uppercase', margin: '0 0 6px 0' }}>Key Concept</p>
-                      <p style={{ fontSize: '14px', color: '#1e293b', margin: 0, lineHeight: '1.6' }}>Asset dependencies determine how value flows through an organization. Mapping them reveals both bottlenecks and multiplication opportunities.</p>
+                      <p style={{ fontSize: '14px', color: '#1e293b', margin: 0, lineHeight: '1.6' }}>Initiative dependencies determine how value flows through an organization. Mapping them reveals both bottlenecks and acceleration opportunities.</p>
                     </div>
                     <div style={{ height: '12px', background: '#f1f5f9', borderRadius: '4px', marginBottom: '12px', width: '95%' }}></div>
                     <div style={{ height: '12px', background: '#f1f5f9', borderRadius: '4px', width: '60%' }}></div>
@@ -2241,7 +2241,7 @@ export default function Mockups() {
                   {/* Sidebar */}
                   <div style={{ borderLeft: '1px solid #f1f5f9', paddingLeft: '32px' }}>
                     <p style={{ fontSize: '11px', fontWeight: '600', color: '#1e293b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '16px' }}>In This Lesson</p>
-                    {['Asset mapping framework', 'Dependency identification', 'Value flow analysis', 'Bottleneck diagnosis'].map((item, i) => (
+                    {['AI workflow configuration', 'Dependency identification', 'Value flow analysis', 'Bottleneck diagnosis'].map((item, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                         <div style={{ width: '18px', height: '18px', borderRadius: '4px', border: i < 2 ? 'none' : '2px solid #e2e8f0', background: i < 2 ? '#0eb2af' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '10px', flexShrink: 0 }}>{i < 2 ? '\u2713' : ''}</div>
                         <span style={{ fontSize: '13px', color: i < 2 ? '#1e293b' : '#64748b' }}>{item}</span>
@@ -2249,7 +2249,7 @@ export default function Mockups() {
                     ))}
                     <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '8px', textAlign: 'center' }}>
                       <Icon size={32} />
-                      <p style={{ fontSize: '11px', color: '#64748b', marginTop: '8px', margin: '8px 0 0 0' }}>Pillar: Visibility & Sync</p>
+                      <p style={{ fontSize: '11px', color: '#64748b', marginTop: '8px', margin: '8px 0 0 0' }}>Module: Intelligence</p>
                     </div>
                   </div>
                 </div>
@@ -2265,11 +2265,11 @@ export default function Mockups() {
                     <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Enterprise Pilot - In Progress</p>
                   </div>
                 </div>
-                {/* Pillar progress bars */}
+                {/* Module progress bars */}
                 {[
-                  { label: 'Plan & Capture', color: '#1f476a', pct: 100 },
-                  { label: 'Visibility & Sync', color: '#0eb2af', pct: 65 },
-                  { label: 'Performance & Impact', color: '#fbbf24', pct: 0 },
+                  { label: 'Visibility', color: '#1f476a', pct: 100 },
+                  { label: 'Intelligence', color: '#0eb2af', pct: 65 },
+                  { label: 'Value', color: '#fbbf24', pct: 0 },
                 ].map((p, i) => (
                   <div key={i} style={{ marginBottom: '20px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
@@ -2284,8 +2284,8 @@ export default function Mockups() {
                 <div style={{ marginTop: '24px', padding: '20px', background: '#f8fafc', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '16px' }}>
                   <Icon size={32} />
                   <div>
-                    <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Next: Lesson 2.4 - Integration Patterns</p>
-                    <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Continue in the Visibility & Sync module</p>
+                    <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Next: Lesson 2.4 - Automation Patterns</p>
+                    <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Continue in the Intelligence module</p>
                   </div>
                   <button className="btn btn-primary" style={{ marginLeft: 'auto', padding: '10px 24px', fontSize: '13px' }}>Continue</button>
                 </div>
@@ -2309,13 +2309,13 @@ export default function Mockups() {
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Three-brand accent divider for section breaks</p>
                 </div>
-                {/* Pillar accent chips */}
+                {/* Module accent chips */}
                 <div className="box" style={{ padding: '32px', textAlign: 'center' }}>
-                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Pillar Tags</p>
+                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', letterSpacing: '0.5px', textTransform: 'uppercase', marginBottom: '20px' }}>Module Tags</p>
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#1f476a', background: '#1f476a14', padding: '6px 14px', borderRadius: '20px' }}>Plan & Capture</span>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', background: '#0eb2af14', padding: '6px 14px', borderRadius: '20px' }}>Visibility & Sync</span>
-                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#d97706', background: '#fbbf2414', padding: '6px 14px', borderRadius: '20px' }}>Performance & Impact</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#1f476a', background: '#1f476a14', padding: '6px 14px', borderRadius: '20px' }}>Visibility</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', background: '#0eb2af14', padding: '6px 14px', borderRadius: '20px' }}>Intelligence</span>
+                    <span style={{ fontSize: '12px', fontWeight: '600', color: '#d97706', background: '#fbbf2414', padding: '6px 14px', borderRadius: '20px' }}>Value</span>
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Use to categorize lessons, resources, and assessments</p>
                 </div>
@@ -2339,7 +2339,7 @@ export default function Mockups() {
                       <Icon size={140} />
                     </div>
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '400', color: '#1e293b', position: 'relative', zIndex: 1, margin: 0 }}>Assessment Complete</p>
-                    <p style={{ fontSize: '13px', color: '#64748b', position: 'relative', zIndex: 1, margin: '4px 0 0 0' }}>Module 01 - Plan & Capture</p>
+                    <p style={{ fontSize: '13px', color: '#64748b', position: 'relative', zIndex: 1, margin: '4px 0 0 0' }}>Module 01 - Visibility</p>
                   </div>
                   <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '16px' }}>Subtle icon watermark for branded documents</p>
                 </div>
@@ -2434,7 +2434,7 @@ export default function Mockups() {
                   <tr><td style={{ fontWeight: '600' }}>Name</td><td>Space Grotesk Regular 400, 15px, #1e293b</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Title</td><td>Inter Regular 400, 12px, #1f476a</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Contact</td><td>Inter Regular 400, 11px, #64748b</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Pillar Bar</td><td>Three 16px bars (Navy/Teal/Gold), 2px height, 6px gap</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Brand Accent Bar</td><td>Three 16px bars (Navy/Teal/Gold), 2px height, 6px gap</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Tagline</td><td>Inter Italic 400, 10px, #94a3b8 - differs per person</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Format</td><td>HTML email signature - no images where possible (inline SVG preferred)</td></tr>
                 </tbody>
@@ -2462,7 +2462,7 @@ export default function Mockups() {
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '10px', width: '80%' }}></div>
                     <div style={{ height: '10px', background: '#f1f5f9', borderRadius: '3px', marginBottom: '24px', width: '60%' }}></div>
 
-                    {/* Three pillar callouts */}
+                    {/* Brand capability callouts */}
                     <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
                       {[
                         { label: 'Discover', color: '#1f476a' },
@@ -2493,7 +2493,7 @@ export default function Mockups() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Layout Structure</h4>
-                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Three-pillar callout strip (Plan / Sync / Perform)', 'Single primary CTA button (Blue #0eb2af)', 'Centered footer with icon and company link'].map((item, i) => (
+                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Brand accent strip (Visibility / Intelligence / Value)', 'Single primary CTA button (Blue #0eb2af)', 'Centered footer with icon and company link'].map((item, i) => (
                     <div key={i} className="checklist-item" style={{ marginBottom: '10px' }}>
                       <div className="checklist-icon">{'\u2713'}</div>
                       <div className="checklist-text" style={{ fontSize: '13px' }}>{item}</div>
@@ -2559,7 +2559,7 @@ export default function Mockups() {
                     Navy gradient header to differentiate from the standard outreach template. Platform icon left, launch details right. Gold accent for availability status.
                   </p>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Pull quote uses Teal accent line to tie to the Intelligence pillar. Single CTA - "Request a Demo" or "Join the Pilot."
+                    Pull quote uses Teal accent line to tie to Intelligence. Single CTA - "Request a Demo" or "Join the Pilot."
                   </p>
                 </div>
                 <div className="card-white" style={{ margin: 0 }}>
@@ -2579,7 +2579,7 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: '#f1f5f9', borderRadius: '12px', padding: '24px' }}>
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
-                  {/* Pillar bar top */}
+                  {/* Brand accent bar top */}
                   <div style={{ height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                   <div style={{ padding: '32px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '24px' }}>
@@ -2595,7 +2595,7 @@ export default function Mockups() {
                     {/* Three steps */}
                     {[
                       { num: '1', label: 'Access your learning portal', color: '#1f476a' },
-                      { num: '2', label: 'Review Module 01: Plan & Capture', color: '#0eb2af' },
+                      { num: '2', label: 'Review Module 01: Visibility', color: '#0eb2af' },
                       { num: '3', label: 'Schedule your first onboarding session', color: '#fbbf24' },
                     ].map((step, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px', padding: '12px 16px', background: '#f8fafc', borderRadius: '8px' }}>
@@ -2694,13 +2694,13 @@ export default function Mockups() {
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Platform Onboarding</td>
-                    <td>Pillar top bar (white bg)</td>
+                    <td>Brand accent top bar (white bg)</td>
                     <td>New team provisioned</td>
                     <td>Access Your Portal</td>
                   </tr>
                   <tr>
                     <td style={{ fontWeight: '600' }}>Module Completion</td>
-                    <td>Pillar color of completed module</td>
+                    <td>Module color of completed training</td>
                     <td>Training module completed</td>
                     <td>Continue to Next Module</td>
                   </tr>
@@ -2740,7 +2740,7 @@ export default function Mockups() {
                       <div style={{ height: '3px', width: '32px', background: '#fbbf24', borderRadius: '2px' }}></div>
                     </div>
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '300', color: 'white', lineHeight: '1.4', margin: '0 0 16px 0', maxWidth: '320px' }}>
-                      Most organizations undervalue what they already have.
+                      Your org chart shows who reports to whom. It doesn't show who's creating value.
                     </p>
                     <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Joe Thompson - TARGA AI</p>
                   </div>
@@ -2748,7 +2748,7 @@ export default function Mockups() {
                 {/* Post caption preview */}
                 <div style={{ padding: '20px' }}>
                   <p style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Hook question or bold statement. 2-3 sentences of insight. CTA to discovery conversation or book.
+                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Hook question or bold statement. 2-3 sentences of insight. CTA to discovery conversation or demo request.
                   </p>
                 </div>
               </div>
@@ -2767,7 +2767,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Post Guidelines</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Lead with insight, not promotion. Reference LX and the three pillars without jargon. End with a question or soft CTA. Tag the TARGA AI company page.
+                    Lead with insight, not promotion. Reference LX and the platform capabilities without jargon. End with a question or soft CTA. Tag the TARGA AI company page.
                   </p>
                 </div>
               </div>
@@ -2796,7 +2796,7 @@ export default function Mockups() {
                 </div>
                 <div style={{ padding: '20px' }}>
                   <p style={{ fontSize: '12px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Announce pilot milestone. Mention platform capabilities and the three pillars. Reinforce enterprise positioning. Tag pilot partners where permitted.
+                    <strong style={{ color: '#1e293b' }}>Caption format:</strong> Announce pilot milestone. Mention platform capabilities and key differentiators. Reinforce enterprise positioning. Tag pilot partners where permitted.
                   </p>
                 </div>
               </div>
@@ -2810,7 +2810,7 @@ export default function Mockups() {
                 <div className="card-white" style={{ margin: 0 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Layout Notes</h4>
                   <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                    Light background with brand gradient top bar. Pillar tags visually reinforce the platform framework. Clean, milestone-forward — not promotional.
+                    Light background with brand gradient top bar. Capability tags visually reinforce the platform framework. Clean, milestone-forward — not promotional.
                   </p>
                 </div>
               </div>
@@ -2915,7 +2915,7 @@ export default function Mockups() {
                 <div className="do-card">
                   <h4 style={{ color: '#16a34a', fontWeight: '600', fontSize: '13px', marginBottom: '12px' }}>{'\u2713'} DO</h4>
                   <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
-                    Lead with insight over promotion. Use client outcomes as proof points. Reference LX and the three pillars by name. Tag partners and pilot participants. Link to discovery conversations.
+                    Lead with insight over promotion. Use client outcomes as proof points. Reference LX and the platform capabilities by name. Tag partners and pilot participants. Link to discovery conversations.
                   </p>
                 </div>
                 <div className="dont-card">
@@ -2950,7 +2950,7 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Executive One-Pager</h3>
             <div className="card-white" style={{ padding: '48px', marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '2px solid #e2e8f0', borderRadius: '4px', padding: '60px', maxWidth: '720px', margin: '0 auto', position: 'relative', overflow: 'hidden' }}>
-                {/* Top pillar bar */}
+                {/* Top brand accent bar */}
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                 {/* Corner watermark */}
                 <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.04 }}>
@@ -2967,7 +2967,7 @@ export default function Mockups() {
                     The leadership performance platform that turns strategic goals into measurable outcomes — giving executives real-time visibility into what drives enterprise value.
                   </p>
 
-                  {/* Pillar badges */}
+                  {/* Capability badges */}
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '32px' }}>
                     {[
                       { label: 'Visibility', color: '#1f476a' },
@@ -3068,7 +3068,7 @@ export default function Mockups() {
                   <tr><td style={{ fontWeight: '600' }}>One-Pager</td><td>8.5" x 11" (portrait), 100lb premium stock</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Trifold</td><td>8.5" x 11" folded to 3.67" x 8.5", 100lb gloss</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Typography</td><td>Space Grotesk Light (headlines), Inter (body), uppercase tracking for labels</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Top Bar</td><td>4px pillar gradient (Navy 30% / Teal 25% / Navy 20% / Gold 25%)</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Top Bar</td><td>4px brand gradient (Navy 30% / Teal 25% / Navy 20% / Gold 25%)</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>CTA</td><td>"Request a Demo" or "Schedule a Discovery Conversation"</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Digital Format</td><td>PDF with embedded fonts, 300 DPI for print</td></tr>
                 </tbody>
@@ -3120,7 +3120,7 @@ export default function Mockups() {
                 </div>
                 <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase' }}>Section 02</span>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '300', color: 'white', margin: '12px 0 0 0' }}>Visibility & Sync</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '300', color: 'white', margin: '12px 0 0 0' }}>Intelligence</p>
                   <p style={{ fontSize: '14px', color: '#cbd5e1', marginTop: '8px' }}>Dynamic views of initiatives, resources, and milestones — connected in real time</p>
                 </div>
               </div>
@@ -3190,7 +3190,7 @@ export default function Mockups() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '24px', marginTop: '16px' }}>
-                  {[{ label: 'Plan & Capture', color: '#1f476a' }, { label: 'Visibility & Sync', color: '#0eb2af' }, { label: 'Performance & Impact', color: '#fbbf24' }].map((l, i) => (
+                  {[{ label: 'Visibility', color: '#1f476a' }, { label: 'Intelligence', color: '#0eb2af' }, { label: 'Value', color: '#fbbf24' }].map((l, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: l.color }}></div>
                       <span style={{ fontSize: '11px', color: '#64748b' }}>{l.label}</span>
@@ -3221,8 +3221,8 @@ export default function Mockups() {
                   <tr><td style={{ fontWeight: '600' }}>Section Dividers</td><td>Brand color background (Navy, Teal, or Gold), centered Space Grotesk title</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Content Slides</td><td>White background, brand gradient top bar, Space Grotesk 24px headers</td></tr>
                   <tr><td style={{ fontWeight: '600' }}>Footer</td><td>Icon mark left, confidentiality note center, page number right</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Charts</td><td>Pillar colors only - Navy for phase 1, Teal for phase 2, Gold for phase 3</td></tr>
-                  <tr><td style={{ fontWeight: '600' }}>Bullet Style</td><td>Pillar-colored dots (6px), not dashes or arrows</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Charts</td><td>Brand colors only - Navy for phase 1, Teal for phase 2, Gold for phase 3</td></tr>
+                  <tr><td style={{ fontWeight: '600' }}>Bullet Style</td><td>Brand-colored dots (6px), not dashes or arrows</td></tr>
                 </tbody>
               </table>
             </div>
@@ -3234,7 +3234,7 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Workshop</h2>
             <p className="section-subtitle">
-              Full-day workshop structure aligned to the three pillars. Facilitator guide, session breakdown, and materials checklist.
+              Full-day workshop structure aligned to Visibility, Intelligence, and Value. Facilitator guide, session breakdown, and materials checklist.
             </p>
 
             {/* Workshop overview card */}
@@ -3271,17 +3271,17 @@ export default function Mockups() {
             {/* Agenda timeline */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Full-Day Agenda</h3>
 
-            {/* Morning - Plan & Capture */}
+            {/* Morning - Visibility */}
             <div style={{ marginBottom: '24px' }}>
               {[
-                { time: '8:30 - 9:00', title: 'Welcome & Framework Introduction', desc: 'Overview of the day, introductions, and the three-pillar framework explained.', color: '#1f476a', pillar: null },
-                { time: '9:00 - 10:30', title: 'Session 1: Plan & Capture - Strategic Goals', desc: 'Guided capture of strategic objectives. Participants map goals, initiatives, and key results across the leadership team.', color: '#1f476a', pillar: 'Plan & Capture' },
+                { time: '8:30 - 9:00', title: 'Welcome & Framework Introduction', desc: 'Overview of the day, introductions, and the Visibility-Intelligence-Value framework explained.', color: '#1f476a', pillar: null },
+                { time: '9:00 - 10:30', title: 'Session 1: Visibility - Strategic Goals', desc: 'Guided capture of strategic objectives. Participants map goals, initiatives, and key results across the leadership team.', color: '#1f476a', pillar: 'Visibility' },
                 { time: '10:30 - 10:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Initiative Prioritization', desc: 'Each identified initiative is scored on strategic impact, resource readiness, and timeline feasibility. The Priority Matrix is produced.', color: '#1f476a', pillar: 'Plan & Capture' },
+                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Initiative Prioritization', desc: 'Each identified initiative is scored on strategic impact, resource readiness, and timeline feasibility. The Priority Matrix is produced.', color: '#1f476a', pillar: 'Visibility' },
                 { time: '12:00 - 1:00', title: 'Lunch', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '1:00 - 2:30', title: 'Session 2: Visibility & Sync - Initiative Mapping', desc: 'Participants connect initiatives to resources and timelines. Identify dependencies, visibility gaps, and automation opportunities. The Initiative Map is produced.', color: '#0eb2af', pillar: 'Visibility & Sync' },
+                { time: '1:00 - 2:30', title: 'Session 2: Intelligence - Initiative Mapping', desc: 'Participants connect initiatives to resources and timelines. Identify dependencies, visibility gaps, and automation opportunities. The Initiative Map is produced.', color: '#0eb2af', pillar: 'Intelligence' },
                 { time: '2:30 - 2:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '2:45 - 4:00', title: 'Session 3: Performance & Impact - Value Delivery', desc: 'Transform the Initiative Map into execution plans. Each workstream gets a 90-day performance plan with measurable value outcomes.', color: '#fbbf24', pillar: 'Performance & Impact' },
+                { time: '2:45 - 4:00', title: 'Session 3: Value - Execution Planning', desc: 'Transform the Initiative Map into execution plans. Each workstream gets a 90-day performance plan with measurable value outcomes.', color: '#fbbf24', pillar: 'Value' },
                 { time: '4:00 - 4:30', title: 'Action Plan & Close', desc: 'Consolidated action plan delivered. Next steps, accountability assignments, and follow-up schedule established.', color: '#0eb2af', pillar: null },
               ].map((session, i) => (
                 <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', padding: session.desc ? '20px' : '12px 20px', background: session.desc ? 'white' : '#f8fafc', borderRadius: '8px', borderLeft: `3px solid ${session.color}`, marginBottom: '8px', border: session.desc ? `1px solid #e2e8f0` : 'none', borderLeftWidth: '3px', borderLeftColor: session.color, borderLeftStyle: 'solid' }}>
@@ -3348,7 +3348,7 @@ export default function Mockups() {
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Facilitator Notes</h3>
               <div style={{ borderLeft: '3px solid #0eb2af', paddingLeft: '20px' }}>
                 <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', marginBottom: '12px' }}>
-                  The three sessions are sequenced intentionally - Plan & Capture must complete before Visibility & Sync begins, and Visibility before Performance & Impact. Do not allow the group to jump ahead to solutions before the strategic capture is thorough. The most common facilitator mistake is letting the group rush past discovery.
+                  The three sessions are sequenced intentionally - Visibility must complete before Intelligence begins, and Intelligence before Value. Do not allow the group to jump ahead to solutions before the strategic capture is thorough. The most common facilitator mistake is letting the group rush past discovery.
                 </p>
                 <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', margin: 0 }}>
                   Use the brand colors physically in the room - navy post-its for strategic goals, teal for initiative connections, gold for value creation opportunities. This reinforces the platform framework visually and makes the Initiative Dependency Map immediately legible.
@@ -3660,7 +3660,7 @@ export default function Mockups() {
 
             {[
               { doTitle: 'Logo Usage', doText: 'Use the full lockup at correct proportions. Maintain clear space around the mark. Display on approved background colors.', dontText: 'Stretch, rotate, or skew the mark. Change individual mark colors. Apply drop shadows, gradients, or effects. Place on busy backgrounds.' },
-              { doTitle: 'Color', doText: 'Use Navy for authority, Teal for innovation, Gold for realization. Colors carry meaning tied to the three pillars.', dontText: 'Use colors purely for decoration. Mix with off-brand palette colors. Use Teal or Gold for body text (accessibility failures).' },
+              { doTitle: 'Color', doText: 'Use Navy for authority, Teal for innovation, Gold for realization. Each color maps to a core platform capability.', dontText: 'Use colors purely for decoration. Mix with off-brand palette colors. Use Teal or Gold for body text (accessibility failures).' },
               { doTitle: 'CTAs', doText: 'Drive toward discovery conversations and consultations. Frame the TARGA AI platform as selective and high-value.', dontText: 'Include shopping carts or transactional language. Use "Buy Now" or "Add to Cart." This is consultative, not e-commerce.' },
             ].map((pair, i) => (
               <div key={i} className="grid-2" style={{ marginBottom: '24px' }}>
@@ -3798,7 +3798,7 @@ export default function Mockups() {
                   <Icon size={300} />
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>See Your Organizational Assets Clearly</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>The Next Generation Leader Experience</p>
                   <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The Leader Experience™ - AI-Powered Value Creation</p>
                 </div>
                 <div style={{ position: 'relative', zIndex: 1 }}>
@@ -3840,7 +3840,7 @@ export default function Mockups() {
                   <Icon size={24} />
                   <div>
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '13px', fontWeight: '300', color: '#1f476a', margin: 0 }}>TARGA AI</p>
-                    <p style={{ fontSize: '8px', color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: '500', margin: 0 }}>Clarity Framework</p>
+                    <p style={{ fontSize: '8px', color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: '500', margin: 0 }}>Leader Experience™</p>
                   </div>
                 </div>
               </div>
@@ -3848,13 +3848,13 @@ export default function Mockups() {
             </div>
 
             {/* Report Cover */}
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Engagement Report Cover</h3>
+            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Pilot Performance Report</h3>
             <div className="card-white">
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '60px', aspectRatio: '8.5/11', maxWidth: '400px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
                 <Icon size={36} />
                 <div>
-                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Asset Discovery<br/>& Valuation Report</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Enterprise Value<br/>Creation Report</p>
                   <div style={{ height: '1px', background: '#e2e8f0', margin: '16px 0' }}></div>
                   <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Prepared for Acme Corp</p>
                   <p style={{ fontSize: '12px', color: '#94a3b8', margin: '4px 0 0 0' }}>March 2026 - Confidential</p>
@@ -3864,7 +3864,7 @@ export default function Mockups() {
                   <p style={{ fontSize: '10px', color: '#94a3b8', margin: 0 }}>TARGA AI</p>
                 </div>
               </div>
-              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>8.5" x 11" - Pillar gradient top bar, icon watermark optional</p>
+              <p style={{ fontSize: '12px', color: '#64748b', marginTop: '16px' }}>8.5" x 11" - Brand gradient top bar, icon watermark optional</p>
             </div>
           </>
         )}
