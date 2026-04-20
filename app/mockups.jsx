@@ -2116,9 +2116,10 @@ export default function Mockups() {
           <>
             <h2 className="section-title">Voice & Messaging</h2>
             <p className="section-subtitle">
-              Brand voice, messaging hierarchy, and copy guidelines for all channels.
+              Brand voice, messaging hierarchy, and copy guidelines for all channels — including the Joe Thompson personal voice system for LinkedIn and thought leadership content.
             </p>
 
+            {/* ── BRAND VOICE ── */}
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '24px' }}>Brand Voice Attributes</h3>
               <div className="grid-4">
@@ -2141,11 +2142,11 @@ export default function Mockups() {
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Category Definition</h3>
               <div style={{ background: '#f8fafc', borderRadius: '12px', padding: '32px', borderLeft: '4px solid #0eb2af', marginBottom: '24px' }}>
                 <p style={{ fontSize: '13px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '8px' }}>LX — The Leader Experience™</p>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', lineHeight: '1.5', marginBottom: '16px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '400', color: '#1e293b', lineHeight: '1.5', marginBottom: '16px' }}>
                   The software industry defined UX, CX, EX, and DX. TARGA AI defines LX — the experience designed specifically for the people making the highest-stakes decisions.
                 </p>
                 <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.7', margin: 0 }}>
-                  Use "The Leader Experience" as the category framing in headlines, pitch decks, and CEO conversations. 
+                  Use "The Leader Experience" as the category framing in headlines, pitch decks, and CEO conversations.
                   Use "LX" as the shorthand once the category has been established in context. Never use LX without first introducing what it stands for.
                 </p>
               </div>
@@ -2172,19 +2173,19 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Primary Taglines</h3>
               <div style={{ marginBottom: '24px' }}>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '400', color: '#1e293b', marginBottom: '4px' }}>
                   "The Next Generation Leader Experience"
                 </p>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Primary. Use for hero headlines, pitch decks, and brand-forward moments.</p>
               </div>
               <div style={{ marginBottom: '24px' }}>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '400', color: '#1e293b', marginBottom: '4px' }}>
                   "Run your business — instead of the business running you"
                 </p>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Secondary. Use for CTAs, email campaigns, and conversational contexts.</p>
               </div>
               <div>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>
+                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '400', color: '#1e293b', marginBottom: '4px' }}>
                   "Your digital Chief of Staff"
                 </p>
                 <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Tertiary. Use sparingly — effective in demos and product-focused contexts.</p>
@@ -2206,6 +2207,221 @@ export default function Mockups() {
                     Project management, task management, workflow tool, productivity software, collaboration platform, Asana alternative, SaaS tool
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* ── JOE THOMPSON PERSONAL VOICE SYSTEM ── */}
+            <div style={{ marginTop: '56px', marginBottom: '16px', paddingBottom: '16px', borderBottom: '2px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ width: '4px', height: '32px', background: 'linear-gradient(to bottom, #1f476a, #0eb2af)', borderRadius: '2px', flexShrink: 0 }} />
+              <div>
+                <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '600', color: '#1e293b', margin: 0 }}>Joe Thompson — Personal Voice System</h2>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: '4px 0 0 0' }}>For LinkedIn thought leadership, long-form content, and CEO communications</p>
+              </div>
+            </div>
+
+            {/* Core Philosophy */}
+            <div className="card-white">
+              <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '28px 32px', marginBottom: '24px', position: 'relative', overflow: 'hidden' }}>
+                <TargaCanvasPattern />
+                <div style={{ position: 'relative', zIndex: 1 }}>
+                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 10px 0' }}>Core Identity</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '400', color: 'white', lineHeight: '1.5', margin: '0 0 12px 0' }}>
+                    "Structured, Intellectually Sound, and Built for Action."
+                  </p>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', lineHeight: '1.7', margin: 0 }}>
+                    Authentic jthompson writing feels like receiving strategic counsel from an experienced professional who shares genuine failures and learning moments, translates complex challenges into actionable frameworks, and maintains authority through competence rather than linguistic gymnastics.
+                  </p>
+                </div>
+              </div>
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Primary Objectives</h3>
+              <div className="grid-4">
+                {[
+                  { label: 'Clarify', desc: 'Complexity through systematic analysis and logical progression' },
+                  { label: 'Educate', desc: 'Strategically — translating experience into transferable principles' },
+                  { label: 'Drive', desc: 'Decisive action through practical frameworks and specific behaviors' },
+                  { label: 'Energize', desc: 'Readers toward improvement and meaningful change' },
+                ].map((o, i) => (
+                  <div key={i} style={{ background: '#f8fafc', borderRadius: '8px', padding: '16px', borderTop: `3px solid ${['#1f476a','#0eb2af','#fbbf24','#1f476a'][i]}` }}>
+                    <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 6px 0' }}>{o.label}</h4>
+                    <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: '1.5' }}>{o.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Structural Architecture */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Article Structure — The Four-Part Framework</h3>
+              {[
+                { section: 'Opening / Premise', weight: '15–20%', color: '#1f476a', desc: 'Establish personal stake or strategic scenario. Demonstrate immediate relevance. Engage readers through shared challenge.' },
+                { section: 'Expansion', weight: '50–60%', color: '#0eb2af', desc: '3–4 thematic sections, each premise-led. Example-driven development. Research integration that supports rather than overwhelms.' },
+                { section: 'Insight + Application', weight: '20–25%', color: '#fbbf24', desc: 'Theory-to-tactics translation. Specific behavioral frameworks. Operational models for implementation.' },
+                { section: 'Conclusion', weight: '5–10%', color: '#1f476a', desc: 'Return to original premise with enhanced clarity. Sharpened call to action. Forward momentum creation.' },
+              ].map((p, i) => (
+                <div key={i} style={{ display: 'flex', gap: '16px', padding: '16px', background: '#f8fafc', borderRadius: '8px', borderLeft: `3px solid ${p.color}`, marginBottom: '10px' }}>
+                  <div style={{ minWidth: '130px' }}>
+                    <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>{p.section}</p>
+                    <p style={{ fontSize: '11px', fontWeight: '600', color: p.color, margin: 0 }}>{p.weight}</p>
+                  </div>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>{p.desc}</p>
+                </div>
+              ))}
+              <div style={{ background: '#f0fdfa', borderRadius: '8px', padding: '16px 20px', marginTop: '16px', borderLeft: '3px solid #0eb2af' }}>
+                <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>Paragraph Construction</p>
+                <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>5–7 sentences per paragraph. Premise sentence followed by supporting development. Varied sentence length for natural cadence. Active voice throughout.</p>
+              </div>
+            </div>
+
+            {/* Voice & Language */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Voice and Language Standards</h3>
+              <div className="grid-2" style={{ marginBottom: '24px' }}>
+                <div>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Diction</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: '0 0 12px 0' }}>Educational sophistication — leverage four and five-syllable words that demonstrate intellectual depth without pretension.</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {[
+                      ['"implementation"', '"putting into place"'],
+                      ['"systematically"', '"in an organized way"'],
+                      ['"operational"', '"day-to-day work"'],
+                    ].map(([use, avoid], i) => (
+                      <div key={i} style={{ display: 'flex', gap: '8px', alignItems: 'center', fontSize: '12px' }}>
+                        <span style={{ color: '#0eb2af', fontWeight: '600', fontFamily: 'monospace' }}>{use}</span>
+                        <span style={{ color: '#94a3b8' }}>not</span>
+                        <span style={{ color: '#94a3b8', fontFamily: 'monospace', textDecoration: 'line-through' }}>{avoid}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Military-Influenced Language</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', margin: '0 0 12px 0' }}>Used naturally, never forced or overused:</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {[
+                      ['Mission orientation', 'off-mission, mission clarity, strategic objectives'],
+                      ['Operational precision', 'execute, deploy, tactical implementation'],
+                      ['Force multiplication', 'leverage, amplify, multiplicative effect'],
+                      ['Action imperative', 'engage, advance, consolidate gains'],
+                    ].map(([label, terms], i) => (
+                      <div key={i} style={{ fontSize: '12px' }}>
+                        <span style={{ color: '#1f476a', fontWeight: '600' }}>{label}: </span>
+                        <span style={{ color: '#64748b', fontStyle: 'italic' }}>{terms}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div style={{ background: '#f8fafc', borderRadius: '8px', padding: '16px 20px', borderLeft: '3px solid #1f476a' }}>
+                <p style={{ fontSize: '12px', fontWeight: '600', color: '#1f476a', margin: '0 0 6px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>We vs. I — Critical Rule</p>
+                <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.7' }}>
+                  Use <strong style={{ color: '#1e293b' }}>"we"</strong> for shared execution — the troops were there, the team executed. Reserve <strong style={{ color: '#1e293b' }}>"I"</strong> for personal reflection, personal failure, and personal accountability — moments where ownership cannot be shared.
+                </p>
+              </div>
+            </div>
+
+            {/* START Framework */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>The START Framework</h3>
+              <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', marginBottom: '20px' }}>Organizational clarity for individual articles and posts:</p>
+              <div style={{ display: 'flex', gap: '0', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                {[
+                  { letter: 'S', word: 'Setup', desc: 'Context with personal or professional stakes', color: '#1f476a' },
+                  { letter: 'T', word: 'Tension', desc: 'Challenge or conflict that demands resolution', color: '#1a4060' },
+                  { letter: 'A', word: 'Action', desc: 'Response strategy with specific tactical elements', color: '#0eb2af' },
+                  { letter: 'R', word: 'Result', desc: 'Outcomes with quantifiable impact where possible', color: '#0ca09d' },
+                  { letter: 'T', word: 'Takeaway', desc: 'Strategic lessons with forward-looking application', color: '#fbbf24' },
+                ].map((s, i) => (
+                  <div key={i} style={{ flex: 1, background: s.color, padding: '20px 12px', textAlign: 'center' }}>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '700', color: 'white', margin: '0 0 4px 0', opacity: 0.95 }}>{s.letter}</p>
+                    <p style={{ fontSize: '11px', fontWeight: '600', color: 'rgba(255,255,255,0.9)', margin: '0 0 6px 0', letterSpacing: '0.5px' }}>{s.word}</p>
+                    <p style={{ fontSize: '10px', color: 'rgba(255,255,255,0.65)', margin: 0, lineHeight: '1.4' }}>{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <div style={{ background: '#fffbeb', borderRadius: '8px', padding: '16px 20px', marginTop: '16px', borderLeft: '3px solid #fbbf24' }}>
+                <p style={{ fontSize: '12px', fontWeight: '600', color: '#92400e', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>The Central Test</p>
+                <p style={{ fontSize: '13px', color: '#78350f', margin: 0, lineHeight: '1.7' }}>Before including any element — story, statistic, or example — ask: does this motivate the reader toward the specific action I am calling them to take? The story exists to make the action feel necessary and achievable.</p>
+              </div>
+            </div>
+
+            {/* Preferred Techniques */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Preferred Writing Techniques</h3>
+              <div className="grid-2">
+                {[
+                  { title: 'Personal Vulnerability', desc: 'Authentic admission of failures and mistakes builds the credibility required for the call to action to land. Ground insights in actual experience, not hypothetical scenarios. The failure is not the point — it makes the reader trust that the recommended action is worth taking.' },
+                  { title: 'Narrative-Led Insight', desc: 'Specific incidents reveal broader patterns the reader recognizes in their own context. Structure the narrative arc so that by the time the call to action arrives, the reader already feels the urgency. The story motivates. The call to action directs.' },
+                  { title: 'Research Integration', desc: 'Studies and data reinforce narrative points and add intellectual weight to the call to action. Statistics illuminate without overwhelming. Evidence supports experiential insights and signals the recommended action is grounded in more than personal opinion.' },
+                  { title: 'Conversational Authority', desc: 'Professional confidence without arrogance. Direct address to the reader as peer. Natural phrasing maintains sophistication without distance. The conversational tone keeps the reader engaged long enough to reach the call to action.' },
+                  { title: 'Rhetorical Questions', desc: 'Strategic questions that create the gap between where the reader is and where they need to be. They function as setup for the call to action, not as a conclusion. Use purposefully, not decoratively.' },
+                  { title: 'Content Development Patterns', desc: 'Problem-Solution: Challenge → Analysis → Response → Results → Lessons. Experience-Principle: Specific incident → Broader pattern → Universal application. Tactical Progression: Strategic concept → Operational approach → Specific behaviors → Implementation.' },
+                ].map((t, i) => (
+                  <div key={i} className="box" style={{ paddingLeft: '20px', borderLeft: `3px solid ${i % 2 === 0 ? '#1f476a' : '#0eb2af'}` }}>
+                    <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 8px 0' }}>{t.title}</h4>
+                    <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.6' }}>{t.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* What to Avoid */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Critical Elements to Avoid</h3>
+              <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.7', marginBottom: '20px' }}>The most common failure modes that undermine authentic jthompson voice:</p>
+              <div className="grid-3" style={{ marginBottom: '20px' }}>
+                {[
+                  {
+                    category: 'Structural',
+                    color: '#dc2626',
+                    items: ['Em-dashes — use two sentences instead', 'Forced fragments for dramatic effect', 'Artificial aphorisms ("Discipline is a system, not a personality")', 'Over-embellishment of simple facts'],
+                  },
+                  {
+                    category: 'Voice',
+                    color: '#ea580c',
+                    items: ['Academic drift — scholarly posturing', 'Manufactured drama', 'Bureaucratic language ("facilitate," "utilize")', 'Passive construction ("was accomplished," "is achieved")'],
+                  },
+                  {
+                    category: 'Content',
+                    color: '#d97706',
+                    items: ['Research dominance over personal narrative', 'Generic conclusions that restate themes', 'Strategic insights without tactical behaviors', 'Over-elaboration ("invested a full day" vs. "prepped the day")'],
+                  },
+                ].map((cat, i) => (
+                  <div key={i} className="dont-card" style={{ borderLeft: `3px solid ${cat.color}` }}>
+                    <h4 style={{ fontSize: '12px', fontWeight: '700', color: cat.color, margin: '0 0 12px 0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{cat.category} Violations</h4>
+                    {cat.items.map((item, j) => (
+                      <div key={j} style={{ display: 'flex', gap: '8px', marginBottom: '8px', alignItems: 'flex-start' }}>
+                        <span style={{ color: cat.color, fontSize: '12px', marginTop: '1px', flexShrink: 0 }}>{'×'}</span>
+                        <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: '1.5' }}>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+              <div style={{ background: '#fef2f2', borderRadius: '8px', padding: '16px 20px', borderLeft: '3px solid #dc2626' }}>
+                <p style={{ fontSize: '12px', fontWeight: '600', color: '#991b1b', margin: '0 0 4px 0', textTransform: 'uppercase', letterSpacing: '1px' }}>Red Flag Test</p>
+                <p style={{ fontSize: '13px', color: '#7f1d1d', margin: 0, lineHeight: '1.7' }}>If a sentence sounds like it was written to impress rather than to inform, cut it. Controlled authenticity beats manufactured cleverness every time.</p>
+              </div>
+            </div>
+
+            {/* Revision Checklist */}
+            <div className="card-white">
+              <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Pre-Publish Revision Checklist</h3>
+              <div className="grid-2">
+                {[
+                  'Authenticity check: remove artificial constructions and over-polished phrases',
+                  'Conversational flow: ensure natural rhythm without forced effects',
+                  'Active construction: strengthen verbs and eliminate passive voice',
+                  'Tactical verification: confirm every strategic insight translates to actionable behavior',
+                  'Voice consistency: professional confidence without arrogance throughout',
+                  'Opening establishes personal stakes and reader relevance',
+                  '"We" used for shared execution; "I" reserved for personal ownership moments',
+                  'Conclusion delivers a clear call to action, not a lesson summary',
+                ].map((item, i) => (
+                  <div key={i} className="checklist-item">
+                    <div className="checklist-icon">{'\u2713'}</div>
+                    <div className="checklist-text" style={{ fontSize: '13px' }}>{item}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </>
