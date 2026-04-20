@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const styles = `
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -727,6 +727,119 @@ header.scrolled {
 }
 `;
 
+function TargaCanvasPattern() {
+  const canvasRef = useRef(null);
+  const sweepRef = useRef(Math.random() * 2);
+  const animRef = useRef(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(function() { setMounted(true); }, []);
+
+  useEffect(function() {
+    if (!mounted) return;
+    var canvas = canvasRef.current;
+    if (!canvas) return;
+    var parent = canvas.parentElement;
+    if (!parent) return;
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    var dpr = typeof window !== 'undefined' ? (window.devicePixelRatio || 1) : 1;
+    var w = 0, h = 0;
+
+    function resize() {
+      w = parent.clientWidth || parent.offsetWidth || 800;
+      h = parent.clientHeight || parent.offsetHeight || 600;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+
+    var ro = null;
+    if (typeof ResizeObserver !== 'undefined') {
+      ro = new ResizeObserver(resize);
+      ro.observe(parent);
+    } else {
+      window.addEventListener('resize', resize);
+    }
+
+    var cellW = 48;
+    var cellH = 52;
+
+    function drawIcon(x, y, size, alpha) {
+      if (alpha < 0.003) return;
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = '#fff';
+      var s = size;
+      ctx.lineWidth = 0.6;
+      ctx.beginPath();
+      ctx.moveTo(x + s * 0.44, y + s * 0.49);
+      ctx.lineTo(x + s * 0.28, y + s * 0.49);
+      ctx.lineTo(x, y - s * 0.28);
+      ctx.lineTo(x - s * 0.28, y + s * 0.49);
+      ctx.lineTo(x - s * 0.44, y + s * 0.49);
+      ctx.lineTo(x - s * 0.09, y - s * 0.28);
+      ctx.lineTo(x - s * 0.03, y - s * 0.41);
+      ctx.lineTo(x, y - s * 0.49);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.lineWidth = 0.4;
+      ctx.beginPath();
+      ctx.moveTo(x + s * 0.09, y + s * 0.27);
+      ctx.lineTo(x - s * 0.09, y + s * 0.27);
+      ctx.lineTo(x, y + s * 0.01);
+      ctx.closePath();
+      ctx.stroke();
+    }
+
+    function render() {
+      var pw = parent.clientWidth || parent.offsetWidth;
+      var ph = parent.clientHeight || parent.offsetHeight;
+      if (!pw || !ph) { animRef.current = requestAnimationFrame(render); return; }
+      if (pw !== w || ph !== h) {
+        w = pw; h = ph;
+        canvas.width = w * dpr; canvas.height = h * dpr;
+        canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      ctx.clearRect(0, 0, w, h);
+      sweepRef.current += 0.0025;
+      if (sweepRef.current > 2.5) sweepRef.current = -0.5;
+      var sweepPos = sweepRef.current;
+      var cols = Math.ceil(w / cellW) + 2;
+      var rows = Math.ceil(h / cellH) + 2;
+      for (var row = 0; row < rows; row++) {
+        var isOdd = row % 2 === 1;
+        for (var col = 0; col < cols; col++) {
+          var x = col * cellW + (isOdd ? cellW * 0.5 : 0);
+          var y = row * cellH;
+          var nx = x / w;
+          var ny = y / h;
+          var depth = nx * 0.35 + ny * 0.65;
+          var baseAlpha = 0.03 + depth * 0.08;
+          var diagPos = (nx + ny) * 0.5;
+          var dist = Math.abs(diagPos - sweepPos);
+          var boost = dist < 0.12 ? (1 - dist / 0.12) * 0.1 : 0;
+          drawIcon(x, y, 16, Math.min(baseAlpha + boost, 0.15));
+        }
+      }
+      animRef.current = requestAnimationFrame(render);
+    }
+    render();
+
+    return function() {
+      if (ro) ro.disconnect();
+      else window.removeEventListener('resize', resize);
+      if (animRef.current) cancelAnimationFrame(animRef.current);
+    };
+  }, [mounted]);
+
+  if (!mounted) return null;
+  return <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} />;
+}
+
 export default function Mockups() {
   const [activeTab, setActiveTab] = useState('hero');
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -834,6 +947,8 @@ export default function Mockups() {
         {activeTab === 'hero' && (
           <>
             <div className="hero">
+              <TargaCanvasPattern />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(8,14,26,0.3) 0%, transparent 50%, rgba(31,71,106,0.06) 100%)', pointerEvents: 'none' }} />
               <div className="hero-content">
                 <div className="hero-text">
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>The Leader Experience™</p>
@@ -1646,7 +1761,8 @@ export default function Mockups() {
                   {/* Context 2: Dark Hero */}
                   <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Hero Section (Dark)</h3>
                   <div className="card-white" style={{ marginBottom: '32px', padding: 0, overflow: 'hidden' }}>
-                    <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '60px 48px' }}>
+                    <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '60px 48px', position: 'relative', overflow: 'hidden' }}>
+                      <TargaCanvasPattern />
                       <ActiveLogo height={44} white={true} />
                       <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '500', color: 'white', margin: '24px 0 12px 0', lineHeight: '1.2' }}>Speed and Clarity for<br/>Enterprise Value Creation</p>
                       <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '28px' }}>Cross-functional visibility and AI-driven insight for executives.</p>
@@ -1676,9 +1792,7 @@ export default function Mockups() {
                   <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Presentation Title Slide</h3>
                   <div className="card-white" style={{ marginBottom: '32px', padding: '40px' }}>
                     <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '48px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                      <div style={{ position: 'absolute', right: '48px', bottom: '-40px', opacity: 0.04 }}>
-                        <Icon size={280} />
-                      </div>
+                      <TargaCanvasPattern />
                       <div style={{ position: 'relative', zIndex: 1 }}>
                         <ActiveLogo height={36} white={true} />
                         <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '500', color: 'white', margin: '28px 0 8px 0' }}>100 CEO Conversations</p>
@@ -1715,17 +1829,7 @@ export default function Mockups() {
                   <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>LinkedIn Company Banner</h3>
                   <div className="card-white" style={{ marginBottom: '32px', padding: 0, overflow: 'hidden' }}>
                     <div style={{ background: 'linear-gradient(135deg, #1f476a, #132f4a)', padding: '40px 48px', aspectRatio: '4/1', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
-                      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                        <defs>
-                          <pattern id="lcBannerPat" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                            <g opacity="0.06">
-                              <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                              <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                            </g>
-                          </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#lcBannerPat)"/>
-                      </svg>
+                      <TargaCanvasPattern />
                       <div style={{ position: 'relative', zIndex: 1 }}>
                         <ActiveLogo height={40} white={true} />
                       </div>
@@ -1832,49 +1936,21 @@ export default function Mockups() {
 
             {/* Hero Section Mockup */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
-              <svg width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="compHeroPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.10">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                    <g opacity="0.06" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                  </pattern>
-                  <linearGradient id="compHeroGrad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#1f476a"/>
-                    <stop offset="100%" stopColor="#152d4a"/>
-                  </linearGradient>
-                  <clipPath id="heroRound">
-                    <rect width="100%" height="360" rx="0"/>
-                  </clipPath>
-                </defs>
-                <rect width="100%" height="360" fill="url(#compHeroGrad)"/>
-                <rect width="100%" height="360" fill="url(#compHeroPattern)"/>
-                {/* Content overlay */}
-                <rect x="0" y="0" width="55%" height="360" fill="url(#compHeroGrad)" opacity="0.85"/>
-                {/* Icon */}
-                <g transform="translate(60, 80)">
-                  <polygon fill="#0eb2af" points="16.5 22.1 10.9 22.1 13.7 16.3 16.5 22.1"/>
-                  <polygon fill="#ffffff" points="27.2 27.8 22.3 27.8 13.7 10.3 5 27.9 0 27.9 11 5.5 12.8 1.7 13.7 0 27.2 27.8"/>
-                </g>
-                {/* Text */}
-                <text x="60" y="128" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="2">THE LEADER EXPERIENCE™</text>
-                <text x="60" y="158" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="300" letterSpacing="-0.5">AI-Powered Value Creation</text>
-                <text x="60" y="190" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="28" fontWeight="300" letterSpacing="-0.5">for Enterprise Leaders</text>
-                <text x="60" y="224" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Real-time visibility into what drives enterprise value.</text>
-                <text x="60" y="242" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Natural language AI that speaks the C-suite's language.</text>
-                {/* CTA buttons */}
-                <rect x="60" y="268" width="160" height="42" rx="8" fill="#0eb2af"/>
-                <text x="140" y="294" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600" textAnchor="middle">Request a Demo</text>
-                <rect x="236" y="268" width="130" height="42" rx="8" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
-                <text x="301" y="294" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="500" textAnchor="middle">Learn More</text>
-                {/* Teal accent line */}
-                <line x1="0" y1="357" x2="100%" y2="357" stroke="#0eb2af" strokeWidth="3" opacity="0.5"/>
-              </svg>
+              <div style={{ background: 'linear-gradient(135deg, #1f476a, #152d4a)', position: 'relative', overflow: 'hidden', minHeight: '320px', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '60px' }}>
+                <TargaCanvasPattern />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(31,71,106,0.92) 50%, transparent 100%)', pointerEvents: 'none' }} />
+                <div style={{ position: 'relative', zIndex: 1, maxWidth: '520px' }}>
+                  <Icon size={28} />
+                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 12px 0' }}>The Leader Experience™</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '500', color: 'white', lineHeight: '1.2', margin: '0 0 12px 0' }}>AI-Powered Value Creation<br />for Enterprise Leaders</p>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', margin: '0 0 28px 0', lineHeight: '1.7' }}>Real-time visibility into what drives enterprise value. Natural language AI that speaks the C-suite's language.</p>
+                  <div style={{ display: 'flex', gap: '12px' }}>
+                    <div style={{ background: '#0eb2af', borderRadius: '8px', padding: '11px 24px', fontSize: '13px', fontWeight: '600', color: 'white' }}>Request a Demo</div>
+                    <div style={{ border: '2px solid rgba(255,255,255,0.3)', borderRadius: '8px', padding: '11px 24px', fontSize: '13px', color: 'white' }}>Learn More</div>
+                  </div>
+                </div>
+                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'rgba(14,178,175,0.5)', zIndex: 2 }} />
+              </div>
               <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
                 <strong style={{ color: '#1e293b' }}>Hero Section</strong> — Pattern at full density behind content area with 85% overlay fade on the text side. Teal accent line anchors the bottom.
               </div>
@@ -1882,28 +1958,15 @@ export default function Mockups() {
 
             {/* CTA Band Mockup */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
-              <svg width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="compCtaPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.08">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                    <g opacity="0.05" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                    </g>
-                  </pattern>
-                </defs>
-                <rect width="100%" height="180" fill="#1f476a"/>
-                <rect width="100%" height="180" fill="url(#compCtaPattern)"/>
-                {/* Centered text */}
-                <text x="50%" y="60" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" textAnchor="middle" letterSpacing="2">THE LEADER EXPERIENCE™</text>
-                <text x="50%" y="88" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="22" fontWeight="400" textAnchor="middle" letterSpacing="-0.3">Ready to see what value creation looks like?</text>
-                <text x="50%" y="112" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" textAnchor="middle">Join 100 enterprise CEOs shaping the future of LX.</text>
-                {/* CTA */}
-                <rect x="50%" y="126" width="200" height="42" rx="8" fill="#0eb2af" transform="translate(-100,0)"/>
-                <text x="50%" y="152" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="600" textAnchor="middle">Schedule a Conversation</text>
-              </svg>
+              <div style={{ background: '#1f476a', position: 'relative', overflow: 'hidden', minHeight: '180px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '40px 60px', textAlign: 'center' }}>
+                <TargaCanvasPattern />
+                <div style={{ position: 'relative', zIndex: 1 }}>
+                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 10px 0' }}>The Leader Experience™</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '500', color: 'white', margin: '0 0 8px 0' }}>Ready to see what value creation looks like?</p>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', margin: '0 0 24px 0' }}>Join 100 enterprise CEOs shaping the future of LX.</p>
+                  <div style={{ background: '#0eb2af', borderRadius: '8px', padding: '12px 28px', fontSize: '13px', fontWeight: '600', color: 'white', display: 'inline-block' }}>Schedule a Conversation</div>
+                </div>
+              </div>
               <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
                 <strong style={{ color: '#1e293b' }}>CTA Band</strong> — Full-width pattern at low opacity behind centered call-to-action. Use between content sections to break visual rhythm.
               </div>
@@ -1911,63 +1974,33 @@ export default function Mockups() {
 
             {/* Footer Mockup */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
-              <svg width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="compFooterPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.06">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                    <g opacity="0.03" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                    </g>
-                  </pattern>
-                  <linearGradient id="compFooterGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#132f4a"/>
-                    <stop offset="100%" stopColor="#0f2338"/>
-                  </linearGradient>
-                </defs>
-                <rect width="100%" height="260" fill="url(#compFooterGrad)"/>
-                <rect width="100%" height="260" fill="url(#compFooterPattern)"/>
-                {/* Teal top border */}
-                <line x1="0" y1="2" x2="100%" y2="2" stroke="#0eb2af" strokeWidth="3" opacity="0.6"/>
-                {/* Logo: white iconmark + white wordmark */}
-                <g transform="translate(60, 32)">
-                  {/* White iconmark */}
-                  <g transform="scale(0.55)">
-                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
-                    <polygon fill="#ffffff" points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06" opacity="0.85"/>
-                  </g>
-                  {/* White wordmark (whiteAsset_6) */}
-                  <g transform="translate(40, 4) scale(0.55)">
-                    <path fill="#ffffff" d="M172.56,24.31c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z" opacity="0.85"/>
-                    <polygon fill="#ffffff" points="220.02 44.98 216.6 45 199.28 8.77 181.74 45.15 178.23 45.17 199.26 1.55 220.02 44.98" opacity="0.85"/>
-                    <polygon fill="#0eb2af" points="202.4 34.18 195.93 34.21 199.19 27.46 202.4 34.18"/>
-                    <polygon fill="#ffffff" points="84.7 44.99 81.28 45 63.97 8.77 46.42 45.15 42.91 45.17 63.95 1.55 84.7 44.99" opacity="0.85"/>
-                    <path fill="#ffffff" d="M106.28,25.52l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z" opacity="0.85"/>
-                    <polygon fill="#ffffff" points="45.35 .93 43.94 3.85 21.9 3.85 21.9 45.69 18.54 45.69 18.54 3.85 0 3.85 1.4 .94 45.35 .93" opacity="0.85"/>
-                    <polygon fill="#0eb2af" points="67.03 34.18 60.56 34.21 63.81 27.46 67.03 34.18"/>
-                  </g>
-                </g>
-                {/* Footer columns */}
-                <text x="60" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1" textTransform="uppercase">PLATFORM</text>
-                <text x="60" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Features</text>
-                <text x="60" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Integrations</text>
-                <text x="60" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Pricing</text>
-                <text x="200" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1">COMPANY</text>
-                <text x="200" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Our Story</text>
-                <text x="200" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Leadership</text>
-                <text x="200" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Careers</text>
-                <text x="340" y="110" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="1">RESOURCES</text>
-                <text x="340" y="130" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Blog</text>
-                <text x="340" y="148" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Case Studies</text>
-                <text x="340" y="166" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="12">Support</text>
-                {/* Divider */}
-                <line x1="60" y1="200" x2="90%" y2="200" stroke="#ffffff" strokeWidth="1" opacity="0.06"/>
-                {/* Copyright */}
-                <text x="60" y="230" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">{'\u00A9'} 2026 Targatek Inc. All rights reserved.</text>
-                <text x="90%" y="230" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11" textAnchor="end">Privacy Policy  |  Terms</text>
-              </svg>
+              <div style={{ background: 'linear-gradient(180deg, #132f4a, #0f2338)', position: 'relative', overflow: 'hidden', padding: '32px 60px 40px 60px' }}>
+                <TargaCanvasPattern />
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'rgba(14,178,175,0.6)', zIndex: 2 }} />
+                <div style={{ position: 'relative', zIndex: 1 }}>
+                  {/* Logo row */}
+                  <div style={{ marginBottom: '28px' }}>
+                    <Icon size={24} />
+                  </div>
+                  {/* Footer columns */}
+                  <div style={{ display: 'flex', gap: '60px', marginBottom: '28px' }}>
+                    {[
+                      { h: 'Platform', links: ['Features', 'Integrations', 'Pricing'] },
+                      { h: 'Company', links: ['Our Story', 'Leadership', 'Careers'] },
+                      { h: 'Resources', links: ['Blog', 'Case Studies', 'Support'] },
+                    ].map((col, i) => (
+                      <div key={i}>
+                        <p style={{ fontSize: '11px', fontWeight: '600', color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', margin: '0 0 12px 0' }}>{col.h}</p>
+                        {col.links.map((l, j) => <p key={j} style={{ fontSize: '12px', color: '#64748b', margin: '0 0 8px 0' }}>{l}</p>)}
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '20px', display: 'flex', justifyContent: 'space-between' }}>
+                    <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>{'\u00A9'} 2026 Targatek Inc. All rights reserved.</p>
+                    <p style={{ fontSize: '11px', color: '#64748b', margin: 0 }}>Privacy Policy  |  Terms</p>
+                  </div>
+                </div>
+              </div>
               <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
                 <strong style={{ color: '#1e293b' }}>Footer</strong> — Darkest navy gradient with pattern at minimal opacity (6%). Teal accent line at top edge. Pattern adds subtle texture without competing with navigation links.
               </div>
@@ -1979,76 +2012,37 @@ export default function Mockups() {
               Downloadable asset for the 100 CEO Conversations initiative. Animated pattern creates premium perception at the moment of conversion.
             </p>
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
-              <svg width="100%" viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="leadPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.10">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                    <g opacity="0.06" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                      <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                  </pattern>
-                  <pattern id="leadPatternSm" x="20" y="23" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.05">
-                      <polygon fill="#0eb2af" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                    </g>
-                  </pattern>
-                  <linearGradient id="leadGrad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#1f476a"/>
-                    <stop offset="100%" stopColor="#132f4a"/>
-                  </linearGradient>
-                  <clipPath id="leadClip">
-                    <rect width="100%" height="480"/>
-                  </clipPath>
-                </defs>
-                <rect width="100%" height="480" fill="url(#leadGrad)"/>
-                <g clipPath="url(#leadClip)">
-                  <g className="pattern-animate">
-                    <rect x="-80" y="0" width="2000" height="480" fill="url(#leadPattern)"/>
-                    <rect x="-80" y="0" width="2000" height="480" fill="url(#leadPatternSm)"/>
-                  </g>
-                </g>
+              <div style={{ background: 'linear-gradient(135deg, #1f476a, #132f4a)', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'stretch', minHeight: '340px' }}>
+                <TargaCanvasPattern />
                 {/* Left content */}
-                <g transform="translate(60, 60)">
-                  <text x="0" y="0" fill="#0eb2af" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="600" letterSpacing="2">FREE EXECUTIVE BRIEF</text>
-                  <text x="0" y="40" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="32" fontWeight="300" letterSpacing="-0.5">The State of the</text>
-                  <text x="0" y="76" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="32" fontWeight="300" letterSpacing="-0.5">Leader Experience</text>
-                  <text x="0" y="118" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">Insights from conversations with 100 enterprise</text>
-                  <text x="0" y="136" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">CEOs on what's broken in leadership tooling</text>
-                  <text x="0" y="154" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="13" fontWeight="400">and what comes next.</text>
-                  {/* Key stats */}
-                  <g transform="translate(0, 186)">
-                    <rect x="0" y="0" width="120" height="64" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
-                    <text x="16" y="28" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="24" fontWeight="400">100</text>
-                    <text x="16" y="48" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">CEOs Interviewed</text>
-                    <rect x="136" y="0" width="120" height="64" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
-                    <text x="152" y="28" fill="#0eb2af" fontFamily="'Space Grotesk', sans-serif" fontSize="24" fontWeight="400">7</text>
-                    <text x="152" y="48" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">Key Findings</text>
-                  </g>
-                </g>
+                <div style={{ flex: '1 1 55%', padding: '48px 40px', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <p style={{ fontSize: '11px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 16px 0' }}>Free Executive Brief</p>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '400', color: 'white', lineHeight: '1.25', margin: '0 0 16px 0' }}>The State of the<br />Leader Experience</p>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', lineHeight: '1.7', margin: '0 0 28px 0', maxWidth: '340px' }}>Insights from conversations with 100 enterprise CEOs on what's broken in leadership tooling and what comes next.</p>
+                  <div style={{ display: 'flex', gap: '12px' }}>
+                    {[{ n: '100', l: 'CEOs Interviewed' }, { n: '7', l: 'Key Findings' }].map((s, i) => (
+                      <div key={i} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '8px', padding: '12px 16px', minWidth: '100px' }}>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', fontWeight: '400', color: '#0eb2af', margin: '0 0 2px 0' }}>{s.n}</p>
+                        <p style={{ fontSize: '10px', color: '#94a3b8', margin: 0 }}>{s.l}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 {/* Right form card */}
-                <rect x="580" y="48" width="360" height="384" rx="16" fill="#ffffff" opacity="0.97"/>
-                <text x="612" y="88" fill="#1e293b" fontFamily="'Space Grotesk', sans-serif" fontSize="18" fontWeight="400">Get the Brief</text>
-                <text x="612" y="108" fill="#64748b" fontFamily="'Inter', sans-serif" fontSize="11">Join 2,400+ leaders who've read it.</text>
-                {/* Form fields */}
-                <rect x="612" y="124" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
-                <text x="628" y="149" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">First Name</text>
-                <rect x="612" y="176" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
-                <text x="628" y="201" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Work Email</text>
-                <rect x="612" y="228" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
-                <text x="628" y="253" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Company</text>
-                <rect x="612" y="280" width="296" height="40" rx="8" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5"/>
-                <text x="628" y="305" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="12">Title</text>
-                {/* CTA */}
-                <rect x="612" y="336" width="296" height="44" rx="8" fill="#0eb2af"/>
-                <text x="760" y="363" fill="#ffffff" fontFamily="'Inter', sans-serif" fontSize="14" fontWeight="600" textAnchor="middle">Download the Brief</text>
-                <text x="760" y="412" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="9" textAnchor="middle">No spam. Unsubscribe anytime.</text>
-                {/* Teal bottom line */}
-                <line x1="0" y1="477" x2="100%" y2="477" stroke="#0eb2af" strokeWidth="3" opacity="0.5"/>
-              </svg>
+                <div style={{ flex: '0 0 340px', padding: '24px', display: 'flex', alignItems: 'center', position: 'relative', zIndex: 1 }}>
+                  <div style={{ background: 'rgba(255,255,255,0.97)', borderRadius: '12px', padding: '28px', width: '100%' }}>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '16px', fontWeight: '500', color: '#1e293b', margin: '0 0 4px 0' }}>Get the Brief</p>
+                    <p style={{ fontSize: '11px', color: '#64748b', margin: '0 0 20px 0' }}>Join 2,400+ leaders who've read it.</p>
+                    {['First Name', 'Work Email', 'Company', 'Title'].map((f, i) => (
+                      <div key={i} style={{ border: '1.5px solid #e2e8f0', borderRadius: '8px', padding: '10px 14px', marginBottom: '10px', fontSize: '12px', color: '#94a3b8', background: 'white' }}>{f}</div>
+                    ))}
+                    <div style={{ background: '#0eb2af', borderRadius: '8px', padding: '12px', textAlign: 'center', marginTop: '4px' }}>
+                      <span style={{ fontSize: '13px', fontWeight: '600', color: 'white' }}>Download the Brief</span>
+                    </div>
+                    <p style={{ fontSize: '9px', color: '#94a3b8', textAlign: 'center', margin: '10px 0 0 0' }}>No spam. Unsubscribe anytime.</p>
+                  </div>
+                </div>
+              </div>
               <div style={{ background: '#f8fafc', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
                 <strong style={{ color: '#1e293b' }}>Lead Magnet</strong> — Animated interlocking pattern behind a split layout: value proposition left, conversion form right. Teal accent stats reinforce credibility. Ties directly to the 100 CEO Conversations initiative.
               </div>
@@ -2059,43 +2053,18 @@ export default function Mockups() {
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
               <div style={{ background: '#f8fafc', padding: '48px 60px', display: 'flex', gap: '48px', alignItems: 'center' }}>
                 {/* Left: feature card with animated pattern */}
-                <div style={{ flex: '0 0 45%', borderRadius: '16px', overflow: 'hidden', position: 'relative' }}>
-                  <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <pattern id="featPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                        <g opacity="0.08">
-                          <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                          <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                        </g>
-                        <g opacity="0.05" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                          <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                        </g>
-                      </pattern>
-                      <clipPath id="featClip">
-                        <rect width="400" height="300" rx="12"/>
-                      </clipPath>
-                    </defs>
-                    <rect width="400" height="300" rx="12" fill="#1f476a"/>
-                    <g clipPath="url(#featClip)">
-                      <g className="pattern-animate">
-                        <rect x="-80" y="0" width="560" height="300" fill="url(#featPattern)"/>
-                      </g>
-                    </g>
-                    {/* Dashboard mockup inside */}
-                    <rect x="40" y="40" width="320" height="220" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                    <rect x="40" y="40" width="320" height="4" rx="2" fill="#0eb2af" opacity="0.6"/>
+                <div style={{ flex: '0 0 45%', borderRadius: '16px', overflow: 'hidden', position: 'relative', background: '#1f476a', minHeight: '260px' }}>
+                  <TargaCanvasPattern />
+                  <div style={{ position: 'relative', zIndex: 1, padding: '28px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                    <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '14px', fontWeight: '300', color: 'white', opacity: 0.9, margin: '0 0 6px 0' }}>Value Creation Dashboard</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8', margin: '0 0 20px 0' }}>Real-time performance across all initiatives</p>
                     {/* Mini chart bars */}
-                    <rect x="60" y="180" width="32" height="60" rx="4" fill="#1f476a" opacity="0.4"/>
-                    <rect x="60" y="160" width="32" height="80" rx="4" fill="rgba(255,255,255,0.08)"/>
-                    <rect x="104" y="140" width="32" height="100" rx="4" fill="#0eb2af" opacity="0.3"/>
-                    <rect x="148" y="160" width="32" height="80" rx="4" fill="rgba(255,255,255,0.08)"/>
-                    <rect x="192" y="120" width="32" height="120" rx="4" fill="#0eb2af" opacity="0.3"/>
-                    <rect x="236" y="150" width="32" height="90" rx="4" fill="rgba(255,255,255,0.08)"/>
-                    <rect x="280" y="100" width="32" height="140" rx="4" fill="#fbbf24" opacity="0.3"/>
-                    {/* Labels */}
-                    <text x="60" y="80" fill="#ffffff" fontFamily="'Space Grotesk', sans-serif" fontSize="16" fontWeight="300" opacity="0.9">Value Creation Dashboard</text>
-                    <text x="60" y="100" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10">Real-time performance across all initiatives</text>
-                  </svg>
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-end', height: '100px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '8px', padding: '12px', marginTop: 'auto' }}>
+                      {[60, 80, 40, 100, 65, 90, 55].map((h, i) => (
+                        <div key={i} style={{ flex: 1, height: h + '%', borderRadius: '3px', background: i === 3 ? '#fbbf24' : i % 2 === 0 ? 'rgba(14,178,175,0.5)' : 'rgba(255,255,255,0.12)', opacity: 0.8 }} />
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 {/* Right: text content */}
                 <div style={{ flex: 1 }}>
@@ -2127,40 +2096,16 @@ export default function Mockups() {
             {/* Social Proof Bar */}
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginTop: '24px', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Social Proof Bar</h3>
             <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
-              <svg width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="proofPattern" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
-                    <g opacity="0.04">
-                      <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                      <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
-                    </g>
-                    <g opacity="0.025" transform="translate(40,46) scale(1,-1) translate(-40,-29)">
-                      <polygon fill="#1f476a" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
-                    </g>
-                  </pattern>
-                  <clipPath id="proofClip">
-                    <rect width="100%" height="120"/>
-                  </clipPath>
-                </defs>
-                <rect width="100%" height="120" fill="#f8fafc"/>
-                <g clipPath="url(#proofClip)">
-                  <g className="pattern-animate">
-                    <rect x="-80" y="0" width="2000" height="120" fill="url(#proofPattern)"/>
-                  </g>
-                </g>
-                <line x1="0" y1="0" x2="100%" y2="0" stroke="#e2e8f0" strokeWidth="1"/>
-                <line x1="0" y1="119" x2="100%" y2="119" stroke="#e2e8f0" strokeWidth="1"/>
-                <text x="50%" y="40" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="11" fontWeight="500" textAnchor="middle" letterSpacing="1">TRUSTED BY LEADERS AT</text>
-                {/* Placeholder logos */}
-                {[0, 1, 2, 3, 4].map(i => (
-                  <g key={i} transform={`translate(${120 + i * 180}, 0)`}>
-                    <rect x="0" y="60" width="100" height="28" rx="4" fill="#1f476a" opacity="0.08"/>
-                    <text x="50" y="79" fill="#94a3b8" fontFamily="'Inter', sans-serif" fontSize="10" fontWeight="500" textAnchor="middle">Partner {i + 1}</text>
-                  </g>
-                ))}
-              </svg>
-              <div style={{ background: '#ffffff', padding: '12px 20px', fontSize: '12px', color: '#64748b', borderTop: '1px solid #e2e8f0' }}>
-                <strong style={{ color: '#1e293b' }}>Social Proof Bar</strong> — Light animated pattern creates premium texture behind partner logos. Use between hero and feature sections.
+              <div style={{ background: '#f8fafc', padding: '24px 40px', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                <p style={{ fontSize: '11px', fontWeight: '500', color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', margin: 0 }}>Trusted by Leaders at</p>
+                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                  {[1, 2, 3, 4, 5].map(i => (
+                    <div key={i} style={{ background: 'rgba(31,71,106,0.08)', borderRadius: '4px', padding: '8px 24px', fontSize: '10px', fontWeight: '500', color: '#94a3b8' }}>Partner {i}</div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ background: '#ffffff', padding: '12px 20px', fontSize: '12px', color: '#64748b' }}>
+                <strong style={{ color: '#1e293b' }}>Social Proof Bar</strong> — Clean light bar with placeholder partner logos. Use between hero and feature sections.
               </div>
             </div>
           </>
@@ -2770,9 +2715,7 @@ export default function Mockups() {
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
                   {/* Email header */}
                   <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '32px 32px 24px 32px', position: 'relative', overflow: 'hidden' }}>
-                    <div style={{ position: 'absolute', right: '-20px', top: '-20px', opacity: 0.05 }}>
-                      <Icon size={120} />
-                    </div>
+                    <TargaCanvasPattern />
                     <Icon size={28} />
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '20px', fontWeight: '300', color: 'white', margin: '16px 0 4px 0', lineHeight: '1.3' }}>See what your organization is missing.</p>
                     <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The TARGA AI</p>
@@ -2838,9 +2781,7 @@ export default function Mockups() {
                 <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', maxWidth: '480px', margin: '0 auto' }}>
                   {/* Navy header for launch */}
                   <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '32px', position: 'relative', overflow: 'hidden' }}>
-                    <div style={{ position: 'absolute', left: '-40px', bottom: '-40px', opacity: 0.06 }}>
-                      <Icon size={160} />
-                    </div>
+                    <TargaCanvasPattern />
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center', position: 'relative', zIndex: 1 }}>
                       <div style={{ width: '80px', height: '80px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '12px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '12px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.08)' }}>
                         <Icon size={32} />
@@ -3052,9 +2993,7 @@ export default function Mockups() {
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 {/* Post image */}
                 <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
-                  <div style={{ position: 'absolute', right: '-40px', bottom: '-40px', opacity: 0.05 }}>
-                    <Icon size={240} />
-                  </div>
+                  <TargaCanvasPattern />
                   <div style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ display: 'flex', gap: '6px', marginBottom: '24px' }}>
                       <div style={{ height: '3px', width: '32px', background: '#1f476a', borderRadius: '2px' }}></div>
@@ -3143,9 +3082,7 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 <div style={{ background: 'linear-gradient(135deg, #1f476a, #334155)', padding: '48px 40px', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
-                  <div style={{ position: 'absolute', left: '-60px', top: '-60px', opacity: 0.06 }}>
-                    <Icon size={280} />
-                  </div>
+                  <TargaCanvasPattern />
                   <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '32px', height: '100%' }}>
                     {/* Platform mockup */}
                     <div style={{ width: '120px', height: '160px', background: 'linear-gradient(135deg, #1a3a5c, #132f4a)', borderRadius: '8px', boxShadow: '8px 4px 20px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '16px', flexShrink: 0, border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -3190,6 +3127,7 @@ export default function Mockups() {
             <div className="grid-2" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden' }}>
                 <div style={{ background: '#132f4a', padding: '0', position: 'relative', overflow: 'hidden', aspectRatio: '1200/627' }}>
+                  <TargaCanvasPattern />
                   {/* Video frame mockup */}
                   <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                     <div style={{ position: 'absolute', top: '16px', left: '16px', display: 'flex', alignItems: 'center', gap: '8px', zIndex: 2 }}>
@@ -3411,9 +3349,7 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Title Slide</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '40px' }}>
               <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', right: '60px', bottom: '-40px', opacity: 0.04 }}>
-                  <Icon size={320} />
-                </div>
+                <TargaCanvasPattern />
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={36} />
                   <p style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 8px 0' }}>The Leader Experience™</p>
@@ -3432,14 +3368,7 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Section Divider</h3>
             <div className="card-white" style={{ padding: '40px', marginBottom: '40px' }}>
               <div style={{ background: '#1f476a', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                {/* Triangle accent bottom-left */}
-                <div style={{ position: 'absolute', left: '-20px', bottom: '-20px', opacity: 0.10 }}>
-                  <Icon size={200} />
-                </div>
-                {/* Subtle second triangle top-right */}
-                <div style={{ position: 'absolute', right: '40px', top: '-60px', opacity: 0.04 }}>
-                  <Icon size={180} />
-                </div>
+                <TargaCanvasPattern />
                 <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <span style={{ fontSize: '12px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase' }}>Section 02</span>
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '36px', fontWeight: '300', color: 'white', margin: '12px 0 0 0' }}>Intelligence</p>
@@ -4066,9 +3995,7 @@ export default function Mockups() {
               </div>
               <div style={{ background: 'white', borderRadius: '12px', padding: '40px', border: '1px solid #e2e8f0' }}>
                 <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '32px', aspectRatio: '3.5/2', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                  <div style={{ position: 'absolute', right: '-30px', bottom: '-30px', opacity: 0.06 }}>
-                    <Icon size={180} />
-                  </div>
+                  <TargaCanvasPattern />
                   <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                     <svg height="48" viewBox="0 0 376.9 114.15" xmlns="http://www.w3.org/2000/svg">
                       <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
@@ -4116,9 +4043,7 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>LinkedIn Banner</h3>
             <div className="card-white" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '40px 48px', aspectRatio: '4/1', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', left: '-60px', top: '-60px', opacity: 0.04 }}>
-                  <Icon size={300} />
-                </div>
+                <TargaCanvasPattern />
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: 'white', margin: '0 0 4px 0' }}>The Next Generation Leader Experience</p>
                   <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>The Leader Experience™ - AI-Powered Value Creation</p>
@@ -4134,9 +4059,7 @@ export default function Mockups() {
             <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Presentation Title Slide</h3>
             <div className="card-white" style={{ marginBottom: '48px' }}>
               <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '60px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', right: '60px', bottom: '-40px', opacity: 0.04 }}>
-                  <Icon size={320} />
-                </div>
+                <TargaCanvasPattern />
                 <div style={{ position: 'relative', zIndex: 1 }}>
                   <Icon size={36} />
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '32px', fontWeight: '300', color: 'white', margin: '20px 0 12px 0', lineHeight: '1.2' }}>Enterprise Value<br/>Creation Workshop</p>
