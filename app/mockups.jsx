@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const styles = `
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -33,6 +33,15 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(226, 232, 240, 0.7);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 
 .header-inner {
@@ -94,7 +103,7 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: #64748b;
+  color: #475569;
   white-space: nowrap;
   text-align: center;
   border-bottom: 2px solid transparent;
@@ -212,7 +221,7 @@ header {
 .hero-text h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 56px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 28px;
   line-height: 1.1;
   letter-spacing: -1px;
@@ -372,7 +381,7 @@ header {
 .section-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 12px;
   color: #1e293b;
   letter-spacing: -0.5px;
@@ -414,7 +423,7 @@ header {
 .card-header h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
@@ -699,11 +708,39 @@ header {
 .pattern-animate {
   animation: patternSlide 8s linear infinite;
 }
+
+.logo-toggle-bar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 148px;
+  z-index: 50;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 `;
 
 export default function Mockups() {
   const [activeTab, setActiveTab] = useState('hero');
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [logoVariant, setLogoVariant] = useState('bold');
+  const [showAI, setShowAI] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(function() {
+    function handleScroll() {
+      setScrolled(window.scrollY > 20);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return function() { window.removeEventListener('scroll', handleScroll); };
+  }, []);
 
   const Icon = ({ size = 40 }) => (
     <svg width={size} height={size * (58.3 / 55.86)} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
@@ -720,6 +757,7 @@ export default function Mockups() {
     { id: 'colors', label: 'Colors' },
     { id: 'typography', label: 'Typography' },
     { id: 'logos', label: 'Logos' },
+    { id: 'logo-compare', label: 'Logo Compare' },
     { id: 'components', label: 'Components' },
     { id: 'voice', label: 'Voice' },
     { id: 'imagery', label: 'Imagery' },
@@ -736,7 +774,7 @@ export default function Mockups() {
     { id: 'accessibility', label: 'Accessibility' },
     { id: 'applications', label: 'Applications' },
     { id: 'downloads', label: 'Downloads' },
-    { id: 'implementation', label: 'Implementation' },
+    // { id: 'implementation', label: 'Implementation' }, // Hidden to keep nav at 2 rows
   ];
 
   return (
@@ -744,22 +782,20 @@ export default function Mockups() {
       <style>{styles}</style>
       
       {/* ==================== HEADER ==================== */}
-      <header>
+      <header className={scrolled ? 'scrolled' : ''}>
         <div className="header-inner">
           <div className="header-top">
             <div className="header-logo">
-              <svg height="40" viewBox="0 0 376.9 114.15" xmlns="http://www.w3.org/2000/svg">
-                <polygon fill="#0eb2af" points="65.93 88.62 43.68 88.72 54.88 65.52 65.93 88.62"/>
-                <polygon fill="#1f476a" points="109.38 113.68 89.68 113.76 55.04 41.28 19.95 114.06 0 114.15 44.35 22.18 51.67 6.97 55.04 0 109.38 113.68"/>
-                <path fill="#1f476a" d="M303.28,59.85c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92-.01,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
-                <polygon fill="#1f476a" points="350.74 80.52 347.32 80.54 330 44.31 312.46 80.69 308.95 80.71 329.98 37.09 350.74 80.52"/>
-                <polygon fill="#0eb2af" points="333.12 69.72 326.65 69.75 329.91 62.99 333.12 69.72"/>
-                <polygon fill="#1f476a" points="215.42 80.53 212 80.54 194.69 44.31 177.14 80.69 173.63 80.71 194.67 37.09 215.42 80.53"/>
-                <path fill="#1f476a" d="M237,61.06l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
-                <polygon fill="#1f476a" points="176.07 36.47 174.66 39.39 152.62 39.39 152.62 81.23 149.26 81.23 149.26 39.39 130.72 39.39 132.12 36.48 176.07 36.47"/>
-                <path fill="#0eb2af" d="M362.93,32.01l-7.73,16.61h2.54l1.74-3.79.98-2.22,2.43-5.31,2.32,5.31.96,2.22,1.64,3.79h2.58l-7.46-16.61Z"/>
-                <rect fill="#0eb2af" x="374.54" y="32.99" width="2.36" height="15.63"/>
-                <polygon fill="#0eb2af" points="197.75 69.72 191.28 69.75 194.53 62.99 197.75 69.72"/>
+              <svg height="36" viewBox="0 0 295.76 59.34" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#0eb2af" points="84.33 45.26 72.97 45.31 78.69 33.46 84.33 45.26"/>
+                <path fill="#1f476a" d="M197.54,29.8l-3.75,7.76h8.29c-.38,3.85-2.19,7.16-5.42,9.93-.03.02-.05.04-.08.06-2.86,2.39-6.03,3.73-9.53,4-.44.04-.89.05-1.35.05-2.74,0-5.37-.6-7.89-1.81-1.87-.9-3.67-2.12-5.41-3.68-4.38-3.95-6.56-8.97-6.56-15.07s1.96-10.83,5.89-14.75c3.92-3.99,8.78-5.99,14.57-5.99,3.39,0,6.51.83,9.36,2.48l3.45-7.15c-.32-.18-.64-.34-.97-.5-3.71-1.75-7.71-2.62-11.98-2.62-7.97,0-14.73,2.78-20.28,8.33-5.56,5.53-8.33,12.27-8.33,20.21s2.73,14.44,8.19,20c2.61,2.64,5.46,4.65,8.57,6.03,3.4,1.51,7.11,2.27,11.11,2.27,2.01,0,3.93-.19,5.76-.56.7-.14,1.39-.32,2.07-.52.29-.09.59-.18.88-.28,4.07-1.37,7.63-3.78,10.69-7.22,2.25-2.55,3.84-5.3,4.79-8.23.97-3.17,1.45-6.81,1.45-10.92v-1.81h-13.51Z"/>
+                <polygon fill="#1f476a" points="272.16 58.05 262.11 58.1 244.42 21.08 226.49 58.25 216.31 58.3 244.42 0 272.16 58.05"/>
+                <polygon fill="#0eb2af" points="249.89 45.17 238.7 45.21 244.33 33.54 249.89 45.17"/>
+                <polygon fill="#1f476a" points="106.52 58.06 96.46 58.1 78.77 21.08 60.85 58.25 50.66 58.3 73.31 11.33 77.05 3.56 78.77 0 106.52 58.06"/>
+                <path fill="#1f476a" d="M133.22,34.99l11.88,23.31h-10.11l-7.89-15.39-6.8-14.21h5.25c1.57,0,2.98-.11,4.21-.37,5-.95,7.53-3.82,7.53-8.59,0-2.72-.9-4.8-2.72-6.21-1.85-1.46-4.69-2.19-8.48-2.22h-22.94l-3.71-7.75h24.91c1.8,0,3.45.08,5,.25,3.2.34,5.87,1.04,8,2.08,1.01.51,1.91,1.1,2.67,1.74,3.54,3.03,5.31,7.02,5.31,11.99,0,3.88-1.09,7.22-3.31,10-2.22,2.78-5.17,4.58-8.79,5.36Z"/>
+                <polygon fill="#1f476a" points="58.08 3.55 54.34 11.32 30.42 11.32 30.42 58.3 22.15 58.3 22.15 11.32 0 11.32 3.74 3.55 9.74 3.55 9.74 3.55 58.08 3.55"/>
+                <path fill="#0eb2af" d="M286.18,15.18h-7.51l-1.95,4.26h-2.85l8.68-18.65,8.38,18.65h-2.9l-1.84-4.26ZM285.1,12.69l-2.6-5.97-2.73,5.97h5.33Z"/>
+                <rect fill="#0eb2af" x="293.11" y="1.9" width="2.65" height="17.55"/>
               </svg>
               <div className="logo-text">
                 <p>Brand System</p>
@@ -801,10 +837,10 @@ export default function Mockups() {
               <div className="hero-content">
                 <div className="hero-text">
                   <p style={{ fontSize: '13px', fontWeight: '600', color: '#0eb2af', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>The Leader Experience™</p>
-                  <h1>AI-Powered Value Creation for Enterprise Leaders</h1>
+                  <h1>Speed and Clarity for Enterprise Value Creation</h1>
                   <p>
-                    TARGA AI is the leadership performance platform that turns strategic goals 
-                    into measurable outcomes — giving executives real-time visibility into 
+                    TARGA AI gives executives cross-functional visibility — turning strategic goals 
+                    into measurable outcomes with AI-driven insight into 
                     what drives enterprise value.
                   </p>
                   <div className="hero-buttons">
@@ -863,7 +899,7 @@ export default function Mockups() {
             </div>
 
             <div className="card-white">
-              <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', marginBottom: '20px' }}>
+              <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '500', color: '#1e293b', marginBottom: '20px' }}>
                 Every executive deserves to see — at a glance — what drives enterprise value.
               </h3>
               <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', marginBottom: '24px', maxWidth: '760px' }}>
@@ -873,7 +909,7 @@ export default function Mockups() {
                 <strong> LX — the Leader Experience™</strong>.
               </p>
               <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', maxWidth: '760px' }}>
-                The platform delivers three core capabilities — Visibility, Intelligence, and Value — each 
+                The platform delivers three core capabilities — Clarity, Speed, and Value — each 
                 representing a layer in the journey from strategic intent to enterprise value creation.
               </p>
             </div>
@@ -897,6 +933,53 @@ export default function Mockups() {
                   Enterprise value creation management — measuring outcomes in dollars, not checkboxes. Premium SaaS that delivers ROI from day one.
                 </p>
               </div>
+            </div>
+
+            <div className="card-white" style={{ marginTop: '40px' }}>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '20px' }}>Competitive Positioning</h3>
+              <p style={{ fontSize: '15px', color: '#1f476a', lineHeight: '1.8', marginBottom: '24px', maxWidth: '760px' }}>
+                TARGA's real competitor isn't other KPI software — it's a general-purpose AI like Claude with a management 
+                framework pasted in. The positioning must answer: why do I need TARGA when I could just use Claude?
+              </p>
+              <div className="grid-2">
+                <div className="do-card">
+                  <h4 style={{ marginBottom: '12px', color: '#1f476a', fontWeight: '600', fontSize: '13px' }}>TARGA AI</h4>
+                  <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
+                    Purpose-built for enterprise leadership. Proprietary data stays in a secure, governed environment. 
+                    Structured views (cascade, Kanban, timeline) designed for executive decision-making. 
+                    AI fine-tuned to your company's strategic context.
+                  </p>
+                </div>
+                <div className="dont-card">
+                  <h4 style={{ marginBottom: '12px', color: '#64748b', fontWeight: '600', fontSize: '13px' }}>GENERAL AI (Claude, ChatGPT)</h4>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: 0, lineHeight: '1.7' }}>
+                    Generic tool with no enterprise security guarantee. No structured views — just text. 
+                    No cross-functional visibility. Your strategic data lives on someone else's servers 
+                    with no governance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-white" style={{ marginTop: '24px' }}>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px' }}>Targatek — Parent Company</h3>
+              <p style={{ fontSize: '14px', color: '#64748b', lineHeight: '1.8', maxWidth: '700px', marginBottom: '16px' }}>
+                Targatek Inc. is the parent company. TARGA AI is the product brand. These must be kept separate:
+              </p>
+              <div className="grid-2">
+                <div className="box" style={{ textAlign: 'center' }}>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: '#1e293b', marginBottom: '4px' }}>targatek.com</p>
+                  <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Corporate entity, board of directors, investor relations</p>
+                </div>
+                <div className="box" style={{ textAlign: 'center' }}>
+                  <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: '#0eb2af', marginBottom: '4px' }}>targa.ai</p>
+                  <p style={{ fontSize: '12px', color: '#64748b', margin: 0 }}>Product brand, customer-facing, 100 CEO Conversations</p>
+                </div>
+              </div>
+              <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.8', marginTop: '16px' }}>
+                Targatek wordmark uses the same letterforms as TARGA AI, with "tek" in a thinner weight to differentiate. 
+                targatek.com should not forward to targa.ai — the parent company needs its own simple presence.
+              </p>
             </div>
 
             <div className="card-white" style={{ marginTop: '40px', textAlign: 'center', padding: '48px' }}>
@@ -1437,6 +1520,245 @@ export default function Mockups() {
           </>
         )}
 
+        {/* ==================== LOGO COMPARE ==================== */}
+        {activeTab === 'logo-compare' && (
+          <>
+            <h2 className="section-title">Logo Comparison</h2>
+            <p className="section-subtitle">
+              Toggle between wordmark treatments to evaluate each in real-world contexts. Use this view when presenting options to stakeholders.
+            </p>
+
+            {/* Sticky toggle bar */}
+            <div className="logo-toggle-bar">
+              <span style={{ fontSize: '13px', color: '#64748b', marginRight: '8px' }}>Wordmark:</span>
+              {[
+                { id: 'thin', label: 'Thin + Separator' },
+                { id: 'bold', label: 'Bold (Original)' },
+                { id: 'basic', label: 'Icon + Font' },
+              ].map(v => (
+                <button
+                  key={v.id}
+                  onClick={() => setLogoVariant(v.id)}
+                  style={{
+                    padding: '8px 20px',
+                    borderRadius: '8px',
+                    border: logoVariant === v.id ? '2px solid #0eb2af' : '1px solid #e2e8f0',
+                    background: logoVariant === v.id ? '#f0fdfa' : '#ffffff',
+                    color: logoVariant === v.id ? '#0eb2af' : '#64748b',
+                    fontWeight: logoVariant === v.id ? '600' : '400',
+                    fontSize: '13px',
+                    cursor: 'pointer',
+                    fontFamily: "'Inter', sans-serif",
+                    transition: 'all 0.2s',
+                  }}
+                >
+                  {v.label}
+                </button>
+              ))}
+              <div style={{ width: '1px', height: '24px', background: '#e2e8f0', margin: '0 8px' }}></div>
+              <span style={{ fontSize: '13px', color: '#64748b', marginRight: '4px' }}>AI:</span>
+              <button
+                onClick={() => setShowAI(!showAI)}
+                style={{
+                  padding: '8px 16px',
+                  borderRadius: '8px',
+                  border: showAI ? '2px solid #0eb2af' : '1px solid #e2e8f0',
+                  background: showAI ? '#0eb2af' : '#ffffff',
+                  color: showAI ? '#ffffff' : '#64748b',
+                  fontWeight: '600',
+                  fontSize: '12px',
+                  cursor: 'pointer',
+                  fontFamily: "'Inter', sans-serif",
+                  transition: 'all 0.2s',
+                  minWidth: '44px',
+                }}
+              >
+                {showAI ? 'ON' : 'OFF'}
+              </button>
+            </div>
+
+            {/* Logo rendering helper */}
+            {(() => {
+              const ThinLogo = ({ height = 40, white = false }) => (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <svg height={height * 0.85} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill={white ? '#ffffff' : '#1f476a'} points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </svg>
+                  <div style={{ width: '1px', height: height * 0.65, background: white ? 'rgba(255,255,255,0.25)' : '#cbd5e1' }}></div>
+                  <svg height={height * 0.55} viewBox="0 0 220.02 46.61" xmlns="http://www.w3.org/2000/svg">
+                    <path fill={white ? '#ffffff' : '#1f476a'} d="M172.56,24.31c-.03,3.29-.44,6.23-1.2,8.72-.75,2.33-2.05,4.56-3.85,6.61-2.49,2.79-5.4,4.77-8.67,5.87-.23.07-.47.15-.71.22-.55.16-1.12.3-1.68.42-1.48.3-3.07.46-4.72.46-3.27,0-6.32-.62-9.08-1.85-2.53-1.12-4.89-2.78-7.02-4.94-4.52-4.6-6.72-9.97-6.72-16.41s2.24-12,6.84-16.58c4.6-4.6,10.04-6.83,16.64-6.83,3.14,0,6.13.58,8.86,1.71l-1.31,2.74c-2.31-1-4.8-1.51-7.42-1.51-5.69,0-10.54,2-14.39,5.92-3.87,3.87-5.83,8.76-5.83,14.55s2.19,11.01,6.51,14.91c1.69,1.51,3.46,2.72,5.28,3.59,2.51,1.21,5.16,1.81,7.89,1.81.46,0,.92,0,1.36-.05,3.53-.27,6.76-1.62,9.62-4.02l.08-.07c3.28-2.8,5.13-6.22,5.52-10.16l.21-2.2h-6.39l1.4-2.91h8.78Z"/>
+                    <polygon fill={white ? '#ffffff' : '#1f476a'} points="220.02 44.98 216.6 45 199.28 8.77 181.74 45.15 178.23 45.17 199.26 1.55 220.02 44.98"/>
+                    <polygon fill="#0eb2af" points="202.4 34.18 195.93 34.21 199.19 27.45 202.4 34.18"/>
+                    <polygon fill={white ? '#ffffff' : '#1f476a'} points="84.7 44.99 81.28 45 63.97 8.77 46.42 45.15 42.91 45.17 63.95 1.55 84.7 44.99"/>
+                    <path fill={white ? '#ffffff' : '#1f476a'} d="M106.28,25.52l10.27,20.16h-3.31l-6.45-12.56-4.68-9.79h1.5c1.59,0,2.95-.12,4.13-.36,5.37-1.03,8.32-4.44,8.32-9.62,0-3.08-1.07-5.47-3.18-7.1-2.02-1.59-4.89-2.37-8.79-2.4h-19.17l-1.39-2.9h19.01c1.53,0,2.91.07,4.24.21,2.58.27,4.76.83,6.44,1.65.75.38,1.41.81,1.97,1.28,2.71,2.32,4.03,5.32,4.03,9.16,0,3.03-.83,5.54-2.52,7.66-1.67,2.1-3.92,3.46-6.69,4.06l-3.73.55Z"/>
+                    <polygon fill={white ? '#ffffff' : '#1f476a'} points="45.35 .93 43.94 3.85 21.9 3.85 21.9 45.69 18.54 45.69 18.54 3.85 0 3.85 1.4 .94 45.35 .93"/>
+                    <polygon fill="#0eb2af" points="67.03 34.18 60.56 34.21 63.81 27.45 67.03 34.18"/>
+                  </svg>
+                  {showAI && <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: height * 0.3, fontWeight: '500', color: '#0eb2af', marginLeft: '2px' }}>AI</span>}
+                </div>
+              );
+
+              const BoldLogo = ({ height = 40, white = false }) => (
+                <svg height={height} viewBox="0 0 295.76 59.34" xmlns="http://www.w3.org/2000/svg">
+                  <polygon fill="#0eb2af" points="84.33 45.26 72.97 45.31 78.69 33.46 84.33 45.26"/>
+                  <path fill={white ? '#ffffff' : '#1f476a'} d="M197.54,29.8l-3.75,7.76h8.29c-.38,3.85-2.19,7.16-5.42,9.93-.03.02-.05.04-.08.06-2.86,2.39-6.03,3.73-9.53,4-.44.04-.89.05-1.35.05-2.74,0-5.37-.6-7.89-1.81-1.87-.9-3.67-2.12-5.41-3.68-4.38-3.95-6.56-8.97-6.56-15.07s1.96-10.83,5.89-14.75c3.92-3.99,8.78-5.99,14.57-5.99,3.39,0,6.51.83,9.36,2.48l3.45-7.15c-.32-.18-.64-.34-.97-.5-3.71-1.75-7.71-2.62-11.98-2.62-7.97,0-14.73,2.78-20.28,8.33-5.56,5.53-8.33,12.27-8.33,20.21s2.73,14.44,8.19,20c2.61,2.64,5.46,4.65,8.57,6.03,3.4,1.51,7.11,2.27,11.11,2.27,2.01,0,3.93-.19,5.76-.56.7-.14,1.39-.32,2.07-.52.29-.09.59-.18.88-.28,4.07-1.37,7.63-3.78,10.69-7.22,2.25-2.55,3.84-5.3,4.79-8.23.97-3.17,1.45-6.81,1.45-10.92v-1.81h-13.51Z"/>
+                  <polygon fill={white ? '#ffffff' : '#1f476a'} points="272.16 58.05 262.11 58.1 244.42 21.08 226.49 58.25 216.31 58.3 244.42 0 272.16 58.05"/>
+                  <polygon fill="#0eb2af" points="249.89 45.17 238.7 45.21 244.33 33.54 249.89 45.17"/>
+                  <polygon fill={white ? '#ffffff' : '#1f476a'} points="106.52 58.06 96.46 58.1 78.77 21.08 60.85 58.25 50.66 58.3 73.31 11.33 77.05 3.56 78.77 0 106.52 58.06"/>
+                  <path fill={white ? '#ffffff' : '#1f476a'} d="M133.22,34.99l11.88,23.31h-10.11l-7.89-15.39-6.8-14.21h5.25c1.57,0,2.98-.11,4.21-.37,5-.95,7.53-3.82,7.53-8.59,0-2.72-.9-4.8-2.72-6.21-1.85-1.46-4.69-2.19-8.48-2.22h-22.94l-3.71-7.75h24.91c1.8,0,3.45.08,5,.25,3.2.34,5.87,1.04,8,2.08,1.01.51,1.91,1.1,2.67,1.74,3.54,3.03,5.31,7.02,5.31,11.99,0,3.88-1.09,7.22-3.31,10-2.22,2.78-5.17,4.58-8.79,5.36Z"/>
+                  <polygon fill={white ? '#ffffff' : '#1f476a'} points="58.08 3.55 54.34 11.32 30.42 11.32 30.42 58.3 22.15 58.3 22.15 11.32 0 11.32 3.74 3.55 9.74 3.55 9.74 3.55 58.08 3.55"/>
+                  {showAI && <path fill="#0eb2af" d="M286.18,15.18h-7.51l-1.95,4.26h-2.85l8.68-18.65,8.38,18.65h-2.9l-1.84-4.26ZM285.1,12.69l-2.6-5.97-2.73,5.97h5.33Z"/>}
+                  {showAI && <rect fill="#0eb2af" x="293.11" y="1.9" width="2.65" height="17.55"/>}
+                </svg>
+              );
+
+              const BasicLogo = ({ height = 40, white = false }) => (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <svg height={height * 0.8} viewBox="0 0 55.86 58.3" xmlns="http://www.w3.org/2000/svg">
+                    <polygon fill="#0eb2af" points="33.67 45.26 22.31 45.31 28.03 33.46 33.67 45.26"/>
+                    <polygon fill={white ? '#ffffff' : '#1f476a'} points="55.86 58.06 45.8 58.1 28.11 21.08 10.19 58.25 0 58.3 22.65 11.33 26.39 3.56 28.11 0 55.86 58.06"/>
+                  </svg>
+                  <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: height * 0.45, fontWeight: '400', color: white ? '#ffffff' : '#1f476a', letterSpacing: '1.5px' }}>TARGA{showAI && <span style={{ color: '#0eb2af' }}> AI</span>}</span>
+                </div>
+              );
+
+              const ActiveLogo = logoVariant === 'thin' ? ThinLogo : logoVariant === 'bold' ? BoldLogo : BasicLogo;
+              const variantLabel = (logoVariant === 'thin' ? 'Thin + Separator' : logoVariant === 'bold' ? 'Bold (Original)' : 'Icon + Font') + (showAI ? ' + AI' : '');
+
+              return (
+                <>
+                  {/* Context 1: Website Header */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Website Header</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: 0, overflow: 'hidden' }}>
+                    <div style={{ background: '#ffffff', padding: '16px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #e2e8f0' }}>
+                      <ActiveLogo height={36} />
+                      <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+                        <span style={{ fontSize: '13px', color: '#64748b' }}>Platform</span>
+                        <span style={{ fontSize: '13px', color: '#64748b' }}>About</span>
+                        <span style={{ fontSize: '13px', color: '#64748b' }}>Resources</span>
+                        <button className="btn btn-primary" style={{ padding: '8px 20px', fontSize: '12px' }}>Request a Demo</button>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', padding: '10px 20px', margin: 0 }}><strong style={{ color: '#1e293b' }}>Header</strong> — {variantLabel} at 36px height in sticky nav</p>
+                  </div>
+
+                  {/* Context 2: Dark Hero */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Hero Section (Dark)</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: 0, overflow: 'hidden' }}>
+                    <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', padding: '60px 48px' }}>
+                      <ActiveLogo height={44} white={true} />
+                      <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '500', color: 'white', margin: '24px 0 12px 0', lineHeight: '1.2' }}>Speed and Clarity for<br/>Enterprise Value Creation</p>
+                      <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '28px' }}>Cross-functional visibility and AI-driven insight for executives.</p>
+                      <button className="btn btn-primary" style={{ fontSize: '13px', padding: '12px 28px' }}>Request a Demo</button>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', padding: '10px 20px', margin: 0 }}><strong style={{ color: '#1e293b' }}>Hero</strong> — {variantLabel} at 44px, white variant on dark navy</p>
+                  </div>
+
+                  {/* Context 3: Business Card */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Business Card Front</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: '40px' }}>
+                    <div style={{ background: 'white', borderRadius: '8px', padding: '32px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', maxWidth: '400px', aspectRatio: '3.5/2', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+                      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, #1f476a 30%, #0eb2af 30%, #0eb2af 55%, #1f476a 55%, #1f476a 75%, #fbbf24 75%)' }}></div>
+                      <ActiveLogo height={28} />
+                      <div>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '14px', fontWeight: '400', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                        <p style={{ fontSize: '10px', color: '#64748b', margin: 0 }}>CEO</p>
+                      </div>
+                      <div style={{ fontSize: '9px', color: '#64748b', lineHeight: '1.8' }}>
+                        joe@targa.ai | (555) 123-4567
+                      </div>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', marginTop: '12px' }}><strong style={{ color: '#1e293b' }}>Business Card</strong> — {variantLabel} at 28px</p>
+                  </div>
+
+                  {/* Context 4: Presentation Slide */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Presentation Title Slide</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: '40px' }}>
+                    <div style={{ background: 'linear-gradient(135deg, #132f4a, #1a3a5c)', borderRadius: '8px', padding: '48px', aspectRatio: '16/9', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+                      <div style={{ position: 'absolute', right: '48px', bottom: '-40px', opacity: 0.04 }}>
+                        <Icon size={280} />
+                      </div>
+                      <div style={{ position: 'relative', zIndex: 1 }}>
+                        <ActiveLogo height={36} white={true} />
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '500', color: 'white', margin: '28px 0 8px 0' }}>100 CEO Conversations</p>
+                        <p style={{ fontSize: '13px', color: '#94a3b8' }}>Enterprise Value Creation Through Speed and Clarity</p>
+                        <div style={{ display: 'flex', gap: '8px', marginTop: '20px' }}>
+                          <div style={{ height: '2px', width: '32px', background: '#1f476a', borderRadius: '1px' }}></div>
+                          <div style={{ height: '2px', width: '32px', background: '#0eb2af', borderRadius: '1px' }}></div>
+                          <div style={{ height: '2px', width: '32px', background: '#fbbf24', borderRadius: '1px' }}></div>
+                        </div>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', marginTop: '12px' }}><strong style={{ color: '#1e293b' }}>Presentation</strong> — {variantLabel} at 36px, white on dark</p>
+                  </div>
+
+                  {/* Context 5: Email Signature */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Email Signature</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: '40px' }}>
+                    <div style={{ maxWidth: '440px', padding: '20px', background: '#fafafa', borderRadius: '8px' }}>
+                      <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                        <div style={{ borderRight: '2px solid #0eb2af', paddingRight: '16px' }}>
+                          <ActiveLogo height={32} />
+                        </div>
+                        <div>
+                          <p style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', margin: '0 0 2px 0' }}>Joe Thompson</p>
+                          <p style={{ fontSize: '11px', color: '#64748b', margin: '0 0 4px 0' }}>CEO, TARGA AI</p>
+                          <p style={{ fontSize: '11px', color: '#0eb2af', margin: 0 }}>targa.ai</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', marginTop: '12px' }}><strong style={{ color: '#1e293b' }}>Email Signature</strong> — {variantLabel} at 32px</p>
+                  </div>
+
+                  {/* Context 6: LinkedIn Banner */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>LinkedIn Company Banner</h3>
+                  <div className="card-white" style={{ marginBottom: '32px', padding: 0, overflow: 'hidden' }}>
+                    <div style={{ background: 'linear-gradient(135deg, #1f476a, #132f4a)', padding: '40px 48px', aspectRatio: '4/1', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+                      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <defs>
+                          <pattern id="lcBannerPat" x="0" y="0" width="80" height="92" patternUnits="userSpaceOnUse">
+                            <g opacity="0.06">
+                              <polygon fill="#ffffff" points="40,4 72,58 56,58 40,30 24,58 8,58"/>
+                              <polygon fill="#0eb2af" points="40,42 48,58 32,58"/>
+                            </g>
+                          </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#lcBannerPat)"/>
+                      </svg>
+                      <div style={{ position: 'relative', zIndex: 1 }}>
+                        <ActiveLogo height={40} white={true} />
+                      </div>
+                      <div style={{ position: 'relative', zIndex: 1, textAlign: 'right' }}>
+                        <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '18px', fontWeight: '300', color: 'white', margin: 0 }}>The Leader Experience™</p>
+                        <p style={{ fontSize: '11px', color: '#94a3b8', margin: '4px 0 0 0' }}>Speed and Clarity for Enterprise Value Creation</p>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: '12px', color: '#64748b', padding: '10px 20px', margin: 0 }}><strong style={{ color: '#1e293b' }}>LinkedIn Banner</strong> — {variantLabel} at 40px with brand pattern, 1584×396</p>
+                  </div>
+
+                  {/* Context 7: Merch / T-shirt */}
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Event Merchandise</h3>
+                  <div className="grid-2" style={{ marginBottom: '32px' }}>
+                    <div className="card-white" style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
+                      <div style={{ background: '#1e293b', padding: '60px 40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <ActiveLogo height={48} white={true} />
+                      </div>
+                      <p style={{ fontSize: '12px', color: '#64748b', padding: '10px 20px', margin: 0 }}><strong style={{ color: '#1e293b' }}>Dark T-shirt</strong> — {variantLabel}, center chest</p>
+                    </div>
+                    <div className="card-white" style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
+                      <div style={{ background: '#f8fafc', padding: '60px 40px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #e2e8f0' }}>
+                        <ActiveLogo height={48} />
+                      </div>
+                      <p style={{ fontSize: '12px', color: '#64748b', padding: '10px 20px', margin: 0 }}><strong style={{ color: '#1e293b' }}>Light T-shirt</strong> — {variantLabel}, center chest</p>
+                    </div>
+                  </div>
+                </>
+              );
+            })()}
+          </>
+        )}
+
         {/* ==================== COMPONENTS ==================== */}
         {activeTab === 'components' && (
           <>
@@ -1930,7 +2252,7 @@ export default function Mockups() {
                 <div className="do-card">
                   <h4 style={{ marginBottom: '12px', color: '#16a34a', fontWeight: '600', fontSize: '13px' }}>SAY</h4>
                   <p style={{ fontSize: '13px', color: '#1f476a', margin: 0, lineHeight: '1.7' }}>
-                    Leader Experience, leadership performance platform, value creation, enterprise value, strategic visibility, performance automation, digital chief of staff
+                    Leader Experience, enterprise value creation, cross-functional visibility, clarity, speed, enterprise clarity, purpose-built AI, digital chief of staff
                   </p>
                 </div>
                 <div className="dont-card">
@@ -2171,7 +2493,7 @@ export default function Mockups() {
             <div className="card-white">
               <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>Why Structured Training?</h3>
               <p style={{ fontSize: '14px', color: '#1f476a', lineHeight: '1.8', maxWidth: '700px' }}>
-                TARGA AI is not a task tracker — it's a leadership performance platform. Getting full value from the system requires understanding how Visibility, Intelligence, and Value work together. Structured training ensures every user, from the CEO to the implementation lead, knows how to turn strategic inputs into measurable outcomes from day one.
+                TARGA AI is not a task tracker — it's an enterprise value creation platform. Getting full value from the system requires understanding how Clarity, Speed, and Value work together. Structured training ensures every user, from the CEO to the implementation lead, knows how to turn strategic inputs into measurable outcomes from day one.
               </p>
             </div>
 
@@ -2186,8 +2508,8 @@ export default function Mockups() {
               <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#64748b', marginBottom: '16px', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Module Cards</h4>
               <div className="grid-3" style={{ marginBottom: '48px' }}>
                 {[
-                  { num: '01', title: 'Visibility', subtitle: 'Strategic Goals, Dashboards & Alignment', color: '#1f476a', progress: 100 },
-                  { num: '02', title: 'Intelligence', subtitle: 'AI Workflows, Natural Language & Automation', color: '#0eb2af', progress: 65 },
+                  { num: '01', title: 'Clarity', subtitle: 'Cross-Functional Visibility & Strategic Alignment', color: '#1f476a', progress: 100 },
+                  { num: '02', title: 'Speed', subtitle: 'AI Workflows, Risk Detection & Decision Acceleration', color: '#0eb2af', progress: 65 },
                   { num: '03', title: 'Value', subtitle: 'Execution, Measurement & ROI Reporting', color: '#fbbf24', progress: 0 },
                 ].map((mod, i) => (
                   <div key={i} style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', overflow: 'hidden', transition: 'all 0.2s ease' }}>
@@ -2267,8 +2589,8 @@ export default function Mockups() {
                 </div>
                 {/* Module progress bars */}
                 {[
-                  { label: 'Visibility', color: '#1f476a', pct: 100 },
-                  { label: 'Intelligence', color: '#0eb2af', pct: 65 },
+                  { label: 'Clarity', color: '#1f476a', pct: 100 },
+                  { label: 'Speed', color: '#0eb2af', pct: 65 },
                   { label: 'Value', color: '#fbbf24', pct: 0 },
                 ].map((p, i) => (
                   <div key={i} style={{ marginBottom: '20px' }}>
@@ -2493,7 +2815,7 @@ export default function Mockups() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div className="card-white" style={{ margin: 0, flex: 1 }}>
                   <h4 style={{ fontSize: '13px', fontWeight: '600', color: '#1e293b', marginBottom: '12px' }}>Layout Structure</h4>
-                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Brand accent strip (Visibility / Intelligence / Value)', 'Single primary CTA button (Blue #0eb2af)', 'Centered footer with icon and company link'].map((item, i) => (
+                  {['Dark gradient header with icon and headline', 'Body text: 2-3 short paragraphs max', 'Brand accent strip (Clarity / Speed / Value)', 'Single primary CTA button (Blue #0eb2af)', 'Centered footer with icon and company link'].map((item, i) => (
                     <div key={i} className="checklist-item" style={{ marginBottom: '10px' }}>
                       <div className="checklist-icon">{'\u2713'}</div>
                       <div className="checklist-text" style={{ fontSize: '13px' }}>{item}</div>
@@ -2788,7 +3110,7 @@ export default function Mockups() {
                     <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '24px', fontWeight: '300', color: '#1e293b', lineHeight: '1.3', margin: '0 0 8px 0' }}>Pilot Program Launch</p>
                     <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 20px 0' }}>TARGA AI - Enterprise Beta 2026</p>
                     <div style={{ display: 'flex', gap: '16px' }}>
-                      {['Visibility', 'Intelligence', 'Value'].map((p, i) => (
+                      {['Clarity', 'Speed', 'Value'].map((p, i) => (
                         <span key={i} style={{ fontSize: '10px', fontWeight: '600', color: ['#1f476a', '#0eb2af', '#d97706'][i], background: ['#1f476a10', '#0eb2af10', '#fbbf2410'][i], padding: '4px 10px', borderRadius: '12px' }}>{p}</span>
                       ))}
                     </div>
@@ -2961,17 +3283,17 @@ export default function Mockups() {
                   <Icon size={40} />
                   <p style={{ fontSize: '10px', fontWeight: '600', color: '#64748b', letterSpacing: '2px', textTransform: 'uppercase', margin: '16px 0 4px 0' }}>TARGA AI</p>
                   <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '28px', fontWeight: '300', color: '#1e293b', margin: '24px 0 8px 0' }}>The Leader Experience™</p>
-                  <p style={{ fontSize: '14px', color: '#64748b', margin: '0 0 32px 0' }}>AI-Powered Value Creation for Enterprise Leaders</p>
+                  <p style={{ fontSize: '14px', color: '#64748b', margin: '0 0 32px 0' }}>Speed and Clarity for Enterprise Value Creation</p>
 
                   <p style={{ fontSize: '14px', color: '#64748b', margin: '16px 0 32px 0', lineHeight: '1.7', maxWidth: '480px', marginLeft: 'auto', marginRight: 'auto' }}>
-                    The leadership performance platform that turns strategic goals into measurable outcomes — giving executives real-time visibility into what drives enterprise value.
+                    Cross-functional visibility and AI-driven insight — giving every executive the speed and clarity to create enterprise value.
                   </p>
 
                   {/* Capability badges */}
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '32px' }}>
                     {[
-                      { label: 'Visibility', color: '#1f476a' },
-                      { label: 'Intelligence', color: '#0eb2af' },
+                      { label: 'Clarity', color: '#1f476a' },
+                      { label: 'Speed', color: '#0eb2af' },
                       { label: 'Value', color: '#fbbf24' },
                     ].map((p, i) => (
                       <div key={i} style={{ textAlign: 'center' }}>
@@ -3190,7 +3512,7 @@ export default function Mockups() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '24px', marginTop: '16px' }}>
-                  {[{ label: 'Visibility', color: '#1f476a' }, { label: 'Intelligence', color: '#0eb2af' }, { label: 'Value', color: '#fbbf24' }].map((l, i) => (
+                  {[{ label: 'Clarity', color: '#1f476a' }, { label: 'Speed', color: '#0eb2af' }, { label: 'Value', color: '#fbbf24' }].map((l, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <div style={{ width: '10px', height: '10px', borderRadius: '2px', background: l.color }}></div>
                       <span style={{ fontSize: '11px', color: '#64748b' }}>{l.label}</span>
@@ -3275,11 +3597,11 @@ export default function Mockups() {
             <div style={{ marginBottom: '24px' }}>
               {[
                 { time: '8:30 - 9:00', title: 'Welcome & Framework Introduction', desc: 'Overview of the day, introductions, and the Visibility-Intelligence-Value framework explained.', color: '#1f476a', pillar: null },
-                { time: '9:00 - 10:30', title: 'Session 1: Visibility - Strategic Goals', desc: 'Guided capture of strategic objectives. Participants map goals, initiatives, and key results across the leadership team.', color: '#1f476a', pillar: 'Visibility' },
+                { time: '9:00 - 10:30', title: 'Session 1: Clarity - Strategic Alignment', desc: 'Guided capture of strategic objectives. Participants map goals, initiatives, and key results across the leadership team.', color: '#1f476a', pillar: 'Clarity' },
                 { time: '10:30 - 10:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Initiative Prioritization', desc: 'Each identified initiative is scored on strategic impact, resource readiness, and timeline feasibility. The Priority Matrix is produced.', color: '#1f476a', pillar: 'Visibility' },
+                { time: '10:45 - 12:00', title: 'Session 1 (cont.): Initiative Prioritization', desc: 'Each identified initiative is scored on strategic impact, resource readiness, and timeline feasibility. The Priority Matrix is produced.', color: '#1f476a', pillar: 'Clarity' },
                 { time: '12:00 - 1:00', title: 'Lunch', desc: null, color: '#e2e8f0', pillar: null },
-                { time: '1:00 - 2:30', title: 'Session 2: Intelligence - Initiative Mapping', desc: 'Participants connect initiatives to resources and timelines. Identify dependencies, visibility gaps, and automation opportunities. The Initiative Map is produced.', color: '#0eb2af', pillar: 'Intelligence' },
+                { time: '1:00 - 2:30', title: 'Session 2: Speed - Initiative Acceleration', desc: 'Participants connect initiatives to resources and timelines. Identify dependencies, visibility gaps, and automation opportunities. The Initiative Map is produced.', color: '#0eb2af', pillar: 'Speed' },
                 { time: '2:30 - 2:45', title: 'Break', desc: null, color: '#e2e8f0', pillar: null },
                 { time: '2:45 - 4:00', title: 'Session 3: Value - Execution Planning', desc: 'Transform the Initiative Map into execution plans. Each workstream gets a 90-day performance plan with measurable value outcomes.', color: '#fbbf24', pillar: 'Value' },
                 { time: '4:00 - 4:30', title: 'Action Plan & Close', desc: 'Consolidated action plan delivered. Next steps, accountability assignments, and follow-up schedule established.', color: '#0eb2af', pillar: null },
